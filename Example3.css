@@ -1,33 +1,88 @@
-/* This is an example CSS file. If you include it in your portfolio, it'll provide some clean and basic styling */
-/* for your page. Feel free to experiment with the values, or copy them into a new file and use that instead. */
+/* Base page styling */
+:root {
+  --cream: #f6f4ef;
+  --paper: #ffffff;
+  --ink: #1f1f24;
 
-/* These are comments in CSS. Comments don't do anything except explain your working to make code easier to understand. */
-
-
-body { /* We can style any HTML element by using its name - here we're styling the body */
-  /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: #ffafcc;
-  line-height: 1.6;
-  /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
-  margin:0 auto;
-  max-width: 800px;
-  padding-top: 60px;
+  --muted-purple: #6b5b95;
+  --soft-lilac: #ebe7f6;
+  --border-subtle: #e2e0ea;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden; /* prevents horizontal scroll */
+}
+/* Navigation */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--cream);
+  z-index: 1000;
+}
+
+.nav-left {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.nav-right {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right a {
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  opacity: 0.7;
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: var(--ink);
+  line-height: 1.7;
+  background-color: var(--cream);
+  margin: 0;
+  padding: 0;
+}
+/* Page wrapper: centers content and pushes it below fixed nav */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 120px auto 40px auto;
+  padding: 0 20px;
+}
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #ffafcc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               'Helvetica Neue', Arial, sans-serif;
+  color: #000;
   margin-top: 24px;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-/* We want the headings to be a little bigger than the paragraph text */
-.big { /* This is the class we created in the HTML file, you can use it to style any element */
+
+.big {
   font-size: 2.5em;
 }
 
@@ -39,29 +94,98 @@ h2 {
   font-size: 1.25em;
 }
 
-/* Paragraph */
+/* Paragraphs */
 p {
   margin-bottom: 1em;
   font-weight: 300;
 }
 
+/* Generic section spacing */
 section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
+  margin-bottom: 32px;
+}
+
+/* Alternating section backgrounds and box styling */
+.section-light,
+.section-grey {
+  padding: 24px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.section-light {
+   background-color: var(--paper);;
+}
+
+.section-grey {
+   background-color: var(--soft-lilac);
 }
 
 /* Links */
-/* We want the links to be a little more visible  and a different color */
 a {
-  color: #065f46;
+   color: var(--muted-purple);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  opacity: 0.85;
 }
-  
-/* Images */
+
+/* Chart layout */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;        /* allow wrapping on smaller screens */
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.chart-item {
+  flex: 1 1 0;
+  min-width: 280px;       /* prevents items becoming too narrow */
+}
+
+/* Keep charts inside their boxes */
+.chart-item figure {
+  margin: 0;
+}
+
+.chart-item .vega-embed,
+.chart-item svg,
+.chart-item canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Images (if any) */
 img {
   max-width: 100%;
   height: auto;
+}
+.chart-item p {
+  font-size: 13px;   /* adjust as needed */
+  line-height: 1.4;
+}
+.cc6-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.cc6-grid figure {
+  margin: 0;
+}
+.small-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #444;
+  margin-top: 4px;
+}
+/* For sections where charts should stack vertically */
+.chart-container.vertical {
+  flex-direction: column;
 }
