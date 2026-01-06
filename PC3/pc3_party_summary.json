@@ -1,0 +1,128 @@
+[
+  {
+    "party":"Bharatiya Janata Party",
+    "total_questions":96,
+    "active_mps":70,
+    "avg_questions":1.37
+  },
+  {
+    "party":"Indian National Congress",
+    "total_questions":19,
+    "active_mps":14,
+    "avg_questions":1.36
+  },
+  {
+    "party":"Telugu Desam Party",
+    "total_questions":14,
+    "active_mps":9,
+    "avg_questions":1.56
+  },
+  {
+    "party":"Dravida Munnetra Kazhagam",
+    "total_questions":9,
+    "active_mps":7,
+    "avg_questions":1.29
+  },
+  {
+    "party":"Shiv Sena",
+    "total_questions":4,
+    "active_mps":3,
+    "avg_questions":1.33
+  },
+  {
+    "party":"Lok Janshakti Party (Ram Vilas)",
+    "total_questions":3,
+    "active_mps":2,
+    "avg_questions":1.5
+  },
+  {
+    "party":"Rashtriya Lok Dal",
+    "total_questions":3,
+    "active_mps":2,
+    "avg_questions":1.5
+  },
+  {
+    "party":"Jharkhand Mukti Morcha",
+    "total_questions":3,
+    "active_mps":2,
+    "avg_questions":1.5
+  },
+  {
+    "party":"Janata Dal (United)",
+    "total_questions":3,
+    "active_mps":1,
+    "avg_questions":3.0
+  },
+  {
+    "party":"Yuvajana Sramika Rythu Congress Party",
+    "total_questions":2,
+    "active_mps":2,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Viduthalai Chiruthaigal Katchi",
+    "total_questions":2,
+    "active_mps":2,
+    "avg_questions":1.0
+  },
+  {
+    "party":"All India Majlis-E-Ittehadul Muslimeen",
+    "total_questions":2,
+    "active_mps":1,
+    "avg_questions":2.0
+  },
+  {
+    "party":"AJSU Party",
+    "total_questions":2,
+    "active_mps":1,
+    "avg_questions":2.0
+  },
+  {
+    "party":"All India Trinamool Congress",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Aam Aadmi Party",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Communist Party of India (Marxist)",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Indian Union Muslim League",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Nationalist Congress Party",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Nationalist Congress Party Sharadchandra Pawar",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Samajwadi Party",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  },
+  {
+    "party":"Shiv Sena (Uddhav Balasaheb Thackeray)",
+    "total_questions":1,
+    "active_mps":1,
+    "avg_questions":1.0
+  }
+]
