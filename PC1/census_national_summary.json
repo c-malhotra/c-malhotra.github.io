@@ -1,0 +1,12 @@
+{
+  "total_pwd": 26814994,
+  "male_pwd": 14988593,
+  "female_pwd": 11826401,
+  "sex_ratio": 789,
+  "national_prevalence": 2.21,
+  "rural_pct": 69.0,
+  "urban_pct": 31.0,
+  "homeless_pwd": 68422,
+  "homeless_urban": 43509,
+  "homeless_rural": 24913
+}

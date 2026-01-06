@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Seeing",
+    "count": 5033431,
+    "percentage": 18.77
+  },
+  {
+    "type": "Movement",
+    "count": 5436826,
+    "percentage": 20.28
+  },
+  {
+    "type": "Hearing",
+    "count": 5072914,
+    "percentage": 18.92
+  },
+  {
+    "type": "Speech",
+    "count": 1998692,
+    "percentage": 7.45
+  },
+  {
+    "type": "Mental Retardation",
+    "count": 1505964,
+    "percentage": 5.62
+  },
+  {
+    "type": "Mental Illness",
+    "count": 722880,
+    "percentage": 2.7
+  },
+  {
+    "type": "Multiple",
+    "count": 2116698,
+    "percentage": 7.89
+  },
+  {
+    "type": "Other",
+    "count": 4927589,
+    "percentage": 18.38
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "state": "ANDAMAN & NICOBAR ISLANDS",
+    "pwd_prevalence": 1.75,
+    "pwd_population": 6660,
+    "total_population": 379944,
+    "sex_ratio": 725,
+    "male_pwd": 3861,
+    "female_pwd": 2799
+  },
+  {
+    "state": "ANDHRA PRADESH",
+    "pwd_prevalence": 2.68,
+    "pwd_population": 2266607,
+    "total_population": 84665533,
+    "sex_ratio": 851,
+    "male_pwd": 1224459,
+    "female_pwd": 1042148
+  },
+  {
+    "state": "ARUNACHAL PRADESH",
+    "pwd_prevalence": 1.93,
+    "pwd_population": 26734,
+    "total_population": 1382611,
+    "sex_ratio": 877,
+    "male_pwd": 14245,
+    "female_pwd": 12489
+  },
+  {
+    "state": "ASSAM",
+    "pwd_prevalence": 1.54,
+    "pwd_population": 480065,
+    "total_population": 31169272,
+    "sex_ratio": 865,
+    "male_pwd": 257385,
+    "female_pwd": 222680
+  },
+  {
+    "state": "BIHAR",
+    "pwd_prevalence": 2.25,
+    "pwd_population": 2331009,
+    "total_population": 103804637,
+    "sex_ratio": 736,
+    "male_pwd": 1343100,
+    "female_pwd": 987909
+  },
+  {
+    "state": "CHANDIGARH",
+    "pwd_prevalence": 1.4,
+    "pwd_population": 14796,
+    "total_population": 1054686,
+    "sex_ratio": 692,
+    "male_pwd": 8743,
+    "female_pwd": 6053
+  },
+  {
+    "state": "CHHATTISGARH",
+    "pwd_prevalence": 2.45,
+    "pwd_population": 624937,
+    "total_population": 25540196,
+    "sex_ratio": 871,
+    "male_pwd": 334093,
+    "female_pwd": 290844
+  },
+  {
+    "state": "DADRA & NAGAR HAVELI",
+    "pwd_prevalence": 0.96,
+    "pwd_population": 3294,
+    "total_population": 342853,
+    "sex_ratio": 740,
+    "male_pwd": 1893,
+    "female_pwd": 1401
+  },
+  {
+    "state": "DAMAN & DIU",
+    "pwd_prevalence": 0.9,
+    "pwd_population": 2196,
+    "total_population": 242911,
+    "sex_ratio": 689,
+    "male_pwd": 1300,
+    "female_pwd": 896
+  },
+  {
+    "state": "GOA",
+    "pwd_prevalence": 2.26,
+    "pwd_population": 33012,
+    "total_population": 1457723,
+    "sex_ratio": 940,
+    "male_pwd": 17016,
+    "female_pwd": 15996
+  },
+  {
+    "state": "GUJARAT",
+    "pwd_prevalence": 1.81,
+    "pwd_population": 1092302,
+    "total_population": 60383628,
+    "sex_ratio": 782,
+    "male_pwd": 612804,
+    "female_pwd": 479498
+  },
+  {
+    "state": "HARYANA",
+    "pwd_prevalence": 2.16,
+    "pwd_population": 546374,
+    "total_population": 25353081,
+    "sex_ratio": 732,
+    "male_pwd": 315533,
+    "female_pwd": 230841
+  },
+  {
+    "state": "HIMACHAL PRADESH",
+    "pwd_prevalence": 2.27,
+    "pwd_population": 155316,
+    "total_population": 6856509,
+    "sex_ratio": 799,
+    "male_pwd": 86321,
+    "female_pwd": 68995
+  },
+  {
+    "state": "JAMMU & KASHMIR",
+    "pwd_prevalence": 2.88,
+    "pwd_population": 361153,
+    "total_population": 12548926,
+    "sex_ratio": 763,
+    "male_pwd": 204834,
+    "female_pwd": 156319
+  },
+  {
+    "state": "JHARKHAND",
+    "pwd_prevalence": 2.34,
+    "pwd_population": 769980,
+    "total_population": 32966238,
+    "sex_ratio": 804,
+    "male_pwd": 426876,
+    "female_pwd": 343104
+  },
+  {
+    "state": "KARNATAKA",
+    "pwd_prevalence": 2.17,
+    "pwd_population": 1324205,
+    "total_population": 61130704,
+    "sex_ratio": 823,
+    "male_pwd": 726521,
+    "female_pwd": 597684
+  },
+  {
+    "state": "KERALA",
+    "pwd_prevalence": 2.28,
+    "pwd_population": 761843,
+    "total_population": 33387677,
+    "sex_ratio": 930,
+    "male_pwd": 394706,
+    "female_pwd": 367137
+  },
+  {
+    "state": "LAKSHADWEEP",
+    "pwd_prevalence": 2.51,
+    "pwd_population": 1615,
+    "total_population": 64429,
+    "sex_ratio": 927,
+    "male_pwd": 838,
+    "female_pwd": 777
+  },
+  {
+    "state": "MADHYA PRADESH",
+    "pwd_prevalence": 2.14,
+    "pwd_population": 1551931,
+    "total_population": 72597565,
+    "sex_ratio": 746,
+    "male_pwd": 888751,
+    "female_pwd": 663180
+  },
+  {
+    "state": "MAHARASHTRA",
+    "pwd_prevalence": 2.64,
+    "pwd_population": 2963392,
+    "total_population": 112372972,
+    "sex_ratio": 751,
+    "male_pwd": 1692285,
+    "female_pwd": 1271107
+  },
+  {
+    "state": "MANIPUR",
+    "pwd_prevalence": 2.15,
+    "pwd_population": 58547,
+    "total_population": 2721756,
+    "sex_ratio": 878,
+    "male_pwd": 31174,
+    "female_pwd": 27373
+  },
+  {
+    "state": "MEGHALAYA",
+    "pwd_prevalence": 1.5,
+    "pwd_population": 44317,
+    "total_population": 2964007,
+    "sex_ratio": 900,
+    "male_pwd": 23326,
+    "female_pwd": 20991
+  },
+  {
+    "state": "MIZORAM",
+    "pwd_prevalence": 1.39,
+    "pwd_population": 15160,
+    "total_population": 1091014,
+    "sex_ratio": 849,
+    "male_pwd": 8198,
+    "female_pwd": 6962
+  },
+  {
+    "state": "NAGALAND",
+    "pwd_prevalence": 1.5,
+    "pwd_population": 29631,
+    "total_population": 1980602,
+    "sex_ratio": 835,
+    "male_pwd": 16148,
+    "female_pwd": 13483
+  },
+  {
+    "state": "NCT OF DELHI",
+    "pwd_prevalence": 1.4,
+    "pwd_population": 234882,
+    "total_population": 16753235,
+    "sex_ratio": 697,
+    "male_pwd": 138379,
+    "female_pwd": 96503
+  },
+  {
+    "state": "ODISHA",
+    "pwd_prevalence": 2.97,
+    "pwd_population": 1244402,
+    "total_population": 41947358,
+    "sex_ratio": 844,
+    "male_pwd": 674775,
+    "female_pwd": 569627
+  },
+  {
+    "state": "PUDUCHERRY",
+    "pwd_prevalence": 2.43,
+    "pwd_population": 30189,
+    "total_population": 1244464,
+    "sex_ratio": 844,
+    "male_pwd": 16373,
+    "female_pwd": 13816
+  },
+  {
+    "state": "PUNJAB",
+    "pwd_prevalence": 2.36,
+    "pwd_population": 654063,
+    "total_population": 27704236,
+    "sex_ratio": 723,
+    "male_pwd": 379551,
+    "female_pwd": 274512
+  },
+  {
+    "state": "RAJASTHAN",
+    "pwd_prevalence": 2.28,
+    "pwd_population": 1563694,
+    "total_population": 68621012,
+    "sex_ratio": 843,
+    "male_pwd": 848287,
+    "female_pwd": 715407
+  },
+  {
+    "state": "SIKKIM",
+    "pwd_prevalence": 2.99,
+    "pwd_population": 18187,
+    "total_population": 607688,
+    "sex_ratio": 860,
+    "male_pwd": 9779,
+    "female_pwd": 8408
+  },
+  {
+    "state": "TAMIL NADU",
+    "pwd_prevalence": 1.64,
+    "pwd_population": 1179963,
+    "total_population": 72138958,
+    "sex_ratio": 795,
+    "male_pwd": 657418,
+    "female_pwd": 522545
+  },
+  {
+    "state": "TRIPURA",
+    "pwd_prevalence": 1.75,
+    "pwd_population": 64346,
+    "total_population": 3671032,
+    "sex_ratio": 813,
+    "male_pwd": 35482,
+    "female_pwd": 28864
+  },
+  {
+    "state": "UTTAR PRADESH",
+    "pwd_prevalence": 2.08,
+    "pwd_population": 4157514,
+    "total_population": 199581477,
+    "sex_ratio": 759,
+    "male_pwd": 2364171,
+    "female_pwd": 1793343
+  },
+  {
+    "state": "UTTARAKHAND",
+    "pwd_prevalence": 1.83,
+    "pwd_population": 185272,
+    "total_population": 10116752,
+    "sex_ratio": 802,
+    "male_pwd": 102787,
+    "female_pwd": 82485
+  },
+  {
+    "state": "WEST BENGAL",
+    "pwd_prevalence": 2.21,
+    "pwd_population": 2017406,
+    "total_population": 91347736,
+    "sex_ratio": 790,
+    "male_pwd": 1127181,
+    "female_pwd": 890225
+  }
+]
