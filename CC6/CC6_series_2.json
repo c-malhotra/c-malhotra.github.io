@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Companies with Zero Disabled Employees",
+  "data": {
+    "values": [
+      {
+        "year": 2019,
+        "companies_zero_disabled": 548,
+        "percentage": 44.7
+      },
+      {
+        "year": 2020,
+        "companies_zero_disabled": 538,
+        "percentage": 43.8
+      },
+      {
+        "year": 2021,
+        "companies_zero_disabled": 528,
+        "percentage": 43.0
+      },
+      {
+        "year": 2022,
+        "companies_zero_disabled": 518,
+        "percentage": 42.2
+      },
+      {
+        "year": 2023,
+        "companies_zero_disabled": 508,
+        "percentage": 41.4
+      },
+      {
+        "year": 2024,
+        "companies_zero_disabled": 498,
+        "percentage": 40.6
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "companies_zero_disabled",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "color": {
+      "value": "#a855f7"
+    },
+    "tooltip": [
+      "year:T",
+      "companies_zero_disabled:Q",
+      "percentage:Q"
+    ]
+  },
+  "width": 300,
+  "height": 200
+}

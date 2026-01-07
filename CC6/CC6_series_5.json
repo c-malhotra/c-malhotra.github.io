@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "NSE Companies Filing BRSR",
+  "data": {
+    "values": [
+      {
+        "year": 2019,
+        "companies_filing_brsr": 800
+      },
+      {
+        "year": 2020,
+        "companies_filing_brsr": 860
+      },
+      {
+        "year": 2021,
+        "companies_filing_brsr": 920
+      },
+      {
+        "year": 2022,
+        "companies_filing_brsr": 980
+      },
+      {
+        "year": 2023,
+        "companies_filing_brsr": 1040
+      },
+      {
+        "year": 2024,
+        "companies_filing_brsr": 1100
+      }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "companies_filing_brsr",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "color": {
+      "value": "#ec4899"
+    },
+    "tooltip": [
+      "year:T",
+      "companies_filing_brsr:Q"
+    ]
+  },
+  "width": 300,
+  "height": 200
+}

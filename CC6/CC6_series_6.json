@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Disability Employment by Salary Band",
+  "data": {
+    "values": [
+      {
+        "year": 2019,
+        "salary_band": "<5 LPA",
+        "disability_employment_percent": 0.68
+      },
+      {
+        "year": 2020,
+        "salary_band": "<5 LPA",
+        "disability_employment_percent": 0.78
+      },
+      {
+        "year": 2021,
+        "salary_band": "<5 LPA",
+        "disability_employment_percent": 0.88
+      },
+      {
+        "year": 2022,
+        "salary_band": "<5 LPA",
+        "disability_employment_percent": 0.98
+      },
+      {
+        "year": 2023,
+        "salary_band": "<5 LPA",
+        "disability_employment_percent": 1.08
+      },
+      {
+        "year": 2024,
+        "salary_band": "<5 LPA",
+        "disability_employment_percent": 1.18
+      },
+      {
+        "year": 2019,
+        "salary_band": "5-10 LPA",
+        "disability_employment_percent": 0.58
+      },
+      {
+        "year": 2020,
+        "salary_band": "5-10 LPA",
+        "disability_employment_percent": 0.68
+      },
+      {
+        "year": 2021,
+        "salary_band": "5-10 LPA",
+        "disability_employment_percent": 0.78
+      },
+      {
+        "year": 2022,
+        "salary_band": "5-10 LPA",
+        "disability_employment_percent": 0.88
+      },
+      {
+        "year": 2023,
+        "salary_band": "5-10 LPA",
+        "disability_employment_percent": 0.98
+      },
+      {
+        "year": 2024,
+        "salary_band": "5-10 LPA",
+        "disability_employment_percent": 1.08
+      },
+      {
+        "year": 2019,
+        "salary_band": "10-20 LPA",
+        "disability_employment_percent": 0.48
+      },
+      {
+        "year": 2020,
+        "salary_band": "10-20 LPA",
+        "disability_employment_percent": 0.58
+      },
+      {
+        "year": 2021,
+        "salary_band": "10-20 LPA",
+        "disability_employment_percent": 0.68
+      },
+      {
+        "year": 2022,
+        "salary_band": "10-20 LPA",
+        "disability_employment_percent": 0.78
+      },
+      {
+        "year": 2023,
+        "salary_band": "10-20 LPA",
+        "disability_employment_percent": 0.88
+      },
+      {
+        "year": 2024,
+        "salary_band": "10-20 LPA",
+        "disability_employment_percent": 0.98
+      },
+      {
+        "year": 2019,
+        "salary_band": "20+ LPA",
+        "disability_employment_percent": 0.35
+      },
+      {
+        "year": 2020,
+        "salary_band": "20+ LPA",
+        "disability_employment_percent": 0.45
+      },
+      {
+        "year": 2021,
+        "salary_band": "20+ LPA",
+        "disability_employment_percent": 0.55
+      },
+      {
+        "year": 2022,
+        "salary_band": "20+ LPA",
+        "disability_employment_percent": 0.65
+      },
+      {
+        "year": 2023,
+        "salary_band": "20+ LPA",
+        "disability_employment_percent": 0.75
+      },
+      {
+        "year": 2024,
+        "salary_band": "20+ LPA",
+        "disability_employment_percent": 0.85
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "disability_employment_percent",
+      "type": "quantitative",
+      "title": "%"
+    },
+    "color": {
+      "field": "salary_band",
+      "type": "nominal",
+      "scale": {
+        "scheme": "purples"
+      }
+    },
+    "tooltip": [
+      "year:T",
+      "salary_band:N",
+      "disability_employment_percent:Q"
+    ]
+  },
+  "width": 300,
+  "height": 200
+}
