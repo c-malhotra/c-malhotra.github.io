@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Corporate Disability Employment by Company Size",
+    "subtitle": "Click a size category to filter | 1,227 NSE Companies Analysed",
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "color": "#1e293b"
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC5/all_companies_disability_data.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.total_employees < 100 ? 'Small (<100)' : datum.total_employees < 1000 ? 'Medium (100-1K)' : datum.total_employees < 10000 ? 'Large (1K-10K)' : 'Very Large (>10K)'",
+      "as": "size_category"
+    },
+    {
+      "calculate": "datum.disabled_employees == 0 ? 'Zero Disabled' : datum.disabled_percent < 1 ? 'Below 1%' : datum.disabled_percent < 2 ? '1-2%' : 'Above 2%'",
+      "as": "employment_category"
+    },
+    {"filter": "datum.disabled_percent != null"}
+  ],
+  "params": [
+    {
+      "name": "size_filter",
+      "select": {"type": "point", "fields": ["size_category"]},
+      "bind": "legend"
+    }
+  ],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {
+      "field": "size_category",
+      "type": "nominal",
+      "title": "Company Size",
+      "sort": [
+        "Small (<100)",
+        "Medium (100-1K)",
+        "Large (1K-10K)",
+        "Very Large (>10K)"
+      ],
+      "axis": {"labelFontSize": 12, "titleFontSize": 13, "labelAngle": 0}
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Number of Companies",
+      "axis": {"titleFontSize": 13}
+    },
+    "color": {
+      "field": "employment_category",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Above 2%", "1-2%", "Below 1%", "Zero Disabled"],
+        "range": ["#b864d1", "#d946b8", "#ff6b9d", "#2a1f35"]
+      },
+      "legend": {
+        "title": "Disability Employment",
+        "titleFontSize": 12,
+        "labelFontSize": 11,
+        "orient": "top-right"
+      }
+    },
+    "opacity": {
+      "condition": {"param": "size_filter", "value": 1},
+      "value": 0.2
+    },
+    "tooltip": [
+      {"field": "size_category", "title": "Size"},
+      {"field": "employment_category", "title": "Employment of PwDs"},
+      {"aggregate": "count", "title": "Companies"}
+    ]
+  },
+  "config": {"view": {"stroke": null}, "background": "#ffffff"}
+}
