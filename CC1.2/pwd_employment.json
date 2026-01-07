@@ -32,11 +32,12 @@
     "x": {
       "field": "Country_Name",
       "type": "nominal",
+      "sort": "-y",
       "axis": {
-        "labelAngle": -30,
-        "labelFontSize": 11
+        "labelAngle": -45,
+        "labelFontSize": 11,
+        "title": "Country"
       },
-      "title": "Country",
       "scale": {
         "paddingInner": 0.4,
         "paddingOuter": 0.2
