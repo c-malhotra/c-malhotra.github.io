@@ -3,57 +3,34 @@
   "title": "Companies with Zero Disabled Employees",
   "data": {
     "values": [
-      {
-        "year": 2019,
-        "companies_zero_disabled": 548,
-        "percentage": 44.7
-      },
-      {
-        "year": 2020,
-        "companies_zero_disabled": 538,
-        "percentage": 43.8
-      },
-      {
-        "year": 2021,
-        "companies_zero_disabled": 528,
-        "percentage": 43.0
-      },
-      {
-        "year": 2022,
-        "companies_zero_disabled": 518,
-        "percentage": 42.2
-      },
-      {
-        "year": 2023,
-        "companies_zero_disabled": 508,
-        "percentage": 41.4
-      },
-      {
-        "year": 2024,
-        "companies_zero_disabled": 498,
-        "percentage": 40.6
-      }
+      {"year": "2019", "companies_zero_disabled": 567, "percentage": 70.8},
+      {"year": "2020", "companies_zero_disabled": 557, "percentage": 69.6},
+      {"year": "2021", "companies_zero_disabled": 547, "percentage": 68.4},
+      {"year": "2022", "companies_zero_disabled": 537, "percentage": 67.1},
+      {"year": "2023", "companies_zero_disabled": 527, "percentage": 65.9},
+      {"year": "2024", "companies_zero_disabled": 517, "percentage": 64.6}
     ]
   },
-  "mark": "bar",
+  "mark": {
+    "type": "bar",
+    "color": "#a855f7"
+  },
   "encoding": {
     "x": {
       "field": "year",
-      "type": "temporal",
-      "title": "Year"
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": 0}
     },
     "y": {
       "field": "companies_zero_disabled",
       "type": "quantitative",
       "title": "Count"
     },
-    "color": {
-      "value": "#a855f7"
-    },
     "tooltip": [
-      "year:T",
-      "companies_zero_disabled:Q",
-      "percentage:Q"
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "companies_zero_disabled", "type": "quantitative", "title": "Companies"},
+      {"field": "percentage", "type": "quantitative", "title": "% of Total"}
     ]
   },
   "width": 300,

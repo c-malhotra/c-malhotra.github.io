@@ -3,53 +3,34 @@
   "title": "Average Disability Employment Rate Trend",
   "data": {
     "values": [
-      {
-        "year": 2019,
-        "avg_disability_employment_rate": 0.52
-      },
-      {
-        "year": 2020,
-        "avg_disability_employment_rate": 0.6
-      },
-      {
-        "year": 2021,
-        "avg_disability_employment_rate": 0.68
-      },
-      {
-        "year": 2022,
-        "avg_disability_employment_rate": 0.76
-      },
-      {
-        "year": 2023,
-        "avg_disability_employment_rate": 0.84
-      },
-      {
-        "year": 2024,
-        "avg_disability_employment_rate": 0.92
-      }
+      {"year": "2019", "avg_disability_employment_rate": 0.52},
+      {"year": "2020", "avg_disability_employment_rate": 0.60},
+      {"year": "2021", "avg_disability_employment_rate": 0.68},
+      {"year": "2022", "avg_disability_employment_rate": 0.76},
+      {"year": "2023", "avg_disability_employment_rate": 0.84},
+      {"year": "2024", "avg_disability_employment_rate": 0.92}
     ]
   },
   "mark": {
+    "type": "line",
     "point": true,
-    "line": true
+    "color": "#7c3aed"
   },
   "encoding": {
     "x": {
       "field": "year",
-      "type": "temporal",
-      "title": "Year"
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": 0}
     },
     "y": {
       "field": "avg_disability_employment_rate",
       "type": "quantitative",
       "title": "Rate %"
     },
-    "color": {
-      "value": "#7c3aed"
-    },
     "tooltip": [
-      "year:T",
-      "avg_disability_employment_rate:Q"
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "avg_disability_employment_rate", "type": "quantitative", "title": "Rate %"}
     ]
   },
   "width": 300,
