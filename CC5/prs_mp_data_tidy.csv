@@ -1,0 +1,789 @@
+mp_name,state,party,constituency,chamber,year
+180006,Andhra Pradesh,Bharatiya Janata Party,Narsapuram,Lok Sabha,2024
+180007,Andhra Pradesh,Telugu Desam Party,Nandyal,Lok Sabha,2024
+180009,Andhra Pradesh,Telugu Desam Party,Guntur,Lok Sabha,2024
+180012,Andhra Pradesh,Telugu Desam Party,Amalapuram,Lok Sabha,2024
+180015,Andhra Pradesh,Telugu Desam Party,Bapatla,Lok Sabha,2024
+180016,Andhra Pradesh,Telugu Desam Party,Narsaraopet,Lok Sabha,2024
+180017,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,Thirupati,Lok Sabha,2024
+180022,Andhra Pradesh,Telugu Desam Party,Eluru,Lok Sabha,2024
+180023,Andhra Pradesh,Telugu Desam Party,Srikakulam,Lok Sabha,2024
+180027,Arunachal Pradesh,Bharatiya Janata Party,Arunachal West,Lok Sabha,2024
+180029,Assam,Bharatiya Janata Party,Diphu,Lok Sabha,2024
+180042,Assam,Bharatiya Janata Party,Dibrugarh,Lok Sabha,2024
+180045,Bihar,Janata Dal (United),Gopalganj,Lok Sabha,2024
+180046,Bihar,Lok Janshakti Party (Ram Vilas),Jamui,Lok Sabha,2024
+180048,Bihar,Lok Janshakti Party (Ram Vilas),Hajipur,Lok Sabha,2024
+180053,Bihar,Bharatiya Janata Party,Begusarai,Lok Sabha,2024
+180055,Bihar,Bharatiya Janata Party,Maharajganj,Lok Sabha,2024
+180056,Bihar,Hindustani Awam Morcha (Secular),Gaya,Lok Sabha,2024
+180062,Bihar,Bharatiya Janata Party,Ujiarpur,Lok Sabha,2024
+180065,Bihar,Bharatiya Janata Party,Muzaffarpur,Lok Sabha,2024
+180069,Bihar,Bharatiya Janata Party,Saran,Lok Sabha,2024
+180070,Bihar,Janata Dal (United),Munger,Lok Sabha,2024
+180074,Bihar,Lok Janshakti Party (Ram Vilas),Samastipur,Lok Sabha,2024
+180093,Chhattisgarh,Bharatiya Janata Party,Bilaspur,Lok Sabha,2024
+180104,Goa,Indian National Congress,South Goa,Lok Sabha,2024
+180105,Goa,Bharatiya Janata Party,North Goa,Lok Sabha,2024
+180106,Gujarat,Bharatiya Janata Party,Gandhinagar,Lok Sabha,2024
+180108,Gujarat,Bharatiya Janata Party,Navsari,Lok Sabha,2024
+180122,Gujarat,Bharatiya Janata Party,Porbandar,Lok Sabha,2024
+180249,Maharashtra,Bharatiya Janata Party,Akola,Lok Sabha,2024
+180126,Gujarat,Bharatiya Janata Party,Bhavnagar,Lok Sabha,2024
+180128,Gujarat,Bharatiya Janata Party,Rajkot,Lok Sabha,2024
+180134,Haryana,Bharatiya Janata Party,Gurgaon,Lok Sabha,2024
+180136,Haryana,Bharatiya Janata Party,Faridabad,Lok Sabha,2024
+180137,Haryana,Bharatiya Janata Party,Karnal,Lok Sabha,2024
+180148,Jammu and Kashmir,Bharatiya Janata Party,Udhampur,Lok Sabha,2024
+180151,Jharkhand,Bharatiya Janata Party,Kodarma,Lok Sabha,2024
+180152,Jharkhand,Bharatiya Janata Party,Jamshedpur,Lok Sabha,2024
+180160,Jharkhand,Bharatiya Janata Party,Godda,Lok Sabha,2024
+180161,Jharkhand,Bharatiya Janata Party,Ranchi,Lok Sabha,2024
+180164,Jharkhand,Bharatiya Janata Party,Palamau,Lok Sabha,2024
+180172,Karnataka,Janata Dal (Secular),Mandya,Lok Sabha,2024
+180174,Karnataka,Bharatiya Janata Party,Chikkballapur,Lok Sabha,2024
+180181,Karnataka,Bharatiya Janata Party,Dharwad,Lok Sabha,2024
+180186,Karnataka,Bharatiya Janata Party,Bangalore North,Lok Sabha,2024
+180190,Karnataka,Bharatiya Janata Party,Tumkur,Lok Sabha,2024
+180195,Kerala,Indian National Congress,Chalakudy,Lok Sabha,2024
+180196,Kerala,Indian National Congress,Idukki,Lok Sabha,2024
+180197,Kerala,Indian Union Muslim League,Malappuram,Lok Sabha,2024
+180198,Kerala,Indian National Congress,Ernakulam,Lok Sabha,2024
+180205,Kerala,Revolutionary Socialist Party,Kollam,Lok Sabha,2024
+180208,Kerala,Indian National Congress,Vadakara,Lok Sabha,2024
+180209,Kerala,Indian National Congress,Thiruvananthapuram,Lok Sabha,2024
+180210,Kerala,Bharatiya Janata Party,Thrissur,Lok Sabha,2024
+180212,Kerala,Indian National Congress,Palakkad,Lok Sabha,2024
+180220,Madhya Pradesh,Bharatiya Janata Party,Balaghat,Lok Sabha,2024
+180222,Madhya Pradesh,Bharatiya Janata Party,Hoshangabad,Lok Sabha,2024
+180224,Madhya Pradesh,Bharatiya Janata Party,Betul,Lok Sabha,2024
+180227,Madhya Pradesh,Bharatiya Janata Party,Satna,Lok Sabha,2024
+180231,Madhya Pradesh,Bharatiya Janata Party,Guna,Lok Sabha,2024
+180237,Madhya Pradesh,Bharatiya Janata Party,Dhar,Lok Sabha,2024
+180240,Madhya Pradesh,Bharatiya Janata Party,Vidisha,Lok Sabha,2024
+180242,Madhya Pradesh,Bharatiya Janata Party,Tikamgarh,Lok Sabha,2024
+180245,Maharashtra,Indian National Congress,Nandurbar,Lok Sabha,2024
+180250,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Mumbai South,Lok Sabha,2024
+180251,Maharashtra,Indian National Congress,Dhule,Lok Sabha,2024
+180253,Maharashtra,Indian National Congress,Amravati,Lok Sabha,2024
+180262,Maharashtra,Indian National Congress,Bhandara-Gondiya,Lok Sabha,2024
+180264,Maharashtra,Bharatiya Janata Party,Palghar,Lok Sabha,2024
+180265,Maharashtra,Shiv Sena,Buldhana,Lok Sabha,2024
+180268,Maharashtra,Bharatiya Janata Party,Pune,Lok Sabha,2024
+180273,Maharashtra,Bharatiya Janata Party,Nagpur,Lok Sabha,2024
+180274,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Osmanabad,Lok Sabha,2024
+180276,Maharashtra,Bharatiya Janata Party,Mumbai North,Lok Sabha,2024
+180277,Maharashtra,Indian National Congress,Solapur,Lok Sabha,2024
+180278,Maharashtra,Bharatiya Janata Party,Raver,Lok Sabha,2024
+180279,Maharashtra,Shiv Sena,Mumbai North West,Lok Sabha,2024
+180283,Maharashtra,Shiv Sena,Kalyan,Lok Sabha,2024
+180285,Maharashtra,Shiv Sena,Maval,Lok Sabha,2024
+180287,Maharashtra,Bharatiya Janata Party,Jalgaon,Lok Sabha,2024
+180288,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Baramati,Lok Sabha,2024
+180291,Maharashtra,Independent,Sangli,Lok Sabha,2024
+180304,Odisha,Bharatiya Janata Party,Cuttack,Lok Sabha,2024
+180306,Odisha,Bharatiya Janata Party,Sambalpur,Lok Sabha,2024
+180308,Odisha,Bharatiya Janata Party,Sundargarh,Lok Sabha,2024
+180317,Odisha,Indian National Congress,Koraput,Lok Sabha,2024
+180324,Punjab,Indian National Congress,Patiala,Lok Sabha,2024
+180334,Rajasthan,Bharatiya Janata Party,Bikaner,Lok Sabha,2024
+180335,Rajasthan,Bharatiya Janata Party,Ajmer,Lok Sabha,2024
+180337,Rajasthan,Bharatiya Janata Party,Alwar,Lok Sabha,2024
+180340,Rajasthan,Bharatiya Janata Party,Bhilwara,Lok Sabha,2024
+180342,Rajasthan,Bharatiya Janata Party,Jodhpur,Lok Sabha,2024
+180343,Rajasthan,Rashtriya Loktantrik Party,Nagaur,Lok Sabha,2024
+180346,Rajasthan,Bharatiya Janata Party,Jalore,Lok Sabha,2024
+180352,Rajasthan,Bharatiya Janata Party,Pali,Lok Sabha,2024
+180354,Rajasthan,Bharat Adivasi Party,Banswara,Lok Sabha,2024
+180355,Rajasthan,Bharatiya Janata Party,Jaipur Rural,Lok Sabha,2024
+180361,Tamil Nadu,Dravida Munnetra Kazhagam,Tiruvannamalai,Lok Sabha,2024
+180453,Uttar Pradesh,Bharatiya Janata Party,Pilibhit,Lok Sabha,2024
+180363,Tamil Nadu,Dravida Munnetra Kazhagam,Vellore,Lok Sabha,2024
+180373,Tamil Nadu,Dravida Munnetra Kazhagam,Thoothukkudi,Lok Sabha,2024
+180378,Tamil Nadu,Indian National Congress,Virudhunagar,Lok Sabha,2024
+180370,Tamil Nadu,Indian National Congress,Krishnagiri,Lok Sabha,2024
+180381,Tamil Nadu,Indian Union Muslim League,Ramanathapuram,Lok Sabha,2024
+180384,Tamil Nadu,Indian National Congress,Karur,Lok Sabha,2024
+180390,Tamil Nadu,Dravida Munnetra Kazhagam,Chennai South,Lok Sabha,2024
+180396,Tamil Nadu,Dravida Munnetra Kazhagam,Chennai North,Lok Sabha,2024
+180404,Telangana,Bharatiya Janata Party,Secunderabad,Lok Sabha,2024
+180406,Telangana,Indian National Congress,Warangal,Lok Sabha,2024
+180412,Telangana,Bharatiya Janata Party,Karimnagar,Lok Sabha,2024
+180422,Uttar Pradesh,Samajwadi Party,Dhaurahra,Lok Sabha,2024
+180425,Uttar Pradesh,Apna Dal (Soneylal),Mirzapur,Lok Sabha,2024
+180436,Uttar Pradesh,Aazad Samaj Party (Kanshi Ram),Nagina,Lok Sabha,2024
+180442,Uttar Pradesh,Samajwadi Party,Azamgarh,Lok Sabha,2024
+180449,Uttar Pradesh,Samajwadi Party,Kairana,Lok Sabha,2024
+180450,Uttar Pradesh,Bharatiya Janata Party,Domariyaganj,Lok Sabha,2024
+180454,Uttar Pradesh,Bharatiya Janata Party,Bansgaon,Lok Sabha,2024
+180457,Uttar Pradesh,Bharatiya Janata Party,Gonda,Lok Sabha,2024
+180444,Uttar Pradesh,Rashtriya Lok Dal,Baghpat,Lok Sabha,2024
+180466,Uttar Pradesh,Bharatiya Janata Party,Varanasi,Lok Sabha,2024
+180469,Uttar Pradesh,Bharatiya Janata Party,Maharajganj,Lok Sabha,2024
+180475,Uttar Pradesh,Samajwadi Party,Ghosi,Lok Sabha,2024
+180476,Uttar Pradesh,Bharatiya Janata Party,Fatehpur Sikri,Lok Sabha,2024
+180477,Uttar Pradesh,Bharatiya Janata Party,Lucknow,Lok Sabha,2024
+180481,Uttar Pradesh,Samajwadi Party,Salempur,Lok Sabha,2024
+180484,Uttar Pradesh,Bharatiya Janata Party,Gorakhpur,Lok Sabha,2024
+180486,Uttar Pradesh,Bharatiya Janata Party,Agra,Lok Sabha,2024
+180498,Uttarakhand,Bharatiya Janata Party,Almora,Lok Sabha,2024
+180514,West Bengal,Bharatiya Janata Party,Jalpaiguri,Lok Sabha,2024
+180532,West Bengal,Bharatiya Janata Party,Darjeeling,Lok Sabha,2024
+180537,West Bengal,Bharatiya Janata Party,Bangaon,Lok Sabha,2024
+180543,West Bengal,Bharatiya Janata Party,Balurghat,Lok Sabha,2024
+180020,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,Rajampet,Lok Sabha,2024
+180083,Chandigarh,Indian National Congress,Chandigarh,Lok Sabha,2024
+180098,Delhi,Bharatiya Janata Party,East Delhi,Lok Sabha,2024
+180100,Delhi,Bharatiya Janata Party,North East Delhi,Lok Sabha,2024
+180063,Bihar,Bharatiya Janata Party,Araria,Lok Sabha,2024
+180345,Rajasthan,Indian National Congress,Ganganagar,Lok Sabha,2024
+180392,Tamil Nadu,Dravida Munnetra Kazhagam,Sriperumbudur,Lok Sabha,2024
+180427,Uttar Pradesh,Bharatiya Janata Party,Meerut,Lok Sabha,2024
+180002,Andhra Pradesh,Telugu Desam Party,Ananthapur,Lok Sabha,2024
+180003,Andhra Pradesh,Telugu Desam Party,Vizianagaram,Lok Sabha,2024
+180004,Andhra Pradesh,Telugu Desam Party,Hindupur,Lok Sabha,2024
+180005,Andhra Pradesh,Jana Sena Party,Machilipatnam,Lok Sabha,2024
+180008,Andhra Pradesh,Bharatiya Janata Party,Anakapalle,Lok Sabha,2024
+180010,Andhra Pradesh,Bharatiya Janata Party,Rajahmundry,Lok Sabha,2024
+180011,Andhra Pradesh,Telugu Desam Party,Chittoor,Lok Sabha,2024
+180013,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,Araku,Lok Sabha,2024
+180014,Andhra Pradesh,Telugu Desam Party,Vijayawada,Lok Sabha,2024
+180018,Andhra Pradesh,Telugu Desam Party,Ongole,Lok Sabha,2024
+180019,Andhra Pradesh,Telugu Desam Party,Kurnoolu,Lok Sabha,2024
+180021,Andhra Pradesh,Telugu Desam Party,Nellore,Lok Sabha,2024
+180024,Andhra Pradesh,Telugu Desam Party,Visakhapatnam,Lok Sabha,2024
+180025,Andhra Pradesh,Jana Sena Party,Kakinada,Lok Sabha,2024
+180026,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,Kadapa,Lok Sabha,2024
+180028,Arunachal Pradesh,Bharatiya Janata Party,Arunachal East,Lok Sabha,2024
+180030,Assam,Bharatiya Janata Party,Guwahati,Lok Sabha,2024
+180031,Assam,Bharatiya Janata Party,Darang Udalguri,Lok Sabha,2024
+180032,Assam,Indian National Congress,Jorhat,Lok Sabha,2024
+180033,Assam,"United Peoples Party, Liberal",Kokrajhar,Lok Sabha,2024
+180034,Assam,Bharatiya Janata Party,Kaziranga,Lok Sabha,2024
+180035,Assam,Bharatiya Janata Party,Karimganj,Lok Sabha,2024
+180036,Assam,Bharatiya Janata Party,Silchar,Lok Sabha,2024
+180037,Assam,Asom Gana Parishad,Barpeta,Lok Sabha,2024
+180038,Assam,Bharatiya Janata Party,Lakhimpur,Lok Sabha,2024
+180058,Bihar,Janata Dal (United),Sheohar,Lok Sabha,2024
+180039,Assam,Indian National Congress,Nagaon,Lok Sabha,2024
+180040,Assam,Indian National Congress,Dhubri,Lok Sabha,2024
+180041,Assam,Bharatiya Janata Party,Sonitpur,Lok Sabha,2024
+180256,Maharashtra,Shiv Sena,Aurangabad,Lok Sabha,2024
+180043,Bihar,Rashtriya Janata Dal,Aurangabad,Lok Sabha,2024
+180047,Bihar,Bharatiya Janata Party,Madhubani,Lok Sabha,2024
+180049,Bihar,Janata Dal (United),Sitamarhi,Lok Sabha,2024
+180050,Bihar,Janata Dal (United),Supaul,Lok Sabha,2024
+180051,Bihar,Janata Dal (United),Madhepura,Lok Sabha,2024
+180052,Bihar,Janata Dal (United),Banka,Lok Sabha,2024
+180054,Bihar,Bharatiya Janata Party,Darbhanga,Lok Sabha,2024
+180057,Bihar,Janata Dal (United),Nalanda,Lok Sabha,2024
+180059,Bihar,Indian National Congress,Sasaram,Lok Sabha,2024
+180061,Bihar,Indian National Congress,Kishanganj,Lok Sabha,2024
+180066,Bihar,Communist Party of India (Marxist-Leninist) (Liberation),Karakat,Lok Sabha,2024
+180067,Bihar,Independent,Purnia,Lok Sabha,2024
+180068,Bihar,Lok Janshakti Party (Ram Vilas),Khagaria,Lok Sabha,2024
+180071,Bihar,Janata Dal (United),Jhanjharpur,Lok Sabha,2024
+180073,Bihar,Bharatiya Janata Party,Paschim Champaran,Lok Sabha,2024
+180075,Bihar,Communist Party of India (Marxist-Leninist) (Liberation),Arrah,Lok Sabha,2024
+180076,Bihar,Rashtriya Janata Dal,Buxar,Lok Sabha,2024
+180077,Bihar,Janata Dal (United),Valmiki Nagar,Lok Sabha,2024
+180079,Bihar,Indian National Congress,Katihar,Lok Sabha,2024
+180080,Bihar,Lok Janshakti Party (Ram Vilas),Vaishali,Lok Sabha,2024
+180081,Bihar,Janata Dal (United),Siwan,Lok Sabha,2024
+180082,Bihar,Bharatiya Janata Party,Nawada,Lok Sabha,2024
+180084,Chhattisgarh,Bharatiya Janata Party,Kanker,Lok Sabha,2024
+180085,Chhattisgarh,Bharatiya Janata Party,Raipur,Lok Sabha,2024
+180086,Chhattisgarh,Bharatiya Janata Party,Surguja,Lok Sabha,2024
+180087,Chhattisgarh,Indian National Congress,Korba,Lok Sabha,2024
+180088,Chhattisgarh,Bharatiya Janata Party,Janjgir-Champa,Lok Sabha,2024
+180089,Chhattisgarh,Bharatiya Janata Party,Bastar,Lok Sabha,2024
+180090,Chhattisgarh,Bharatiya Janata Party,Raigarh,Lok Sabha,2024
+180091,Chhattisgarh,Bharatiya Janata Party,Mahasamund,Lok Sabha,2024
+180092,Chhattisgarh,Bharatiya Janata Party,Rajnandgaon,Lok Sabha,2024
+180094,Chhattisgarh,Bharatiya Janata Party,Durg,Lok Sabha,2024
+180107,Gujarat,Bharatiya Janata Party,Amreli,Lok Sabha,2024
+180109,Gujarat,Bharatiya Janata Party,Surendranagar,Lok Sabha,2024
+180110,Gujarat,Bharatiya Janata Party,Kachchh,Lok Sabha,2024
+180111,Gujarat,Bharatiya Janata Party,Junagadh,Lok Sabha,2024
+180112,Gujarat,Bharatiya Janata Party,Patan,Lok Sabha,2024
+180113,Gujarat,Bharatiya Janata Party,Kheda,Lok Sabha,2024
+180114,Gujarat,Bharatiya Janata Party,Valsad,Lok Sabha,2024
+180115,Gujarat,Bharatiya Janata Party,Ahmedabad West,Lok Sabha,2024
+180116,Gujarat,Indian National Congress,Banaskantha,Lok Sabha,2024
+180117,Gujarat,Bharatiya Janata Party,Mahesana,Lok Sabha,2024
+180118,Gujarat,Bharatiya Janata Party,Ahmedabad East,Lok Sabha,2024
+180119,Gujarat,Bharatiya Janata Party,Vadodara,Lok Sabha,2024
+180120,Gujarat,Bharatiya Janata Party,Chhota Udaipur,Lok Sabha,2024
+180121,Gujarat,Bharatiya Janata Party,Dahod,Lok Sabha,2024
+180123,Gujarat,Bharatiya Janata Party,Bharuch,Lok Sabha,2024
+180124,Gujarat,Bharatiya Janata Party,Anand,Lok Sabha,2024
+180125,Gujarat,Bharatiya Janata Party,Surat,Lok Sabha,2024
+180127,Gujarat,Bharatiya Janata Party,Bardoli,Lok Sabha,2024
+180129,Gujarat,Bharatiya Janata Party,Jamnagar,Lok Sabha,2024
+180130,Gujarat,Bharatiya Janata Party,Panchmahal,Lok Sabha,2024
+180131,Gujarat,Bharatiya Janata Party,Sabarkantha,Lok Sabha,2024
+180132,Haryana,Indian National Congress,Rohtak,Lok Sabha,2024
+180133,Haryana,Bharatiya Janata Party,Bhiwani-Mahendragarh,Lok Sabha,2024
+180135,Haryana,Indian National Congress,Hisar,Lok Sabha,2024
+180138,Haryana,Bharatiya Janata Party,Kurukshetra,Lok Sabha,2024
+180139,Haryana,Indian National Congress,Sonipat,Lok Sabha,2024
+180140,Haryana,Indian National Congress,Sirsa,Lok Sabha,2024
+180141,Haryana,Indian National Congress,Ambala,Lok Sabha,2024
+180142,Himachal Pradesh,Bharatiya Janata Party,Hamirpur,Lok Sabha,2024
+180143,Himachal Pradesh,Bharatiya Janata Party,Mandi,Lok Sabha,2024
+180144,Himachal Pradesh,Bharatiya Janata Party,Kangra,Lok Sabha,2024
+180145,Himachal Pradesh,Bharatiya Janata Party,Shimla,Lok Sabha,2024
+180146,Jammu And Kashmir,Independent,Baramulla,Lok Sabha,2024
+180147,Jammu and Kashmir,Jammu and Kashmir National Conference,Srinagar,Lok Sabha,2024
+180149,Jammu And Kashmir,Bharatiya Janata Party,Jammu,Lok Sabha,2024
+180150,Jammu And Kashmir,Jammu and Kashmir National Conference,Anantnag-Rajouri,Lok Sabha,2024
+180153,Jharkhand,AJSU Party,Giridih,Lok Sabha,2024
+180154,Jharkhand,Bharatiya Janata Party,Dhanbad,Lok Sabha,2024
+180155,Jharkhand,Jharkhand Mukti Morcha,Singhbhum,Lok Sabha,2024
+180156,Jharkhand,Indian National Congress,Khunti,Lok Sabha,2024
+180158,Jharkhand,Bharatiya Janata Party,Hazaribagh,Lok Sabha,2024
+180159,Jharkhand,Jharkhand Mukti Morcha,Dumka,Lok Sabha,2024
+180162,Jharkhand,Indian National Congress,Lohardaga,Lok Sabha,2024
+180163,Jharkhand,Jharkhand Mukti Morcha,Rajmahal,Lok Sabha,2024
+180165,Karnataka,Bharatiya Janata Party,Shimoga,Lok Sabha,2024
+180166,Karnataka,Bharatiya Janata Party,Haveri,Lok Sabha,2024
+180167,Karnataka,Bharatiya Janata Party,Dakshina Kannada,Lok Sabha,2024
+180168,Karnataka,Bharatiya Janata Party,Bangalore Rural,Lok Sabha,2024
+180169,Karnataka,Indian National Congress,Bellary,Lok Sabha,2024
+180170,Karnataka,Indian National Congress,Raichur,Lok Sabha,2024
+180171,Karnataka,Bharatiya Janata Party,Chitradurga,Lok Sabha,2024
+180192,Karnataka,Bharatiya Janata Party,Mysore,Lok Sabha,2024
+180173,Karnataka,Bharatiya Janata Party,Belgaum,Lok Sabha,2024
+180176,Karnataka,Bharatiya Janata Party,Udupi Chikmagalur,Lok Sabha,2024
+180177,Karnataka,Janata Dal (Secular),Kolar,Lok Sabha,2024
+180178,Karnataka,Bharatiya Janata Party,Bangalore Central,Lok Sabha,2024
+180179,Karnataka,Bharatiya Janata Party,Bagalkot,Lok Sabha,2024
+180180,Karnataka,Indian National Congress,Davangere,Lok Sabha,2024
+180182,Karnataka,Indian National Congress,Chikkodi,Lok Sabha,2024
+180183,Karnataka,Indian National Congress,Gulbarga,Lok Sabha,2024
+180184,Karnataka,Bharatiya Janata Party,Bijapur,Lok Sabha,2024
+180185,Karnataka,Indian National Congress,Bidar,Lok Sabha,2024
+180187,Karnataka,Indian National Congress,Hassan,Lok Sabha,2024
+180188,Karnataka,Indian National Congress,Chamarajanagar,Lok Sabha,2024
+180189,Karnataka,Bharatiya Janata Party,Bangalore South,Lok Sabha,2024
+180191,Karnataka,Bharatiya Janata Party,Uttara Kannada,Lok Sabha,2024
+180193,Kerala,Indian National Congress,Attingal,Lok Sabha,2024
+180194,Kerala,Indian National Congress,Pathanamthitta,Lok Sabha,2024
+180199,Kerala,Kerala Congress,Kottayam,Lok Sabha,2024
+180200,Kerala,Indian National Congress,Alappuzha,Lok Sabha,2024
+180201,Kerala,Communist Party Of India (Marxist),Alathur,Lok Sabha,2024
+180202,Kerala,Indian National Congress,Kannur,Lok Sabha,2024
+180203,Kerala,Indian National Congress,Kozhikode,Lok Sabha,2024
+180204,Kerala,Indian Union Muslim League,Ponnani,Lok Sabha,2024
+180544,Kerala,Indian National Congress,Wayanad,Lok Sabha,2024
+180207,Kerala,Indian National Congress,Kasaragod,Lok Sabha,2024
+180211,Kerala,Indian National Congress,Mavelikkara,Lok Sabha,2024
+180213,Ladakh,Independent,Ladakh,Lok Sabha,2024
+180215,Madhya Pradesh,Bharatiya Janata Party,Bhopal,Lok Sabha,2024
+180216,Madhya Pradesh,Bharatiya Janata Party,Ujjain,Lok Sabha,2024
+180217,Madhya Pradesh,Bharatiya Janata Party,Ratlam,Lok Sabha,2024
+180218,Madhya Pradesh,Bharatiya Janata Party,Jabalpur,Lok Sabha,2024
+180219,Madhya Pradesh,Bharatiya Janata Party,Gwalior,Lok Sabha,2024
+180221,Madhya Pradesh,Bharatiya Janata Party,Chhindwara,Lok Sabha,2024
+180223,Madhya Pradesh,Bharatiya Janata Party,Sidhi,Lok Sabha,2024
+180225,Madhya Pradesh,Bharatiya Janata Party,Mandla,Lok Sabha,2024
+180226,Madhya Pradesh,Bharatiya Janata Party,Khargone,Lok Sabha,2024
+180228,Madhya Pradesh,Bharatiya Janata Party,Khandwa,Lok Sabha,2024
+180229,Madhya Pradesh,Bharatiya Janata Party,Shahdol,Lok Sabha,2024
+180230,Madhya Pradesh,Bharatiya Janata Party,Rewa,Lok Sabha,2024
+180232,Madhya Pradesh,Bharatiya Janata Party,Sagar,Lok Sabha,2024
+180234,Madhya Pradesh,Bharatiya Janata Party,Damoh,Lok Sabha,2024
+180235,Madhya Pradesh,Bharatiya Janata Party,Rajgarh,Lok Sabha,2024
+180236,Madhya Pradesh,Bharatiya Janata Party,Bhind,Lok Sabha,2024
+180238,Madhya Pradesh,Bharatiya Janata Party,Indore,Lok Sabha,2024
+180241,Madhya Pradesh,Bharatiya Janata Party,Mandsour,Lok Sabha,2024
+180243,Madhya Pradesh,Bharatiya Janata Party,Khajuraho,Lok Sabha,2024
+180246,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Wardha,Lok Sabha,2024
+180247,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Shirur,Lok Sabha,2024
+180248,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Mumbai South Central,Lok Sabha,2024
+180252,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Beed,Lok Sabha,2024
+180295,Meghalaya,Indian National Congress,Tura,Lok Sabha,2024
+180254,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Dindori,Lok Sabha,2024
+180255,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Shirdi,Lok Sabha,2024
+180546,Maharashtra,Indian National Congress,Nanded,Lok Sabha,2024
+180258,Maharashtra,Indian National Congress,Kolhapur,Lok Sabha,2024
+180259,Maharashtra,Shiv Sena,Hatkanangle,Lok Sabha,2024
+180260,Maharashtra,Indian National Congress,Chandrapur,Lok Sabha,2024
+180357,Rajasthan,Indian National Congress,Barmer,Lok Sabha,2024
+180261,Maharashtra,Indian National Congress,Latur,Lok Sabha,2024
+180263,Maharashtra,Indian National Congress,Mumbai North Central,Lok Sabha,2024
+180266,Maharashtra,Indian National Congress,Jalna,Lok Sabha,2024
+180267,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Madha,Lok Sabha,2024
+180269,Maharashtra,Indian National Congress,Gadchiroli-Chimur,Lok Sabha,2024
+180271,Maharashtra,Shiv Sena,Thane,Lok Sabha,2024
+180272,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Ahmednagar,Lok Sabha,2024
+180294,Meghalaya,Voice of the People Party,Shillong,Lok Sabha,2024
+180275,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Nashik,Lok Sabha,2024
+180280,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Mumbai North East,Lok Sabha,2024
+180281,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Parbhani,Lok Sabha,2024
+180282,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Yavatmal-Washim,Lok Sabha,2024
+180286,Maharashtra,Indian National Congress,Ramtek,Lok Sabha,2024
+180289,Maharashtra,Nationalist Congress Party Sharadchandra Pawar,Bhiwandi,Lok Sabha,2024
+180290,Maharashtra,Nationalist Congress Party,Raigad,Lok Sabha,2024
+180293,Manipur,Indian National Congress,Inner Manipur,Lok Sabha,2024
+180296,Mizoram,Zoram People's Movement,Mizoram,Lok Sabha,2024
+180297,Nagaland,Indian National Congress,Nagaland,Lok Sabha,2024
+180298,Odisha,Bharatiya Janata Party,Keonjhar,Lok Sabha,2024
+180299,Odisha,Bharatiya Janata Party,Aska,Lok Sabha,2024
+180300,Odisha,Bharatiya Janata Party,Bhubaneswar,Lok Sabha,2024
+180301,Odisha,Bharatiya Janata Party,Bhadrak,Lok Sabha,2024
+180302,Odisha,Bharatiya Janata Party,Kendrapara,Lok Sabha,2024
+180303,Odisha,Bharatiya Janata Party,Nabarangpur,Lok Sabha,2024
+180305,Odisha,Bharatiya Janata Party,Jagatsinghpur,Lok Sabha,2024
+180307,Odisha,Bharatiya Janata Party,Berhampur,Lok Sabha,2024
+180309,Odisha,Bharatiya Janata Party,Kalahandi,Lok Sabha,2024
+180310,Odisha,Bharatiya Janata Party,Mayurbhanj,Lok Sabha,2024
+180311,Odisha,Bharatiya Janata Party,Bargarh,Lok Sabha,2024
+180312,Odisha,Bharatiya Janata Party,Balasore,Lok Sabha,2024
+180313,Odisha,Bharatiya Janata Party,Jajpur,Lok Sabha,2024
+180314,Odisha,Bharatiya Janata Party,Dhenkanal,Lok Sabha,2024
+180315,Odisha,Bharatiya Janata Party,Puri,Lok Sabha,2024
+180358,Sikkim,Sikkim Krantikari Morcha,Sikkim,Lok Sabha,2024
+180316,Odisha,Bharatiya Janata Party,Bolangir,Lok Sabha,2024
+180318,Odisha,Bharatiya Janata Party,Kandhamal,Lok Sabha,2024
+180320,Punjab,Indian National Congress,Fatehgarh Sahib,Lok Sabha,2024
+180321,Punjab,Indian National Congress,Ludhiana,Lok Sabha,2024
+180323,Punjab,Indian National Congress,Jalandhar,Lok Sabha,2024
+180325,Punjab,Indian National Congress,Amritsar,Lok Sabha,2024
+180326,Punjab,Aam Aadmi Party,Sangrur,Lok Sabha,2024
+180327,Punjab,Shiromani Akali Dal,Bathinda,Lok Sabha,2024
+180328,Punjab,Aam Aadmi Party,Anandpur Sahib,Lok Sabha,2024
+180329,Punjab,Aam Aadmi Party,Hoshiarpur,Lok Sabha,2024
+180330,Punjab,Independent,Faridkot,Lok Sabha,2024
+180331,Punjab,Indian National Congress,Firozpur,Lok Sabha,2024
+180332,Punjab,Indian National Congress,Gurdaspur,Lok Sabha,2024
+180333,Rajasthan,Communist Party of India (Marxist),Sikar,Lok Sabha,2024
+180359,Tamil Nadu,Dravida Munnetra Kazhagam,Nilgiris,Lok Sabha,2024
+180336,Rajasthan,Indian National Congress,Karauli-Dholpur,Lok Sabha,2024
+180338,Rajasthan,Indian National Congress,Jhunjhunu,Lok Sabha,2024
+180339,Rajasthan,Bharatiya Janata Party,Chittorgarh,Lok Sabha,2024
+180341,Rajasthan,Bharatiya Janata Party,Jhalawar-Baran,Lok Sabha,2024
+180344,Rajasthan,Indian National Congress,Tonk-Sawai Madhopur,Lok Sabha,2024
+180347,Rajasthan,Bharatiya Janata Party,Rajsamand,Lok Sabha,2024
+180348,Rajasthan,Bharatiya Janata Party,Jaipur,Lok Sabha,2024
+180349,Rajasthan,Bharatiya Janata Party,Udaipur,Lok Sabha,2024
+180350,Rajasthan,Indian National Congress,Dausa,Lok Sabha,2024
+180353,Rajasthan,Indian National Congress,Churu,Lok Sabha,2024
+180356,Rajasthan,Indian National Congress,Bharatpur,Lok Sabha,2024
+180360,Tamil Nadu,Dravida Munnetra Kazhagam,Perambalur,Lok Sabha,2024
+180362,Tamil Nadu,Viduthalai Chiruthaigal Katchi,Viluppuram,Lok Sabha,2024
+180364,Tamil Nadu,Dravida Munnetra Kazhagam,Chennai Central,Lok Sabha,2024
+180365,Tamil Nadu,Dravida Munnetra Kazhagam,Tenkasi,Lok Sabha,2024
+180366,Tamil Nadu,Marumalarchi Dravida Munnetra Kazhagam,Tiruchirappalli,Lok Sabha,2024
+180367,Tamil Nadu,Dravida Munnetra Kazhagam,Pollachi,Lok Sabha,2024
+180368,Tamil Nadu,Dravida Munnetra Kazhagam,Kancheepuram,Lok Sabha,2024
+180369,Tamil Nadu,Dravida Munnetra Kazhagam,Coimbatore,Lok Sabha,2024
+180371,Tamil Nadu,Dravida Munnetra Kazhagam,Erode,Lok Sabha,2024
+180372,Tamil Nadu,Communist Party of India,Tiruppur,Lok Sabha,2024
+180374,Tamil Nadu,Indian National Congress,Sivaganga,Lok Sabha,2024
+180375,Tamil Nadu,Indian National Congress,Cuddalore,Lok Sabha,2024
+180376,Tamil Nadu,Dravida Munnetra Kazhagam,Kallakurichi,Lok Sabha,2024
+180377,Tamil Nadu,Dravida Munnetra Kazhagam,Dharmapuri,Lok Sabha,2024
+180379,Tamil Nadu,Dravida Munnetra Kazhagam,Namakkal,Lok Sabha,2024
+180380,Tamil Nadu,Dravida Munnetra Kazhagam,Thanjavur,Lok Sabha,2024
+180382,Tamil Nadu,Indian National Congress,Tirunelveli,Lok Sabha,2024
+180383,Tamil Nadu,Dravida Munnetra Kazhagam,Arakkonam,Lok Sabha,2024
+180385,Tamil Nadu,Communist Party of India (Marxist),Madurai,Lok Sabha,2024
+180386,Tamil Nadu,Communist Party of India (Marxist),Dindigul,Lok Sabha,2024
+180387,Tamil Nadu,Indian National Congress,Tiruvallur,Lok Sabha,2024
+180388,Tamil Nadu,Communist Party of India,Nagapattinam,Lok Sabha,2024
+180389,Tamil Nadu,Indian National Congress,Mayiladuthurai,Lok Sabha,2024
+180391,Tamil Nadu,Dravida Munnetra Kazhagam,Salem,Lok Sabha,2024
+180393,Tamil Nadu,Dravida Munnetra Kazhagam,Theni,Lok Sabha,2024
+180394,Tamil Nadu,Dravida Munnetra Kazhagam,Arani,Lok Sabha,2024
+180395,Tamil Nadu,Viduthalai Chiruthaigal Katchi,Chidambaram,Lok Sabha,2024
+180397,Tamil Nadu,Indian National Congress,Kanniyakumari,Lok Sabha,2024
+180398,Telangana,Bharatiya Janata Party,Mahbubnagar,Lok Sabha,2024
+180399,Telangana,Bharatiya Janata Party,Nizamabad,Lok Sabha,2024
+180400,Telangana,All India Majlis-E-Ittehadul Muslimeen,Hyderabad,Lok Sabha,2024
+180401,Telangana,Indian National Congress,Mahabubabad,Lok Sabha,2024
+180402,Telangana,Indian National Congress,Bhongir,Lok Sabha,2024
+180403,Telangana,Bharatiya Janata Party,Malkajgiri,Lok Sabha,2024
+180405,Telangana,Bharatiya Janata Party,Adilabad,Lok Sabha,2024
+180407,Telangana,Bharatiya Janata Party,Chevella,Lok Sabha,2024
+180409,Telangana,Bharatiya Janata Party,Medak,Lok Sabha,2024
+180410,Telangana,Indian National Congress,Nagarkurnool,Lok Sabha,2024
+180411,Telangana,Indian National Congress,Khammam,Lok Sabha,2024
+180413,Telangana,Indian National Congress,Zahirabad,Lok Sabha,2024
+180414,Telangana,Indian National Congress,Peddapalle,Lok Sabha,2024
+180415,Tripura,Bharatiya Janata Party,Tripura West,Lok Sabha,2024
+180416,Tripura,Bharatiya Janata Party,Tripura East,Lok Sabha,2024
+180417,Uttar Pradesh,Samajwadi Party,Badaun,Lok Sabha,2024
+180419,Uttar Pradesh,Samajwadi Party,Hamirpur,Lok Sabha,2024
+180423,Uttar Pradesh,Bharatiya Janata Party,Baharaich,Lok Sabha,2024
+180424,Uttar Pradesh,Bharatiya Janata Party,Hathras,Lok Sabha,2024
+180426,Uttar Pradesh,Bharatiya Janata Party,Jhansi,Lok Sabha,2024
+180428,Uttar Pradesh,Bharatiya Janata Party,Shahjahanpur,Lok Sabha,2024
+180429,Uttar Pradesh,Bharatiya Janata Party,Misrikh,Lok Sabha,2024
+180430,Uttar Pradesh,Bharatiya Janata Party,Ghaziabad,Lok Sabha,2024
+180432,Uttar Pradesh,Samajwadi Party,Jaunpur,Lok Sabha,2024
+180433,Uttar Pradesh,Bharatiya Janata Party,Bulandshahr,Lok Sabha,2024
+180434,Uttar Pradesh,Samajwadi Party,Chandauli,Lok Sabha,2024
+180435,Uttar Pradesh,Rashtriya Lok Dal,Bijnor,Lok Sabha,2024
+180437,Uttar Pradesh,Bharatiya Janata Party,Bareilly,Lok Sabha,2024
+180438,Uttar Pradesh,Samajwadi Party,Robertsganj,Lok Sabha,2024
+180439,Uttar Pradesh,Samajwadi Party,Lalganj,Lok Sabha,2024
+180440,Uttar Pradesh,Bharatiya Janata Party,Akbarpur,Lok Sabha,2024
+180441,Uttar Pradesh,Samajwadi Party,Etah,Lok Sabha,2024
+180443,Uttar Pradesh,Samajwadi Party,Mainpuri,Lok Sabha,2024
+180445,Uttar Pradesh,Bharatiya Janata Party,Bhadohi,Lok Sabha,2024
+180446,Uttar Pradesh,Samajwadi Party,Muzaffarnagar,Lok Sabha,2024
+180447,Uttar Pradesh,Bharatiya Janata Party,Mathura,Lok Sabha,2024
+180448,Uttar Pradesh,Indian National Congress,Saharanpur,Lok Sabha,2024
+180451,Uttar Pradesh,Bharatiya Janata Party,Hardoi,Lok Sabha,2024
+180452,Uttar Pradesh,Samajwadi Party,Etawah,Lok Sabha,2024
+180455,Uttar Pradesh,Bharatiya Janata Party,Amroha,Lok Sabha,2024
+180456,Uttar Pradesh,Bharatiya Janata Party,Kaiserganj,Lok Sabha,2024
+180458,Uttar Pradesh,Indian National Congress,Amethi,Lok Sabha,2024
+180459,Uttar Pradesh,Samajwadi Party,Banda,Lok Sabha,2024
+180460,Uttar Pradesh,Samajwadi Party,Ambedkar Nagar,Lok Sabha,2024
+180461,Uttar Pradesh,Samajwadi Party,Sant Kabir Nagar,Lok Sabha,2024
+180463,Uttar Pradesh,Samajwadi Party,Rampur,Lok Sabha,2024
+180464,Uttar Pradesh,Bharatiya Janata Party,Farrukhabad,Lok Sabha,2024
+180465,Uttar Pradesh,Samajwadi Party,Jalaun,Lok Sabha,2024
+180467,Uttar Pradesh,Samajwadi Party,Fatehpur,Lok Sabha,2024
+180468,Uttar Pradesh,Samajwadi Party,Aonla,Lok Sabha,2024
+180470,Uttar Pradesh,Bharatiya Janata Party,Phulpur,Lok Sabha,2024
+180471,Uttar Pradesh,Samajwadi Party,Machhlishahr,Lok Sabha,2024
+180472,Uttar Pradesh,Samajwadi Party,Kaushambi,Lok Sabha,2024
+180473,Uttar Pradesh,Samajwadi Party,Mohanlalganj,Lok Sabha,2024
+180474,Uttar Pradesh,Indian National Congress,Rae Bareli,Lok Sabha,2024
+180479,Uttar Pradesh,Samajwadi Party,Basti,Lok Sabha,2024
+180480,Uttar Pradesh,Samajwadi Party,Shrawasti,Lok Sabha,2024
+180482,Uttar Pradesh,Samajwadi Party,Sultanpur,Lok Sabha,2024
+180483,Uttar Pradesh,Bharatiya Janata Party,Kanpur,Lok Sabha,2024
+180485,Uttar Pradesh,Samajwadi Party,Moradabad,Lok Sabha,2024
+180487,Uttar Pradesh,Samajwadi Party,Ballia,Lok Sabha,2024
+180488,Uttar Pradesh,Bharatiya Janata Party,Aligarh,Lok Sabha,2024
+180489,Uttar Pradesh,Bharatiya Janata Party,Deoria,Lok Sabha,2024
+180492,Uttar Pradesh,Indian National Congress,Barabanki,Lok Sabha,2024
+180493,Uttar Pradesh,Indian National Congress,Allahabad,Lok Sabha,2024
+180494,Uttar Pradesh,Samajwadi Party,Kheri,Lok Sabha,2024
+180495,Uttar Pradesh,Bharatiya Janata Party,Kushi Nagar,Lok Sabha,2024
+180496,Uttar Pradesh,Samajwadi Party,Sambhal,Lok Sabha,2024
+180497,Uttarakhand,Bharatiya Janata Party,Nainital-Udhamsingh Nagar,Lok Sabha,2024
+180499,Uttarakhand,Bharatiya Janata Party,Garhwal,Lok Sabha,2024
+180500,Uttarakhand,Bharatiya Janata Party,Tehri Garhwal,Lok Sabha,2024
+180501,Uttarakhand,Bharatiya Janata Party,Haridwar,Lok Sabha,2024
+180503,West Bengal,All India Trinamool Congress,Diamond Harbour,Lok Sabha,2024
+180504,West Bengal,All India Trinamool Congress,Murshidabad,Lok Sabha,2024
+180506,West Bengal,All India Trinamool Congress,Bankura,Lok Sabha,2024
+180508,West Bengal,All India Trinamool Congress,Bardhaman-Durgapur,Lok Sabha,2024
+180509,West Bengal,All India Trinamool Congress,Mathurapur,Lok Sabha,2024
+180511,West Bengal,Indian National Congress,Maldaha Dakshin,Lok Sabha,2024
+180512,West Bengal,All India Trinamool Congress,Coochbehar,Lok Sabha,2024
+180513,West Bengal,Bharatiya Janata Party,Ranaghat,Lok Sabha,2024
+180515,West Bengal,All India Trinamool Congress,Medinipur,Lok Sabha,2024
+180516,West Bengal,Bharatiya Janata Party,Purulia,Lok Sabha,2024
+180517,West Bengal,All India Trinamool Congress,Barasat,Lok Sabha,2024
+180518,West Bengal,All India Trinamool Congress,Jhargram,Lok Sabha,2024
+180519,West Bengal,All India Trinamool Congress,Srerampur,Lok Sabha,2024
+180520,West Bengal,Bharatiya Janata Party,Raiganj,Lok Sabha,2024
+180521,West Bengal,Bharatiya Janata Party,Maldaha Uttar,Lok Sabha,2024
+180522,West Bengal,All India Trinamool Congress,Jangipur,Lok Sabha,2024
+180523,West Bengal,All India Trinamool Congress,Krishnanagar,Lok Sabha,2024
+180524,West Bengal,All India Trinamool Congress,Kolkata Dakshin,Lok Sabha,2024
+180525,West Bengal,Bharatiya Janata Party,Alipurduars,Lok Sabha,2024
+180526,West Bengal,All India Trinamool Congress,Arambagh,Lok Sabha,2024
+180527,West Bengal,All India Trinamool Congress,Barrackpur,Lok Sabha,2024
+180528,West Bengal,All India Trinamool Congress,Baharampur,Lok Sabha,2024
+180530,West Bengal,All India Trinamool Congress,Joynagar,Lok Sabha,2024
+180531,West Bengal,All India Trinamool Congress,Hooghly,Lok Sabha,2024
+180533,West Bengal,All India Trinamool Congress,Uluberia,Lok Sabha,2024
+180534,West Bengal,All India Trinamool Congress,Birbhum,Lok Sabha,2024
+180535,West Bengal,Bharatiya Janata Party,Bishnupur,Lok Sabha,2024
+180536,West Bengal,All India Trinamool Congress,Jadavpur,Lok Sabha,2024
+180538,West Bengal,All India Trinamool Congress,Bardhaman Purba,Lok Sabha,2024
+180541,West Bengal,All India Trinamool Congress,Dum Dum,Lok Sabha,2024
+180001,Andaman & Nicobar Islands,Bharatiya Janata Party,Andaman and Nicobar Islands,Lok Sabha,2024
+180095,Dadra and Nagar Haveli,Bharatiya Janata Party,Dadra and Nagar Haveli,Lok Sabha,2024
+180096,Dadra and Nagar Haveli,Independent,Daman and Diu,Lok Sabha,2024
+180097,Delhi,Bharatiya Janata Party,New Delhi,Lok Sabha,2024
+180099,Delhi,Bharatiya Janata Party,West Delhi,Lok Sabha,2024
+180101,Delhi,Bharatiya Janata Party,Chandni Chowk,Lok Sabha,2024
+180102,Delhi,Bharatiya Janata Party,South Delhi,Lok Sabha,2024
+180103,Delhi,Bharatiya Janata Party,North West Delhi,Lok Sabha,2024
+180214,Lakshadweep,Indian National Congress,Lakshadweep,Lok Sabha,2024
+180319,Puducherry,Indian National Congress,Puducherry,Lok Sabha,2024
+180157,Jharkhand,Bharatiya Janata Party,Chatra,Lok Sabha,2024
+180257,Maharashtra,Indian National Congress,Nanded,Lok Sabha,2024
+180044,Bihar,Janata Dal (United),Bhagalpur,Lok Sabha,2024
+180233,Madhya Pradesh,Bharatiya Janata Party,Dewas,Lok Sabha,2024
+180239,Madhya Pradesh,Bharatiya Janata Party,Morena,Lok Sabha,2024
+180244,Maharashtra,Shiv Sena (Uddhav Balasaheb Thackeray),Hingoli,Lok Sabha,2024
+180270,Maharashtra,Bharatiya Janata Party,Ratnagiri-Sindhudurg,Lok Sabha,2024
+180408,Telangana,Indian National Congress,Nalgonda,Lok Sabha,2024
+180478,Uttar Pradesh,Indian National Congress,Sitapur,Lok Sabha,2024
+180505,West Bengal,Bharatiya Janata Party,Kanthi,Lok Sabha,2024
+180510,West Bengal,All India Trinamool Congress,Ghatal,Lok Sabha,2024
+180539,West Bengal,All India Trinamool Congress,Asansol,Lok Sabha,2024
+180064,Bihar,Bharatiya Janata Party,Purvi Champaran,Lok Sabha,2024
+180072,Bihar,Bharatiya Janata Party,Patna Sahib,Lok Sabha,2024
+180175,Karnataka,Indian National Congress,Koppal,Lok Sabha,2024
+180292,Manipur,Indian National Congress,Outer Manipur,Lok Sabha,2024
+180418,Uttar Pradesh,Samajwadi Party,Ghazipur,Lok Sabha,2024
+180420,Uttar Pradesh,Samajwadi Party,Kannauj,Lok Sabha,2024
+180421,Uttar Pradesh,Samajwadi Party,Firozabad,Lok Sabha,2024
+180431,Uttar Pradesh,Samajwadi Party,Faizabad,Lok Sabha,2024
+180462,Uttar Pradesh,Bharatiya Janata Party,Gautam Buddha Nagar,Lok Sabha,2024
+180490,Uttar Pradesh,Samajwadi Party,Pratapgarh,Lok Sabha,2024
+180502,West Bengal,Bharatiya Janata Party,Tamluk,Lok Sabha,2024
+180507,West Bengal,All India Trinamool Congress,Bolpur,Lok Sabha,2024
+180529,West Bengal,All India Trinamool Congress,Howrah,Lok Sabha,2024
+180542,West Bengal,All India Trinamool Congress,Kolkata Uttar,Lok Sabha,2024
+180540,West Bengal,All India Trinamool Congress,Basirhat,Lok Sabha,2024
+180060,Bihar,Rashtriya Janata Dal,Patliputra,Lok Sabha,2024
+180078,Bihar,Rashtriya Janata Dal,Jahanabad,Lok Sabha,2024
+180284,Maharashtra,Bharatiya Janata Party,Satara,Lok Sabha,2024
+180322,Punjab,Independent,Khadoor Sahib,Lok Sabha,2024
+180351,Rajasthan,Bharatiya Janata Party,Kota,Lok Sabha,2024
+180491,Uttar Pradesh,Bharatiya Janata Party,Unnao,Lok Sabha,2024
+900656,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900412,Chhattisgarh,Indian National Congress,nan,Lok Sabha,2024
+900622,Kerala,Communist Party of India (Marxist),nan,Lok Sabha,2024
+900428,Bihar,Janata Dal (United),nan,Lok Sabha,2024
+900706,nan,Nominated,nan,Lok Sabha,2024
+900623,Kerala,Communist Party of India (Marxist),nan,Lok Sabha,2024
+900096,West Bengal,Communist Party of India (Marxist),nan,Lok Sabha,2024
+900391,Maharashtra,Shiv Sena,nan,Lok Sabha,2024
+900163,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900125,Jharkhand,Bharatiya Janata Party,nan,Lok Sabha,2024
+900639,Kerala,Indian National Congress,nan,Lok Sabha,2024
+900694,Haryana,Independent,nan,Lok Sabha,2024
+900547,Karnataka,Indian National Congress,nan,Lok Sabha,2024
+900672,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900666,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900539,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900674,Maharashtra,Indian National Congress,nan,Lok Sabha,2024
+900016,Telangana,Indian National Congress,nan,Lok Sabha,2024
+900343,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900675,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900497,Gujarat,Indian National Congress,nan,Lok Sabha,2024
+900353,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900654,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900707,Delhi,Aam Aadmi Party,nan,Lok Sabha,2024
+900658,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900536,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900214,Telangana,Bharat Rashtra Samithi,nan,Lok Sabha,2024
+900567,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900172,Karnataka,Bharatiya Janata Party,nan,Lok Sabha,2024
+900342,Rajasthan,Indian National Congress,nan,Lok Sabha,2024
+900630,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900477,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900215,Chhattisgarh,Indian National Congress,nan,Lok Sabha,2024
+900127,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900143,Maharashtra,Nationalist Congress Party,nan,Lok Sabha,2024
+900667,Uttar Pradesh,Rashtriya Lok Dal,nan,Lok Sabha,2024
+900288,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900535,Odisha,Bharatiya Janata Party,nan,Lok Sabha,2024
+900632,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900728,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900644,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900531,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900720,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900637,Kerala,Communist Party of India (Marxist),nan,Lok Sabha,2024
+900284,Bihar,Rashtriya Janata Dal,nan,Lok Sabha,2024
+900778,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900451,Telangana,Indian National Congress,nan,Lok Sabha,2024
+900721,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900035,Bihar,Rashtriya Janata Dal,nan,Lok Sabha,2024
+900740,Bihar,Bharatiya Janata Party,nan,Lok Sabha,2024
+900708,nan,Nominated,nan,Lok Sabha,2024
+900455,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900698,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900643,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900345,Karnataka,Bharatiya Janata Party,nan,Lok Sabha,2024
+900660,Chhattisgarh,Indian National Congress,nan,Lok Sabha,2024
+900600,Madhya Pradesh,Indian National Congress,nan,Lok Sabha,2024
+900489,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900638,Kerala,Communist Party of India,nan,Lok Sabha,2024
+900184,Uttar Pradesh,Samajwadi Party,nan,Lok Sabha,2024
+900291,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900478,Delhi,Aam Aadmi Party,nan,Lok Sabha,2024
+900772,nan,Nominated,nan,Lok Sabha,2024
+900769,nan,Nominated,nan,Lok Sabha,2024
+900773,Tamil Nadu,All India Anna Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900782,Jammu and Kashmir,Jammu and Kashmir National Conference,nan,Lok Sabha,2024
+900776,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900767,Andhra Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900779,Jammu and Kashmir,Bharatiya Janata Party,nan,Lok Sabha,2024
+900780,Jammu and Kashmir,Jammu and Kashmir National Conference,nan,Lok Sabha,2024
+900775,Tamil Nadu,All India Anna Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900777,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900768,Assam,Bharatiya Janata Party,nan,Lok Sabha,2024
+900774,Tamil Nadu,Makkal Needhi Maiam,nan,Lok Sabha,2024
+900727,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900659,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900710,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900741,Chhattisgarh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900689,Bihar,Janata Dal (United),nan,Lok Sabha,2024
+900682,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900716,Maharashtra,Shiv Sena,nan,Lok Sabha,2024
+900437,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900663,Karnataka,Bharatiya Janata Party,nan,Lok Sabha,2024
+900267,Manipur,Bharatiya Janata Party,nan,Lok Sabha,2024
+900729,Himachal Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900742,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900627,Puducherry,Bharatiya Janata Party,nan,Lok Sabha,2024
+900662,Karnataka,Bharatiya Janata Party,nan,Lok Sabha,2024
+900680,Rajasthan,Bharatiya Janata Party,nan,Lok Sabha,2024
+900764,Tripura,Bharatiya Janata Party,nan,Lok Sabha,2024
+900138,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900190,Kerala,Kerala Congress (M),nan,Lok Sabha,2024
+900628,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900743,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900733,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900640,Nagaland,Bharatiya Janata Party,nan,Lok Sabha,2024
+900690,Jharkhand,Jharkhand Mukti Morcha,nan,Lok Sabha,2024
+900657,Tamil Nadu,All India Anna Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900679,Rajasthan,Indian National Congress,nan,Lok Sabha,2024
+900746,Uttar Pradesh,Samajwadi Party,nan,Lok Sabha,2024
+900230,Uttar Pradesh,Independent,nan,Lok Sabha,2024
+900636,Himachal Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900699,Goa,Bharatiya Janata Party,nan,Lok Sabha,2024
+900276,Odisha,Bharatiya Janata Party,nan,Lok Sabha,2024
+900655,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900739,Madhya Pradesh,Indian National Congress,nan,Lok Sabha,2024
+900422,Uttar Pradesh,Samajwadi Party,nan,Lok Sabha,2024
+900389,Bihar,Rashtriya Janata Dal,nan,Lok Sabha,2024
+900735,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900683,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900709,Sikkim,Bharatiya Janata Party,nan,Lok Sabha,2024
+900700,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900615,Uttarakhand,Bharatiya Janata Party,nan,Lok Sabha,2024
+900766,Haryana,Bharatiya Janata Party,nan,Lok Sabha,2024
+900635,Assam,United Peoples Party (Liberal),nan,Lok Sabha,2024
+900367,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900359,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900673,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900737,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900319,Arunachal Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900420,Haryana,Bharatiya Janata Party,nan,Lok Sabha,2024
+900749,Bihar,Rashtriya Janata Dal,nan,Lok Sabha,2024
+900066,Odisha,Bharatiya Janata Party,nan,Lok Sabha,2024
+900723,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900092,Assam,Bharatiya Janata Party,nan,Lok Sabha,2024
+900757,Haryana,Bharatiya Janata Party,nan,Lok Sabha,2024
+900026,Assam,Independent,nan,Lok Sabha,2024
+900696,nan,Bharatiya Janata Party,nan,Lok Sabha,2024
+900087,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900534,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900631,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900490,Bihar,Bharatiya Janata Party,nan,Lok Sabha,2024
+900756,Assam,Bharatiya Janata Party,nan,Lok Sabha,2024
+900763,Rajasthan,Bharatiya Janata Party,nan,Lok Sabha,2024
+900705,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900164,Bihar,Janata Dal (United),nan,Lok Sabha,2024
+900736,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900185,Uttar Pradesh,Samajwadi Party,nan,Lok Sabha,2024
+900146,Karnataka,Indian National Congress,nan,Lok Sabha,2024
+900678,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900759,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900070,Andhra Pradesh,Yuvajana Sramika Rythu Congress Party,nan,Lok Sabha,2024
+900366,Chhattisgarh,Indian National Congress,nan,Lok Sabha,2024
+900317,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900731,Telangana,Indian National Congress,nan,Lok Sabha,2024
+900652,Andhra Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900648,Telangana,Bharat Rashtra Samithi,nan,Lok Sabha,2024
+900724,Maharashtra,Indian National Congress,nan,Lok Sabha,2024
+900254,Tamil Nadu,All India Anna Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900537,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900677,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900617,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900711,Karnataka,Bharatiya Janata Party,nan,Lok Sabha,2024
+900738,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900634,Assam,Bharatiya Janata Party,nan,Lok Sabha,2024
+900761,Bihar,Bharatiya Janata Party,nan,Lok Sabha,2024
+900752,Jharkhand,Bharatiya Janata Party,nan,Lok Sabha,2024
+900275,Karnataka,Indian National Congress,nan,Lok Sabha,2024
+900147,Tamil Nadu,Tamil Maanila Congress (Moopanar),nan,Lok Sabha,2024
+900702,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900669,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900377,Maharashtra,Nationalist Congress Party,nan,Lok Sabha,2024
+900614,Karnataka,Bharatiya Janata Party,nan,Lok Sabha,2024
+900685,nan,Nominated,nan,Lok Sabha,2024
+900704,West Bengal,Bharatiya Janata Party,nan,Lok Sabha,2024
+900337,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900134,Madhya Pradesh,Indian National Congress,nan,Lok Sabha,2024
+900311,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900665,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900413,Rajasthan,Bharatiya Janata Party,nan,Lok Sabha,2024
+900714,Haryana,Bharatiya Janata Party,nan,Lok Sabha,2024
+900611,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900028,Bihar,Indian National Congress,nan,Lok Sabha,2024
+900653,Telangana,Bharat Rashtra Samithi,nan,Lok Sabha,2024
+900750,Rajasthan,Bharatiya Janata Party,nan,Lok Sabha,2024
+900603,Meghalaya,National Peoples Party,nan,Lok Sabha,2024
+900381,Rajasthan,Indian National Congress,nan,Lok Sabha,2024
+900684,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900325,Delhi,Aam Aadmi Party,nan,Lok Sabha,2024
+900645,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900661,Tamil Nadu,All India Anna Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900765,Andhra Pradesh,Telugu Desam Party,nan,Lok Sabha,2024
+900650,Odisha,Biju Janata Dal,nan,Lok Sabha,2024
+900681,Rajasthan,Indian National Congress,nan,Lok Sabha,2024
+900688,nan,Nominated,nan,Lok Sabha,2024
+900719,Rajasthan,Bharatiya Janata Party,nan,Lok Sabha,2024
+900713,West Bengal,Bharatiya Janata Party,nan,Lok Sabha,2024
+900649,Andhra Pradesh,Telugu Desam Party,nan,Lok Sabha,2024
+900753,Maharashtra,Nationalist Congress Party,nan,Lok Sabha,2024
+900701,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900646,Punjab,Aam Aadmi Party,nan,Lok Sabha,2024
+900715,Maharashtra,Bharatiya Janata Party,nan,Lok Sabha,2024
+900612,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900734,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900722,Bihar,Bharatiya Janata Party,nan,Lok Sabha,2024
+900732,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900754,Kerala,Communist Party of India,nan,Lok Sabha,2024
+900692,Jharkhand,Bharatiya Janata Party,nan,Lok Sabha,2024
+900476,Maharashtra,Shiv Sena,nan,Lok Sabha,2024
+900717,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900726,Bihar,Janata Dal (United),nan,Lok Sabha,2024
+900725,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900703,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900205,Mizoram,Mizo National Front,nan,Lok Sabha,2024
+900712,Uttarakhand,Bharatiya Janata Party,nan,Lok Sabha,2024
+900755,Kerala,Indian Union Muslim League,nan,Lok Sabha,2024
+900664,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900620,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900058,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900101,Assam,Asom Gana Parishad,nan,Lok Sabha,2024
+900014,Kerala,Indian Union Muslim League,nan,Lok Sabha,2024
+900176,Gujarat,Bharatiya Janata Party,nan,Lok Sabha,2024
+900436,Maharashtra,Republican Party of India (A),nan,Lok Sabha,2024
+900171,Himachal Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900671,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900691,Bihar,Bharatiya Janata Party,nan,Lok Sabha,2024
+900408,Maharashtra,Indian National Congress,nan,Lok Sabha,2024
+900676,Uttarakhand,Bharatiya Janata Party,nan,Lok Sabha,2024
+900568,Bihar,Rashtriya Lok Morcha,nan,Lok Sabha,2024
+900730,Karnataka,Indian National Congress,nan,Lok Sabha,2024
+900651,Telangana,Bharat Rashtra Samithi,nan,Lok Sabha,2024
+900352,Tamil Nadu,Dravida Munnetra Kazhagam,nan,Lok Sabha,2024
+900610,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900771,nan,Nominated,nan,Lok Sabha,2024
+900781,Jammu and Kashmir,Jammu and Kashmir National Conference,nan,Lok Sabha,2024
+900770,nan,Nominated,nan,Lok Sabha,2024
+900762,Maharashtra,Nationalist Congress Party,nan,Lok Sabha,2024
+900442,nan,Nominated,nan,Lok Sabha,2024
+900505,Maharashtra,Nationalist Congress Party,nan,Lok Sabha,2024
+900745,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900744,Uttar Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900533,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900748,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
+900159,Karnataka,Janata Dal (Secular),nan,Lok Sabha,2024
+900693,Bihar,Rashtriya Janata Dal,nan,Lok Sabha,2024
+900349,Tamil Nadu,Indian National Congress,nan,Lok Sabha,2024
+900686,nan,Nominated,nan,Lok Sabha,2024
+900616,Uttar Pradesh,Bahujan Samaj Party,nan,Lok Sabha,2024
+900718,Rajasthan,Indian National Congress,nan,Lok Sabha,2024
+900751,Jharkhand,Jharkhand Mukti Morcha,nan,Lok Sabha,2024
+900747,West Bengal,All India Trinamool Congress,nan,Lok Sabha,2024
+900179,Karnataka,Indian National Congress,nan,Lok Sabha,2024
+900687,nan,Nominated,nan,Lok Sabha,2024
+900758,Madhya Pradesh,Bharatiya Janata Party,nan,Lok Sabha,2024
