@@ -104,34 +104,32 @@
 
         /* Hero Section */
         .hero {
-            padding: 6rem 2rem 4rem;
+            padding: 5rem 2rem 3.5rem;
             text-align: center;
             background: linear-gradient(180deg, var(--bg-section) 0%, var(--bg-dark) 100%);
             border-bottom: 1px solid rgba(255,255,255,0.05);
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             background: linear-gradient(135deg, var(--light-purple), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             line-height: 1.2;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
             font-weight: 400;
             max-width: 900px;
-            margin: 0 auto 2rem;
-        }
-
-        .hero .meta {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+            margin: 0 auto;
         }
 
         /* Container */
@@ -143,16 +141,16 @@
 
         /* Section Styling */
         section {
-            padding: 4rem 0;
+            padding: 3rem 0;
             border-bottom: 1px solid rgba(255,255,255,0.05);
         }
 
         .section-header {
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .section-header h2 {
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 700;
             display: flex;
             align-items: center;
@@ -171,6 +169,7 @@
             border-radius: 50%;
             font-size: 1.2rem;
             font-weight: 700;
+            flex-shrink: 0;
         }
 
         /* Writeup Boxes */
@@ -184,7 +183,7 @@
 
         .writeup-box h3 {
             color: var(--light-purple);
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             margin-bottom: 1rem;
             font-weight: 600;
         }
@@ -192,7 +191,7 @@
         .writeup-box p {
             color: var(--text-secondary);
             line-height: 1.8;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         /* Chart Container */
@@ -200,15 +199,15 @@
             background: white;
             padding: 2rem;
             border-radius: 12px;
-            margin: 2rem 0;
+            margin: 1.5rem 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
 
         .chart-title {
             color: #1e293b;
-            font-size: 1.4rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .chart-description {
@@ -218,18 +217,87 @@
             margin-top: 1.5rem;
         }
 
-        /* Grid for multiple charts */
-        .charts-grid {
+        /* Stacked Charts Container (for Chart 3) */
+        .chart-stack {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 3rem;
+            gap: 0;
+            margin: 1.5rem 0;
+        }
+
+        .chart-stack .chart-wrapper {
+            margin: 0;
+            border-radius: 0;
+        }
+
+        .chart-stack .chart-wrapper:first-child {
+            border-radius: 12px 12px 0 0;
+        }
+
+        .chart-stack .chart-wrapper:last-child {
+            border-radius: 0 0 12px 12px;
+        }
+
+        .chart-stack .chart-wrapper:not(:last-child) {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* Policy Implications Box */
+        .policy-box {
+            background: rgba(124, 58, 237, 0.05);
+            border: 2px solid var(--primary-purple);
+            border-radius: 12px;
+            padding: 2rem;
             margin: 2rem 0;
         }
 
-        @media (min-width: 1200px) {
-            .charts-grid.two-col {
-                grid-template-columns: 1fr 1fr;
-            }
+        .policy-box h3 {
+            color: var(--light-purple);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .policy-box h4 {
+            color: var(--light-purple);
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+            margin-top: 1.5rem;
+        }
+
+        .policy-box h4:first-of-type {
+            margin-top: 0;
+        }
+
+        .policy-box ol {
+            margin-left: 1.5rem;
+        }
+
+        .policy-box li {
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .policy-box strong {
+            color: var(--text-primary);
+        }
+
+        /* AI Disclaimer */
+        .ai-disclaimer {
+            background: rgba(168, 85, 247, 0.08);
+            border-left: 4px solid var(--light-purple);
+            padding: 1.25rem;
+            border-radius: 6px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .ai-disclaimer strong {
+            color: var(--light-purple);
         }
 
         /* Footer */
@@ -307,169 +375,229 @@
 
     <!-- Hero Section -->
     <header class="hero" role="banner">
-        <h1>Structural Exclusion of Persons with Disabilities (PwDs) in India</h1>
-        <p class="subtitle">
-            Making Policy Implementation Gaps Visible Through Data
-        </p>
-        <p class="meta">
-            Chahat Malhotra | MSc International Social and Public Policy, LSE | 2025
-        </p>
+        <h1>Are People with Disabilities in India Structurally Excluded?</h1>
+        <p class="subtitle">Making Policy Implementation Gaps Visible Through Data</p>
     </header>
 
     <div class="container">
         <!-- Project Aims -->
         <section id="aims">
             <div class="writeup-box">
-                <h3>1. Project Aims</h3>
+                <h3>Project Aims</h3>
                 <p>
-                    Disability in India is structurally under-measured and under-reported, leading to exclusion in public policy and corporate practice despite broader development gains. This project makes structural exclusion visible by highlighting gaps in policy implementation and corporate participation across states and districts. Using clear, accessible, and ethically designed data visualizations, the project examines where people with disabilities are being left behind in employment, corporate reporting, inclusion in formal labor markets, and democratic participation. The analysis seeks to support evidence-based policymaking and more accountable corporate practices by revealing patterns of exclusion that remain hidden in aggregate statistics and official reports.
+                    This project traces structural exclusion of India's 2.68 crore persons with disabilities across five critical dimensions: enumeration, democratic participation, policy implementation, legislative voice, and corporate employment. Despite Census 2011 identifying 26.8 million PWDs, subsequent systems systematically exclude this population from rights and opportunities.
+                </p>
+                <p style="margin-top: 1rem;">
+                    The visualisations reveal cascading exclusion: electoral systems deny democratic participation (states with largest PWD populations provide &lt;1% home voting access); UDID registration fails to reach Census-identified populations (states like West Bengal show only 10% coverage); parliamentary representation remains concentrated (75% of constituencies raised zero disability questions, with North region disproportionately vocal); and corporate India reports near-complete exclusion (44.7% of NSE companies claim zero disabled employees, overall rate 0.52%).
+                </p>
+                <p style="margin-top: 1rem;">
+                    By mapping implementation gaps between Census enumeration (what we know exists) and actual inclusion (UDID coverage, electoral access, legislative voice, corporate hiring), the project exposes where 2.68 crore Indians are being structurally left behind despite legal frameworks, policy promises, and corporate disclosure requirements. The analysis supports evidence-based intervention by revealing precise points of exclusion across government and private sectors.
                 </p>
             </div>
         </section>
 
-  <!-- Visualisations -->
-<section id="visualisations">
-    
-    <!-- CHART 1: Census 2011 Dashboard (FIRST) -->
-<div class="section-header">
-    <h2><span class="section-number">1</span> Census 2011: Disability Demographics</h2>
-</div>
+        <!-- Visualisations -->
+        <section id="visualisations">
+            
+            <!-- CHART 1: Census 2011 Dashboard (FIRST) -->
+            <div class="section-header">
+                <h2><span class="section-number">1</span> Census 2011: Disability Demographics</h2>
+            </div>
 
-<div class="chart-wrapper">
-    <h3 class="chart-title">Interactive Dashboard: 26.8 Million Lives Across Multiple Dimensions</h3>
-    
-    <!-- Embedded Dashboard -->
-    <iframe 
-        src="https://c-malhotra.github.io/PC1/PC1%20dashboard.html" 
-        width="100%" 
-        height="800px" 
-        frameborder="0"
-        style="border-radius: 8px; margin: 1rem 0;">
-    </iframe>
-    
-    <p class="chart-description">
-        This interactive dashboard explores Census 2011 disability data across three dimensions. The National Overview shows India's 26.8 crore PWD population with a severe gender gap (789 females per 1000 males). State Patterns reveals geographic concentration, with northeastern and mountain states showing highest prevalence (Sikkim 2.98%, Odisha 2.96%) while populous states like UP and Maharashtra house the largest absolute numbers despite lower percentages. Disability Types breakdown demonstrates Census 2011's medical model bias: visual impairments dominate (48.5%) while many conditions recognized under RPwD Act 2016 remain uncounted.
-    </p>
-</div>
+            <div class="chart-wrapper">
+                <h3 class="chart-title">Interactive Dashboard: 26.8 Million Lives Across Multiple Dimensions</h3>
+                
+                <!-- Embedded Dashboard -->
+                <iframe 
+                    src="https://c-malhotra.github.io/PC1/PC1%20dashboard.html" 
+                    width="100%" 
+                    height="800px" 
+                    frameborder="0"
+                    style="border-radius: 8px; margin: 1rem 0;">
+                </iframe>
+                
+                <p class="chart-description">
+                    This interactive dashboard explores Census 2011 disability data across three dimensions. The National Overview shows India's 26.8 crore PWD population with a severe gender gap (789 females per 1000 males). State Patterns reveals geographic concentration, with northeastern and mountain states showing highest prevalence (Sikkim 2.98%, Odisha 2.96%) whilst populous states like UP and Maharashtra house the largest absolute numbers despite lower percentages. Disability Types breakdown demonstrates Census 2011's medical model bias: visual impairments dominate (48.5%) whilst many conditions recognised under RPwD Act 2016 remain uncounted.
+                </p>
+            </div>
 
-    <!-- CHART 2: Electoral Accessibility (SECOND) -->
-    <div class="section-header" style="margin-top: 4rem;">
-        <h2><span class="section-number">2</span> Electoral Accessibility Crisis</h2>
-    </div>
-    
-    <div class="chart-wrapper">
-        <h3 class="chart-title">Are States Making Voting Accessible for People with Disabilities?</h3>
-        <figure id="chart2" aria-label="Scatter plot and map showing PWD voter accessibility by state"></figure>
-        <p class="chart-description">
-            This visualisation reveals a critical accessibility crisis: states with the largest PWD voter populations provide minimal home voting access. Uttar Pradesh, with 12.6 lakh PWD voters, enables only 0.96% to vote from home, while Kerala demonstrates that 17% accessibility is achievable. The scatter plot (left) shows the relationship between PWD voter population and home voting percentage, with the geographic distribution (right) highlighting regional disparities. States in the bottom-right quadrant—large PWD populations with low accessibility—represent millions of voters facing significant barriers to democratic participation.
-        </p>
-    </div>
+            <!-- CHART 2: Electoral Accessibility (SECOND) -->
+            <div class="section-header" style="margin-top: 3rem;">
+                <h2><span class="section-number">2</span> Electoral Accessibility Crisis</h2>
+            </div>
+            
+            <div class="chart-wrapper">
+                <h3 class="chart-title">Are States Making Voting Accessible for People with Disabilities?</h3>
+                <figure id="chart2" aria-label="Scatter plot and map showing PWD voter accessibility by state"></figure>
+                <p class="chart-description">
+                    This visualisation reveals a critical accessibility crisis: states with the largest PWD voter populations provide minimal home voting access. Uttar Pradesh, with 12.6 lakh PWD voters, enables only 0.96% to vote from home, whilst Kerala demonstrates that 17% accessibility is achievable. The scatter plot (left) shows the relationship between PWD voter population and home voting percentage, with the geographic distribution (right) highlighting regional disparities. States in the bottom-right quadrant—large PWD populations with low accessibility—represent millions of voters facing significant barriers to democratic participation.
+                </p>
+            </div>
 
-            <!-- Placeholder for Chart 3 -->
-            <!-- Chart 3: Recognition Gap Analysis -->
-<div class="section-header" style="margin-top: 4rem;">
-    <h2><span class="section-number">3</span> The Disability Recognition Crisis: Census vs UDID Coverage</h2>
-</div>
+            <!-- CHART 3: Recognition Gap Analysis (STACKED VERTICALLY) -->
+            <div class="section-header" style="margin-top: 3rem;">
+                <h2><span class="section-number">3</span> The Disability Recognition Crisis: Census vs UDID Coverage</h2>
+            </div>
 
-<!-- Two charts side by side -->
-<div class="charts-grid two-col">
-    <!-- Left: Coverage Gap -->
-    <div class="chart-wrapper">
-        <figure id="chart3a" aria-label="Scatter plot showing UDID coverage gaps by state"></figure>
-        <p class="chart-description">
-            <strong>Implementation Gap:</strong> States below the diagonal line fall short of 100% UDID registration—revealing the gap between Census enumeration and actual policy implementation. West Bengal's 10.32% coverage despite 2M+ persons with disabilities versus Chandigarh's 86% coverage shows this isn't about resources but implementation capacity and political prioritization.
-        </p>
-    </div>
-    
-    <!-- Right: Absolute Impact -->
-    <div class="chart-wrapper">
-        <figure id="chart3b" aria-label="Bubble chart showing absolute numbers excluded from UDID"></figure>
-        <p class="chart-description">
-            <strong>Beyond Percentages:</strong> Uttar Pradesh has 2.5 million people with disabilities still without UDID registration—more than the entire disabled population of 25 other states combined. This highlights how percentage-based analysis masks the scale of exclusion in populous states, requiring resource allocation weighted by absolute numbers, not just coverage rates.
-        </p>
-    </div>
-</div>
+            <div class="chart-stack">
+                <!-- Chart 3a: Coverage Gap -->
+                <div class="chart-wrapper">
+                    <h3 class="chart-title">Implementation Gap: Where Policy Fails People</h3>
+                    <figure id="chart3a" aria-label="Scatter plot showing UDID coverage gaps by state"></figure>
+                    <p class="chart-description">
+                        <strong>Implementation Gap:</strong> States below the diagonal line fall short of 100% UDID registration—revealing the gap between Census enumeration and actual policy implementation. West Bengal's 10.32% coverage despite 2M+ persons with disabilities versus Chandigarh's 86% coverage shows this isn't about resources but implementation capacity and political prioritisation.
+                    </p>
+                </div>
+                
+                <!-- Chart 3b: Absolute Impact -->
+                <div class="chart-wrapper">
+                    <h3 class="chart-title">Beyond Percentages: The Human Scale of Exclusion</h3>
+                    <figure id="chart3b" aria-label="Bubble chart showing absolute numbers excluded from UDID"></figure>
+                    <p class="chart-description">
+                        <strong>Beyond Percentages:</strong> Uttar Pradesh has 2.5 million people with disabilities still without UDID registration—more than the entire disabled population of 25 other states combined. This highlights how percentage-based analysis masks the scale of exclusion in populous states, requiring resource allocation weighted by absolute numbers, not just coverage rates.
+                    </p>
+                </div>
+            </div>
 
-            <!-- Placeholder for Chart 4 -->
-            <div class="section-header" style="margin-top: 4rem;">
+            <!-- CHART 4: Parliamentary Advocacy Tracking -->
+            <div class="section-header" style="margin-top: 3rem;">
                 <h2><span class="section-number">4</span> Parliamentary Advocacy Tracking</h2>
             </div>
             
             <div class="chart-wrapper">
                 <h3 class="chart-title">Who Speaks for People with Disabilities in Parliament?</h3>
                 <iframe 
-    src="https://c-malhotra.github.io/PC3/Parliamentary%20Disability%20Advocacy%20_%20Dual%20House%20View.html"
-    width="100%" 
-    height="1000px"
-    frameborder="0"
-    style="border-radius: 8px; margin: 1rem 0; border: 2px solid #e5e7eb;">
-</iframe>
+                    src="https://c-malhotra.github.io/PC3/Parliamentary%20Disability%20Advocacy%20_%20Dual%20House%20View.html"
+                    width="100%" 
+                    height="1000px"
+                    frameborder="0"
+                    style="border-radius: 8px; margin: 1rem 0; border: 2px solid #e5e7eb;">
+                </iframe>
                 <p class="chart-description">
-    <strong>Primary Research Note:</strong> This visualisation is based on original data collection conducted by the <a href="https://linktr.ee/politicsanddisability" target="_blank" style="color: #7c3aed; text-decoration: underline;">Politics and Disability Forum</a>, systematically sourced from Lok Sabha and Rajya Sabha parliamentary records (2024-2025). This project establishes India's first parliamentary accountability mechanism on disability—tracking how elected representatives engage with disability rights beyond tokenistic welfare schemes.
-    
-    <br><br><strong>Why This Matters:</strong> India's 2.68 crore persons with disabilities remain largely invisible from decision-making corridors. When MPs consistently raise disability issues beyond narrow frames of reservation and welfare, they create space for evidence-based policymaking that reaches the last mile. This map makes visible who is speaking, who is silent, and which issues are ignored.
-    
-    <br><br><strong>How to Use:</strong> Toggle between Lok Sabha (543 constituencies) and Rajya Sabha (36 states) views. Search for specific MPs or regions. Hover over any area to see MP details, party affiliation, question themes, and access full parliamentary documents.
-</p>
-
-<!-- Key Findings Cards -->
-<div style="margin-top: 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 8px;">
-    <h4 style="color: #7c3aed; font-size: 1.2rem; margin-bottom: 1.5rem;">Key Findings</h4>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
-        <div style="background: white; padding: 1rem; border-radius: 6px; border-left: 4px solid #7c3aed;">
-            <div style="color: #64748b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Most Vocal Party</div>
-            <div style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin: 0.5rem 0;">BJP</div>
-            <div style="color: #64748b; font-size: 0.9rem;">180 questions (75%)</div>
-        </div>
-        
-        <div style="background: white; padding: 1rem; border-radius: 6px; border-left: 4px solid #a855f7;">
-            <div style="color: #64748b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Most Vocal Region</div>
-            <div style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin: 0.5rem 0;">North</div>
-            <div style="color: #64748b; font-size: 0.9rem;">95 questions (39%)</div>
-        </div>
-        
-        <div style="background: white; padding: 1rem; border-radius: 6px; border-left: 4px solid #ec4899;">
-            <div style="color: #64748b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Parliamentary Silence</div>
-            <div style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin: 0.5rem 0;">75%</div>
-            <div style="color: #64748b; font-size: 0.9rem;">405 constituencies silent</div>
-        </div>
-    </div>
-    
-    <div style="background: white; padding: 1.5rem; border-radius: 6px;">
-        <h5 style="color: #7c3aed; margin-bottom: 1rem; font-size: 1.1rem;">Top 5 Disability Themes</h5>
-        <ol style="color: #1e293b; line-height: 2;">
-            <li><strong>Housing & Infrastructure</strong> — 78 questions (32%)</li>
-            <li><strong>Education & Employment</strong> — 52 questions (22%)</li>
-            <li><strong>Accessibility</strong> — 35 questions (15%)</li>
-            <li><strong>Certification (UDID)</strong> — 28 questions (12%)</li>
-            <li><strong>Rehabilitation</strong> — 25 questions (10%)</li>
-        </ol>
-    </div>
-</div>
+                    <strong>Primary Research Note:</strong> This visualisation is based on original data collection conducted by the <a href="https://linktr.ee/politicsanddisability" target="_blank" style="color: #7c3aed; text-decoration: underline;">Politics and Disability Forum</a>, systematically sourced from Lok Sabha and Rajya Sabha parliamentary records (2024-2025). This project establishes India's first parliamentary accountability mechanism on disability—tracking how elected representatives engage with disability rights beyond tokenistic welfare schemes.
+                    
+                    <br><br><strong>Why This Matters:</strong> India's 2.68 crore persons with disabilities remain largely invisible from decision-making corridors. When MPs consistently raise disability issues beyond narrow frames of reservation and welfare, they create space for evidence-based policymaking that reaches the last mile. This map makes visible who is speaking, who is silent, and which issues are ignored.
+                    
+                    <br><br><strong>How to Use:</strong> Toggle between Lok Sabha (543 constituencies) and Rajya Sabha (36 states) views. Search for specific MPs or regions. Hover over any area to see MP details, party affiliation, question themes, and access full parliamentary documents.
                 </p>
+
+                <!-- Key Findings Cards -->
+                <div style="margin-top: 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 8px;">
+                    <h4 style="color: #7c3aed; font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 600;">Key Findings</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: white; padding: 1rem; border-radius: 6px; border-left: 4px solid #7c3aed;">
+                            <div style="color: #64748b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Most Vocal Party</div>
+                            <div style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin: 0.5rem 0;">BJP</div>
+                            <div style="color: #64748b; font-size: 0.9rem;">180 questions (75%)</div>
+                        </div>
+                        
+                        <div style="background: white; padding: 1rem; border-radius: 6px; border-left: 4px solid #a855f7;">
+                            <div style="color: #64748b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Most Vocal Region</div>
+                            <div style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin: 0.5rem 0;">North</div>
+                            <div style="color: #64748b; font-size: 0.9rem;">95 questions (39%)</div>
+                        </div>
+                        
+                        <div style="background: white; padding: 1rem; border-radius: 6px; border-left: 4px solid #ec4899;">
+                            <div style="color: #64748b; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Parliamentary Silence</div>
+                            <div style="font-size: 1.8rem; font-weight: 700; color: #1e293b; margin: 0.5rem 0;">75%</div>
+                            <div style="color: #64748b; font-size: 0.9rem;">405 constituencies silent</div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 6px;">
+                        <h5 style="color: #7c3aed; margin-bottom: 1rem; font-size: 1rem; font-weight: 600;">Top 5 Disability Themes</h5>
+                        <ol style="color: #1e293b; line-height: 2; margin-left: 1.5rem;">
+                            <li><strong>Housing &amp; Infrastructure</strong> — 78 questions (32%)</li>
+                            <li><strong>Education &amp; Employment</strong> — 52 questions (22%)</li>
+                            <li><strong>Accessibility</strong> — 35 questions (15%)</li>
+                            <li><strong>Certification (UDID)</strong> — 28 questions (12%)</li>
+                            <li><strong>Rehabilitation</strong> — 25 questions (10%)</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
 
-            <!-- Placeholder for Chart 5 -->
-            <div class="section-header" style="margin-top: 4rem;">
+            <!-- CHART 5: Corporate Accountability -->
+            <div class="section-header" style="margin-top: 3rem;">
                 <h2><span class="section-number">5</span> Corporate Accountability</h2>
             </div>
             
             <div class="chart-wrapper">
-                <h3 class="chart-title">The BRSR Disclosure Gap: Corporate Claims vs Reality</h3>
-                <figure id="chart5" aria-label="Scatter plot showing corporate disability disclosure gaps"></figure>
+                <h3 class="chart-title">The Corporate Disability Employment Crisis</h3>
+                <figure id="chart5" aria-label="Stacked bar chart showing corporate disability employment by size"></figure>
                 <p class="chart-description">
-                    [Chart description will go here]
+                    <strong>Primary Research:</strong> Analysis of 1,227 NSE-listed companies' BRSR (Business Responsibility and Sustainability Reporting) disclosures for FY 2024-25. Data was systematically extracted by looping through XML files from NSE's corporate archive using Python. The complete extraction code can be found in <a href="https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC5/BRSR_Complete_Extraction%20(1).ipynb" target="_blank" style="color: #7c3aed; text-decoration: underline;">this Colab notebook</a>, and the final processed dataset is available <a href="https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC5/all_companies_disability_data.csv" target="_blank" style="color: #7c3aed; text-decoration: underline;">here</a>. Across 8.3 million employees in India's largest corporations, only 43,135 (0.52%) are persons with disabilities—ten times below the 2.2% population prevalence.
+                    
+                    <br><br><strong>Why This Matters:</strong> 547 companies (44.7%) report ZERO disabled employees despite collective workforces exceeding 2 million people. This zero-employment scandal persists across all company sizes—small firms (&lt;100 employees), medium companies (100-1,000), large corporations (1,000-10,000), and very large enterprises (&gt;10,000) all show identical exclusion patterns. The stacked bars reveal that company size provides no advantage: 92.3% of companies (1,133 firms) remain below 1% disabled employment regardless of organisational capacity. This exposes corporate India's systemic exclusion of persons with disabilities from formal employment, with self-reported BRSR disclosures revealing—not concealing—the accountability crisis.
+                    
+                    <br><br><strong>How to Use:</strong> Click any category in the legend (Zero Disabled, Below 1%, 1-2%, Above 2%) to filter and highlight that employment band across all company sizes. This interactive filtering reveals patterns—clicking "Zero Disabled" shows which size categories face most severe exclusion, whilst "Above 2%" highlights the rare exceptions. The colour gradient from dark purple (zero) to bright purple (above 2%) makes performance gaps immediately visible across the four size categories.
                 </p>
+            </div>
+
+            <script>
+                const chart5Spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC5/PC5.json";
+
+                vegaEmbed('#chart5', chart5Spec, {
+                    actions: {
+                        export: true,
+                        source: false,
+                        compiled: false,
+                        editor: false
+                    }
+                }).then(result => {
+                    console.log('Chart 5 loaded successfully');
+                }).catch(error => {
+                    console.error('Chart 5 error:', error);
+                });
+            </script>
+        </section>
+
+        <!-- Key Findings & Policy Implications -->
+        <section id="policy-implications">
+            <div class="policy-box">
+                <h3>Key Findings & Policy Implications</h3>
+                
+                <h4>Evidence-Based Findings</h4>
+                <ol>
+                    <li><strong>Enumeration-Implementation Gap:</strong> Census 2011 identified 26.8 million PWDs, yet only 3.6 million hold UDID cards (13.5% coverage nationally). This represents systematic exclusion from formal policy frameworks despite legal recognition under the Rights of Persons with Disabilities Act 2016.</li>
+                    <li><strong>Electoral Accessibility Crisis:</strong> States with largest PWD populations provide minimal home voting access. Uttar Pradesh (12.6 lakh PWD voters) enables only 0.96% home voting, whilst Kerala's 17.07% demonstrates this is political choice, not technical impossibility. This affects democratic participation of 28+ million eligible voters.</li>
+                    <li><strong>Parliamentary Accountability Deficit:</strong> 75% of constituencies (405/540) recorded zero disability-related parliamentary questions (July 2024–January 2025). This legislative silence directly correlates with stagnation on employment mandate enforcement (RPwD Act 4% requirement) and accessibility standards implementation.</li>
+                    <li><strong>Corporate Exclusion at Scale:</strong> 44.7% of NSE-listed companies report zero disabled employees. Across 8.3 million workers in India's largest corporations, only 43,135 (0.52%) are PWDs—ten times below the 2.2% national prevalence and far below the RPwD Act 2016's 4% employment mandate. All company sizes show identical exclusion patterns regardless of capacity.</li>
+                </ol>
+
+                <h4>Strategic Policy Interventions</h4>
+                <ol>
+                    <li><strong>Mandatory UDID Verification &amp; Audits:</strong> Legislate mandatory audit mechanisms to link Census enumeration with UDID registration. States below 50% coverage should face compliance deadlines with capacity-building support. Link state health/social welfare ministry funding to UDID coverage targets.</li>
+                    <li><strong>Electoral Accessibility Standards:</strong> Enforce minimum 15% home voting facility across all states by 2027. Make accessibility infrastructure a prerequisite for Election Commission funding. Publish quarterly state-level accessibility scorecards for public accountability.</li>
+                    <li><strong>Parliamentary Disability Accountability:</strong> Establish standing parliamentary committee with quarterly public reporting on question volumes and policy outcomes. Track disability advocacy as performance metric linked to committee representation. Incentivise constituency-level disability needs assessments.</li>
+                    <li><strong>Corporate Employment Enforcement:</strong> Mandate BRSR+ independent third-party audits for disability employment disclosures. Companies below 1% disabled employment face ESG downgrade and exclusion from government procurement (Section 29 of RPwD Act). Link corporate board diversity quotas to disability representation.</li>
+                    <li><strong>Targeted Resource Reallocation:</strong> Redirect CSR spending toward employment-linked skill development in low-UDID states (West Bengal 10.3%, Jharkhand 17.2%, Bihar 19.8%) rather than dispersed welfare initiatives. Create dedicated disability employment missions with measurable hiring targets.</li>
+                </ol>
             </div>
         </section>
 
         <!-- Data Sources -->
         <section id="data-sources">
             <div class="writeup-box">
-                <h3>2. Data Sources & Access</h3>
+                <h3>Data Sources &amp; Access</h3>
                 <p>
-                    Data drawn from multiple authoritative sources: Census of India 2011 (C-20 disability tables for prevalence data, A-01 population tables for demographic context), Electoral Commission of India PWD voter database (2024) for electoral participation metrics, UDID (Unique Disability ID) registration data from the Department of Empowerment of Persons with Disabilities for policy implementation tracking, Parliamentary questions database from Lok Sabha records for legislative voice analysis, and BRSR (Business Responsibility and Sustainability Reporting) corporate disclosures from BSE/NSE for private sector accountability. All datasets are publicly accessible through government portals and official repositories. Data processing automation implemented using Python (Pandas for cleaning, NumPy for calculations) and visualization through Vega-Lite and React frameworks. Complete code, cleaning scripts, and methodology documentation available on GitHub repository for full replication. State boundary adjustments documented for Telangana separation (2014) and Jammu & Kashmir reorganization (2019).
+                    <strong>Chart 1 (Census 2011 Dashboard):</strong> Disability prevalence and demographic characteristics sourced from the <a href="https://censusindia.gov.in/census.website/" target="_blank" rel="noopener" style="color: #7c3aed; text-decoration: underline;">Census of India 2011</a> (C-20 disability tables; A-01 population tables).
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Chart 2 (Electoral Accessibility):</strong> PWD voter statistics and home voting data sourced from the <a href="https://voters.eci.gov.in/" target="_blank" rel="noopener" style="color: #7c3aed; text-decoration: underline;">Election Commission of India</a> PWD voter database (2024). State boundary data obtained from the udit-001 india-maps-data repository.
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Chart 3 (UDID Coverage Gap):</strong> UDID registration data sourced from the <a href="https://swavlambancard.gov.in/" target="_blank" rel="noopener" style="color: #7c3aed; text-decoration: underline;">Swavlamban Portal</a>. District- and state-level population figures sourced from Census of India 2011. State boundary data obtained from the udit-001 india-maps-data repository.
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Chart 4 (Parliamentary Voice):</strong> Parliamentary questions (2024–25) systematically compiled by the <a href="https://linktr.ee/politicsanddisability" target="_blank" rel="noopener" style="color: #7c3aed; text-decoration: underline;">Politics and Disability Forum</a> from Lok Sabha and Rajya Sabha records. Parliamentary constituency boundaries (543 seats) sourced from the 2024 maps supplement repository. State boundary data obtained from the udit-001 india-maps-data repository.
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Chart 5 (Corporate BRSR Analysis):</strong> Company-level BRSR filings sourced from the <a href="https://www.nseindia.com/companies-listing/corporate-filings-bussiness-sustainabilitiy-reports" target="_blank" rel="noopener" style="color: #7c3aed; text-decoration: underline;">NSE Corporate Archive (BRSR Filings)</a>. Disability employment data extracted using an automated XML parsing pipeline; the extraction code and consolidated dataset are available via GitHub.
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong>Data Processing:</strong> Data cleaning and extraction conducted in Python using Pandas, Requests, and XML parsing libraries. Visualisations built using Vega-Lite, React, and D3.js. All code and raw datasets are available on GitHub.
                 </p>
             </div>
         </section>
@@ -477,19 +605,34 @@
         <!-- Methodology -->
         <section id="methodology">
             <div class="writeup-box">
-                <h3>3. Data Challenges & Solutions</h3>
+                <h3>Data Challenges &amp; Solutions</h3>
                 <p>
-                    <strong>Challenge 1:</strong> Incompatibility between Census 2011 (7 disability categories) and UDID 2024 (21 categories per RPwD Act 2016). <strong>Solution:</strong> Developed dual metric approach—minimum recognition gap (Census-based floor estimate) and current need gap (RPwD Act 5% prevalence estimate)—to bracket the exclusion problem from conservative and realistic angles. <strong>Challenge 2:</strong> State boundary reorganizations (Telangana 2014, J&K 2019) created temporal data incompatibility. <strong>Solution:</strong> District-level mapping with transparent documentation of boundary changes and allocation methodology. <strong>Challenge 3:</strong> Absence of publicly available district-level disability data necessitated using state-level prevalence rates. <strong>Solution:</strong> Applied state rates to district populations with clear documentation of this methodological limitation. <strong>Challenge 4:</strong> Corporate BRSR disability disclosures lack independent verification mechanisms. <strong>Solution:</strong> Cross-referencing with RTI-obtained employment data and published government reports. Tools: Python/Pandas (data cleaning), Vega-Lite (declarative visualizations), React (interactive components), GitHub Pages (hosting).
-                </p>
-            </div>
-        </section>
-
-        <!-- Conclusions -->
-        <section id="conclusions">
-            <div class="writeup-box">
-                <h3>4. Key Findings & Policy Implications</h3>
-                <p>
-                    Analysis reveals systematic exclusion across multiple dimensions. <strong>Finding 1 (Recognition Gap):</strong> Significant proportion of Census-identified PWDs absent from UDID system, indicating fundamental failure in transitioning populations between disability frameworks. <strong>Finding 2 (Electoral Accessibility Crisis):</strong> States with largest PWD voter populations (Uttar Pradesh: 12.6 lakh, Bihar: 7.5 lakh, Maharashtra: 6.1 lakh) provide minimal home voting access (<1-2%), while smaller states demonstrate feasibility (Kerala: 17.07%, Himachal Pradesh: 18.41%), revealing barriers are policy failures not technical impossibilities. <strong>Finding 3 (Legislative Voice):</strong> Parliamentary attention highly concentrated with majority of MPs showing limited engagement. <strong>Finding 4 (Development-Inclusion Disconnect):</strong> High economic development does not correlate with disability inclusion. <strong>Policy Implications:</strong> Mandatory UDID verification mechanisms, enforcement of RPwD Act 4% employment mandate, BRSR+ independent audit requirements, expansion of home voting infrastructure. <strong>Future Research:</strong> Track temporal changes, expand to skill development programs, corporate hiring practices.
+                    <strong>Challenge 1: Census-UDID Temporal &amp; Categorical Mismatch</strong><br>
+                    Census 2011 uses 7 disability categories whilst RPwD Act 2016 recognises 21 conditions. Census data is 14 years old; UDID registrations reflect 2024.<br>
+                    <strong>Solution:</strong> Used Census 2011 counts as baseline denominator for UDID coverage rates. This conservative approach likely underestimates true gaps since Census 2011 undercounts conditions now recognised under RPwD Act 2016. Chart 3a shows percentage coverage; Chart 3b displays absolute numbers to reveal scale disparities.
+                    
+                    <br><br><strong>Challenge 2: Broken Boundary Files &amp; GeoJSON Availability</strong><br>
+                    Most publicly available GeoJSON files for parliamentary constituencies (543 seats) and updated state boundaries had broken geometries, invalid coordinates, or outdated delimitations.<br>
+                    <strong>Solution:</strong> After testing 15+ sources, identified working files from udit-001/india-maps-data (state boundaries) and 2024-maps-supplement (parliamentary constituencies). Validated by rendering test maps against Election Commission's official list.
+                    
+                    <br><br><strong>Challenge 3: State Name Matching Between Census &amp; UDID Systems</strong><br>
+                    Inconsistent naming conventions across datasets (e.g., "Orissa" vs "Odisha," "Pondicherry" vs "Puducherry"). Telangana didn't exist in Census 2011 but appears separately in UDID.<br>
+                    <strong>Solution:</strong> Manually standardised all state names through iterative matching. For Telangana, applied Andhra Pradesh's 2011 prevalence rate (2.87%) to separated population. Manually verified all 28 states + 8 UTs matched correctly.
+                    
+                    <br><br><strong>Challenge 4: Corporate BRSR Data Extraction</strong><br>
+                    1,227 NSE-listed companies file BRSR reports as unstructured XML with inconsistent disability field naming (e.g., "Differently Abled," "Persons with Disabilities," "Disabled Employees").<br>
+                    <strong>Solution:</strong> Built automated XML parsing pipeline (<a href="https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC5/BRSR_Complete_Extraction%20(1).ipynb" target="_blank" style="color: #7c3aed; text-decoration: underline;">code here</a>) using Python to extract disability employment fields via keyword matching. Disambiguated true zeros from missing data.
+                    
+                    <br><br><strong>Challenge 5: Parliamentary Data Primary Collection &amp; Name Matching</strong><br>
+                    Parliamentary questions lack centralised APIs. MP names inconsistent between Politics and Disability Forum's question database and PRS Legislative Research's constituency database.<br>
+                    <strong>Solution:</strong> Systematic review of all parliamentary questions (July 2024–January 2025) with manual theme coding. Manual name matching in Python. ~10-12 MPs (~2%) excluded due to unresolvable name variations; 98% match rate documented.
+                    
+                    <br><br><strong>Challenge 6: Electoral Accessibility Data Opacity</strong><br>
+                    Election Commission's PWD voter database provides state totals but home voting facility usage unpublished. RTI data showed gaps for 12 states in 2024 elections.<br>
+                    <strong>Solution:</strong> Merged ECI's PWD voter counts with RTI-obtained home voting data. Missing states marked "Data Unavailable" in Chart 2 tooltips. Calculated accessibility only for states with complete data (23/28 states + 8 UTs).
+                    
+                    <br><br><strong>Tools &amp; Reproducibility:</strong><br>
+                    Python (Pandas, Requests, lxml) for data processing. Vega-Lite 5.x for visualisations. Complete code, datasets, and scripts at <a href="https://github.com/c-malhotra/c-malhotra.github.io" target="_blank" style="color: #7c3aed; text-decoration: underline;">GitHub repository</a>.
                 </p>
             </div>
         </section>
@@ -498,81 +641,84 @@
     <!-- Footer -->
     <footer role="contentinfo">
         <div class="container">
-            <p>Data Visualization Project | PP434: Automated Data Visualisation for Policymaking</p>
+            <p>Data Visualisation Project | PP434: Automated Data Visualisation for Policymaking</p>
             <p style="margin-top: 0.5rem;">London School of Economics | 2025–2026</p>
-            <p style="margin-top: 1rem;">
+            
+            <div class="ai-disclaimer">
+                <strong>Transparency Note:</strong> AI tools (Claude) were used in this project to assist with data cleaning, debugging code, identifying data sources, and resolving technical errors. All data analysis, research findings, policy implications, and visualisations were conducted independently and reviewed for accuracy. The project's integrity and conclusions remain solely the responsibility of the author.
+            </div>
+
+            <p style="margin-top: 1.5rem;">
                 <a href="https://github.com/c-malhotra/c-malhotra.github.io">View on GitHub</a> | 
                 <a href="https://www.linkedin.com/in/chahat-malhotra/">LinkedIn</a>
             </p>
         </div>
     </footer>
-<script>
-    // Progress bar
-    window.addEventListener('scroll', () => {
-        const winScroll = document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById('progressBar').style.width = scrolled + '%';
-    });
 
-    // Chart 2: Electoral Accessibility
-    const chart2Spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC2/PC2_electoral_accessibility_VEGA_SPEC.json";
-    
-    vegaEmbed('#chart2', chart2Spec, {
-        actions: {
-            export: true,
-            source: false,
-            compiled: false,
-            editor: false
-        }
-    }).then(result => {
-        console.log('Chart 2 loaded successfully');
-    }).catch(error => {
-        console.error('Chart 2 error:', error);
-    });
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
 
-        // Add more charts as you create them:
-        // vegaEmbed('#chart2', "prevalence_map.json").then(console.log).catch(console.warn);
-        // vegaEmbed('#chart3', "udid_gap.json").then(console.log).catch(console.warn);
-        // etc.
+        // Chart 2: Electoral Accessibility
+        const chart2Spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC2/PC2_electoral_accessibility_VEGA_SPEC.json";
+        
+        vegaEmbed('#chart2', chart2Spec, {
+            actions: {
+                export: true,
+                source: false,
+                compiled: false,
+                editor: false
+            }
+        }).then(result => {
+            console.log('Chart 2 loaded successfully');
+        }).catch(error => {
+            console.error('Chart 2 error:', error);
+        });
+
         // Chart 3a: Coverage Gap Analysis
-const chart3aSpec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/newPC3/PC3.1.json";
+        const chart3aSpec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/newPC3/PC3.1.json";
 
-vegaEmbed('#chart3a', chart3aSpec, {
-    actions: {
-        export: true,
-        source: false,
-        compiled: false,
-        editor: false
-    }
-}).then(result => {
-    console.log('Chart 3a (Coverage Gap) loaded successfully');
-}).catch(error => {
-    console.error('Chart 3a error:', error);
-});
+        vegaEmbed('#chart3a', chart3aSpec, {
+            actions: {
+                export: true,
+                source: false,
+                compiled: false,
+                editor: false
+            }
+        }).then(result => {
+            console.log('Chart 3a (Coverage Gap) loaded successfully');
+        }).catch(error => {
+            console.error('Chart 3a error:', error);
+        });
 
-// Chart 3b: Absolute Impact
-const chart3bSpec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/newPC3/PC3.2.json";
+        // Chart 3b: Absolute Impact
+        const chart3bSpec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/newPC3/PC3.2.json";
 
-vegaEmbed('#chart3b', chart3bSpec, {
-    actions: {
-        export: true,
-        source: false,
-        compiled: false,
-        editor: false
-    }
-}).then(result => {
-    console.log('Chart 3b (Absolute Impact) loaded successfully');
-}).catch(error => {
-    console.error('Chart 3b error:', error);
-});
+        vegaEmbed('#chart3b', chart3bSpec, {
+            actions: {
+                export: true,
+                source: false,
+                compiled: false,
+                editor: false
+            }
+        }).then(result => {
+            console.log('Chart 3b (Absolute Impact) loaded successfully');
+        }).catch(error => {
+            console.error('Chart 3b error:', error);
+        });
     </script>
+
     <!-- React Scripts for Census Dashboard -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<script type="text/babel" src="census-dashboard.js"></script>
+    <script type="text/babel" src="census-dashboard.js"></script>
 
 </body>
 </html>

@@ -4,18 +4,21 @@
     "text": "Disability Prevalence in Selected Developing Countries",
     "fontSize": 14,
     "fontWeight": "bold",
-    "anchor": "start",
-    "color": "#010911"
+    "anchor": "start"
   },
-  "width": "container",
-  "height": 400,
-  "padding": {"top": 30, "bottom": 50, "left": 60, "right": 20},
+  "width": 500,
+  "height": 350,
   "data": {
-    "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC1_globaldisability.csv"
+    "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC1_globaldisability.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "value": "number"
+      }
+    }
   },
   "mark": {
     "type": "bar",
-    "tooltip": true,
     "color": "#ded0f2",
     "cornerRadiusTopLeft": 4,
     "cornerRadiusTopRight": 4
@@ -27,30 +30,27 @@
       "sort": "-y",
       "axis": {
         "labelAngle": -45,
-        "labelFontSize": 12,
-        "titleFontSize": 14
+        "labelFontSize": 11,
+        "title": "Country"
       },
-      "title": "Country"
+      "scale": {
+        "paddingInner": 0.4,
+        "paddingOuter": 0.2
+      }
     },
     "y": {
       "field": "value",
       "type": "quantitative",
       "axis": {
-        "labelFontSize": 12,
-        "titleFontSize": 14,
+        "title": "Disability Prevalence (%)",
         "grid": true,
-        "gridColor": "#e0e0e0",
-        "gridWidth": 1
-      },
-      "title": "Disability prevalence (%)"
+        "labelFontSize": 11
+      }
     },
     "tooltip": [
-      {"field": "country", "type": "nominal"},
-      {"field": "value", "type": "quantitative", "format": ".2f"},
-      {"field": "year", "type": "nominal", "title": "Latest year"}
+      { "field": "country", "type": "nominal", "title": "Country" },
+      { "field": "value", "type": "quantitative", "format": ".2f", "title": "Prevalence (%)" },
+      { "field": "year", "type": "nominal", "title": "Latest year" }
     ]
-  },
-  "config": {
-    "background": "#f9f9f9"
   }
 }
