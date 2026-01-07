@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Parliamentary Representation by Party (PRS MP Track Data)",
+  "description": "Top 15 parties in the 17th Lok Sabha, 2024",
+  "width": 850,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC5/prs_mp_data_tidy.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"aggregate": [{"op": "count", "as": "count"}], "groupby": ["party"]},
+    {
+      "sort": [{"field": "count", "order": "descending"}],
+      "window": [{"op": "rank", "as": "rank"}],
+      "ignorePeers": false
+    },
+    {"filter": "datum.rank <= 15"}
+  ],
+  "mark": {"type": "bar", "color": "#7c3aed"},
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of MPs",
+      "axis": {"labelAngle": 0, "titleFontSize": 13}
+    },
+    "y": {
+      "field": "party",
+      "type": "nominal",
+      "sort": "-x",
+      "title": "Political Party",
+      "axis": {"labelLimit": 300, "titleFontSize": 13}
+    },
+    "color": {
+      "field": "count",
+      "type": "quantitative",
+      "scale": {"scheme": "purples"},
+      "title": "Number of MPs"
+    },
+    "tooltip": [
+      {"field": "party", "type": "nominal", "title": "Party"},
+      {"field": "count", "type": "quantitative", "title": "Number of MPs"}
+    ]
+  },
+  "config": {}
+}
