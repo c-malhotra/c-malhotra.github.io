@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Literacy Rate by Type of Disability — India, 2018",
+    "fontSize": 14,
+    "fontWeight": "bold",
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      {
+        "Disability Type": "Locomotor",
+        "Persons": 56.7,
+        "Male": 66.7,
+        "Female": 42.5
+      },
+      {
+        "Disability Type": "Mental Illness",
+        "Persons": 50.9,
+        "Male": 59.6,
+        "Female": 39.5
+      },
+      {
+        "Disability Type": "Speech",
+        "Persons": 46.4,
+        "Male": 50,
+        "Female": 40.9
+      },
+      {
+        "Disability Type": "Hearing",
+        "Persons": 43.5,
+        "Male": 53.5,
+        "Female": 32.6
+      },
+      {
+        "Disability Type": "Visual",
+        "Persons": 37.8,
+        "Male": 49.2,
+        "Female": 26.3
+      },
+      {
+        "Disability Type": "Intellectual",
+        "Persons": 32.4,
+        "Male": 34.5,
+        "Female": 29
+      }
+    ]
+  },
+  "transform": [{"fold": ["Male", "Female"], "as": ["Gender", "Rate"]}],
+  "mark": {"type": "bar", "cornerRadiusTopLeft": 4, "cornerRadiusTopRight": 4},
+  "encoding": {
+    "y": {
+      "field": "Disability Type",
+      "type": "nominal",
+      "axis": {"labelFontSize": 11, "title": null},
+      "sort": [
+        "Locomotor",
+        "Mental Illness",
+        "Speech",
+        "Hearing",
+        "Visual",
+        "Intellectual"
+      ]
+    },
+    "x": {
+      "field": "Rate",
+      "type": "quantitative",
+      "axis": {"title": "Literacy Rate (%)", "grid": true},
+      "scale": {"domain": [0, 75]}
+    },
+    "yOffset": {"field": "Gender"},
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female"], "range": ["#9b7bb5", "#ded0f2"]},
+      "legend": {"title": null, "orient": "top", "direction": "horizontal"}
+    },
+    "tooltip": [
+      {
+        "field": "Disability Type",
+        "type": "nominal",
+        "title": "Disability Type"
+      },
+      {"field": "Gender", "type": "nominal", "title": "Gender"},
+      {
+        "field": "Rate",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Literacy Rate (%)"
+      }
+    ]
+  },
+  "config": {}
+}

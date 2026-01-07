@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Literacy Rate: General Population vs. Persons with Disabilities (India, 2018)",
+    "fontSize": 14,
+    "fontWeight": "bold",
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      {"Category": "All Persons", "Group": "General Population", "Rate": 74},
+      {"Category": "Male", "Group": "General Population", "Rate": 82.1},
+      {"Category": "Female", "Group": "General Population", "Rate": 65.5},
+      {
+        "Category": "All Persons",
+        "Group": "Persons with Disabilities",
+        "Rate": 52.2
+      },
+      {"Category": "Male", "Group": "Persons with Disabilities", "Rate": 61.6},
+      {"Category": "Female", "Group": "Persons with Disabilities", "Rate": 39.6}
+    ]
+  },
+  "mark": {"type": "bar", "cornerRadiusTopLeft": 4, "cornerRadiusTopRight": 4},
+  "encoding": {
+    "x": {
+      "field": "Category",
+      "type": "nominal",
+      "axis": {"labelAngle": 0, "labelFontSize": 11, "title": null}
+    },
+    "y": {
+      "field": "Rate",
+      "type": "quantitative",
+      "axis": {"title": "Literacy Rate (%)", "grid": true},
+      "scale": {"domain": [0, 90]}
+    },
+    "xOffset": {"field": "Group"},
+    "color": {
+      "field": "Group",
+      "type": "nominal",
+      "scale": {
+        "domain": ["General Population", "Persons with Disabilities"],
+        "range": ["#9b7bb5", "#ded0f2"]
+      },
+      "legend": {"title": null, "orient": "top", "direction": "horizontal"}
+    },
+    "tooltip": [
+      {"field": "Group", "type": "nominal", "title": "Population"},
+      {"field": "Category", "type": "nominal", "title": "Category"},
+      {
+        "field": "Rate",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Literacy Rate (%)"
+      }
+    ]
+  },
+  "config": {}
+}
