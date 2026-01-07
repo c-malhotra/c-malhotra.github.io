@@ -1,0 +1,73 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-a00c4ba85ef368c6d26272c95cee0e4d"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {"field": "price_type", "type": "nominal"},
+    "column": {"field": "store_id", "title": "", "type": "nominal"},
+    "x": {
+      "axis": {"labels": false},
+      "field": "price_type",
+      "title": "",
+      "type": "nominal"
+    },
+    "y": {
+      "axis": {"labelExpr": "'£' + datum.label", "labelOverlap": false},
+      "field": "price",
+      "title": "",
+      "type": "quantitative"
+    }
+  },
+  "title": {
+    "text": "Prices by store",
+    "subtitle": ["Mean and median prices", ""]
+  },
+  "width": 100,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-a00c4ba85ef368c6d26272c95cee0e4d": [
+      {"store_id": "Store 1", "price_type": "median_price", "price": 2.5},
+      {"store_id": "Store 2", "price_type": "median_price", "price": 2.55},
+      {"store_id": "Store 3", "price_type": "median_price", "price": 2.25},
+      {"store_id": "Store 4", "price_type": "median_price", "price": 2.25},
+      {"store_id": "Store 5", "price_type": "median_price", "price": 1.79},
+      {"store_id": "Store 8", "price_type": "median_price", "price": 2.5},
+      {"store_id": "Store 9", "price_type": "median_price", "price": 2.5},
+      {
+        "store_id": "Store 1",
+        "price_type": "mean_price",
+        "price": 4.169827447054234
+      },
+      {
+        "store_id": "Store 2",
+        "price_type": "mean_price",
+        "price": 4.205874464358969
+      },
+      {
+        "store_id": "Store 3",
+        "price_type": "mean_price",
+        "price": 3.713804874069067
+      },
+      {
+        "store_id": "Store 4",
+        "price_type": "mean_price",
+        "price": 3.5594852125247263
+      },
+      {
+        "store_id": "Store 5",
+        "price_type": "mean_price",
+        "price": 2.598144933221356
+      },
+      {
+        "store_id": "Store 8",
+        "price_type": "mean_price",
+        "price": 3.919917445423574
+      },
+      {
+        "store_id": "Store 9",
+        "price_type": "mean_price",
+        "price": 3.282282073752734
+      }
+    ]
+  }
+}
