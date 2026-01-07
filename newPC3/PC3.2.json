@@ -1,15 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
-  "height": 400,
+  "height": 380,
   "title": {
     "text": "Beyond Percentages: The Human Scale of Exclusion",
-    "subtitle": "Bubble size represents people excluded from UDID registration.",
+    "subtitle": "Bubble size shows people excluded from UDID. UP: 2.5M unregistered—more than 25 states' entire disabled populations combined.",
     "fontSize": 16,
     "anchor": "start",
-    "subtitleFontSize": 12,
+    "subtitleFontSize": 11,
     "subtitleColor": "#7f8c8d",
-    "subtitlePadding": 10
+    "subtitlePadding": 8
   },
   "data": {
     "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC1_state_pwd_udid_census2011.csv"
@@ -19,9 +19,15 @@
       "calculate": "datum.pwd_population - datum.udid_beneficiaries",
       "as": "coverage_gap"
     },
-    {"calculate": "100 - datum.udid_coverage_percent", "as": "gap_percent"}
+    {
+      "calculate": "100 - datum.udid_coverage_percent",
+      "as": "gap_percent"
+    }
   ],
-  "mark": {"type": "circle", "opacity": 0.7},
+  "mark": {
+    "type": "circle",
+    "opacity": 0.7
+  },
   "encoding": {
     "x": {
       "field": "pwd_percent",
@@ -42,36 +48,19 @@
       "scale": {"range": [100, 3000], "type": "sqrt"}
     },
     "color": {
-      "condition": {"test": "datum.gap_percent > 70", "value": "#c2185b"},
+      "condition": {
+        "test": "datum.gap_percent > 70",
+        "value": "#c2185b"
+      },
       "value": "#ba68c8",
       "legend": null
     },
     "tooltip": [
       {"field": "state", "type": "nominal", "title": "State/UT"},
-      {
-        "field": "pwd_population",
-        "type": "quantitative",
-        "title": "Total Persons with Disabilities",
-        "format": ","
-      },
-      {
-        "field": "udid_beneficiaries",
-        "type": "quantitative",
-        "title": "UDID Registered",
-        "format": ","
-      },
-      {
-        "field": "coverage_gap",
-        "type": "quantitative",
-        "title": "Not Registered (Persons)",
-        "format": ","
-      },
-      {
-        "field": "gap_percent",
-        "type": "quantitative",
-        "title": "Registration Shortfall (%)",
-        "format": ".1f"
-      }
+      {"field": "pwd_population", "type": "quantitative", "title": "Total Persons with Disabilities", "format": ","},
+      {"field": "udid_beneficiaries", "type": "quantitative", "title": "UDID Registered", "format": ","},
+      {"field": "coverage_gap", "type": "quantitative", "title": "Not Registered (Persons)", "format": ","},
+      {"field": "gap_percent", "type": "quantitative", "title": "Registration Shortfall (%)", "format": ".1f"}
     ]
   },
   "config": {
