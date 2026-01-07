@@ -204,18 +204,72 @@
         </div>
     </section>
 
-    <!-- CC5 Section - Placeholder -->
-    <section id="API" class="section-light">
+<!-- CC5 Section -->
+    <section id="CC5" class="section-light">
         <div class="section-header">
-            <h2><span class="cc-pill">CC5</span> Accessing data: Scraper and API</h2>
+            <h2><span class="cc-pill">CC5</span> Accessing data: API & Scraper</h2>
         </div>
+
+        <!-- ============ SCRAPER TASK ============ -->
         <div class="policy-topic">
-            <p><strong>Coming Soon</strong></p>
+            <p><strong>Scraper Source:</strong> PRS Legislative Research MP Track - Live parliamentary data scraped from prsindia.org/mptrack</p>
         </div>
-        <div class="placeholder-box">
-            <p>This section will showcase data extraction techniques using APIs and web scraping.</p>
+
+        <div class="chart-container">
+            <div class="chart-item">
+                <h4>Parliamentary Disability Advocacy: Top MPs & States</h4>
+                <figure id="cc5_scraper_chart"></figure>
+                
+                <p><strong>What This Shows:</strong> Scraped 788 MPs from PRS MP Track across Lok Sabha and Rajya Sabha, analyzing parliamentary composition by party and state. The visualization reveals which parties and states hold greatest power to shape disability policy—larger party representation translates to greater legislative capacity to champion disability rights amendments and welfare schemes.</p>
+
+                <p style="margin-top: 1rem;"><strong>Data Cleaning:</strong> Standardized party names, removed duplicates, extracted constituency data, validated state assignments. Exported as tidy long-form CSV with columns: mp_name | state | party | constituency | chamber | year.</p>
+
+                <p style="margin-top: 1rem;"><strong>Public Colab Notebook:</strong> <a href="https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC5/CC5.ipynb" target="_blank" style="color: #7c3aed; font-weight: 600;">View Scraper Code →</a><br>
+                <span style="font-size: 0.85rem; color: #666;">Contains BeautifulSoup scraping, data cleaning, pandas transformations, and Vega-Lite visualization code.</span></p>
+
+                <p style="margin-top: 1.5rem; color: #7c3aed; font-weight: 600; background: #f5f0fa; padding: 1rem; border-radius: 4px; border-left: 4px solid #9b7bb5;">
+                    <strong>Comment:</strong> "Scraped PRS MP Track website by state filters. Cleaned party names, removed duplicates. Exported tidy CSV with 788 MPs across 28 states and 56 parties."
+                </p>
+            </div>
         </div>
+
+
+
     </section>
+
+    <!-- ============ VEGA-EMBED SCRIPT ============ -->
+    <script>
+        // CC5 Scraper Chart
+        let cc5_chart_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC5/CHART5.json";
+        vegaEmbed('#cc5_scraper_chart', cc5_chart_spec).then(console.log).catch(console.warn);
+    </script>
+
+
+
+    </section>
+
+    <!-- ============ VEGA-EMBED SCRIPT ============ -->
+    <script>
+        // CC5 Scraper Chart
+        let cc5_chart_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC5/CHART5.json";
+        vegaEmbed('#cc5_scraper_chart', cc5_chart_spec).then(console.log).catch(console.warn);
+    </script>
+
+    </section>
+
+    <!-- ============ VEGA-EMBED SCRIPT ============ -->
+    <script>
+        // CC5 Scraper Chart
+        let cc5_chart_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC5/CHART5.json";
+        vegaEmbed('#cc5_scraper_chart', cc5_chart_spec).then(console.log).catch(console.warn);
+    </script>
+
+    <!-- ============ VEGA-EMBED SCRIPT ============ -->
+    <script>
+        // CC5 Scraper Chart
+        let cc5_chart_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC5/CHART5.json";
+        vegaEmbed('#cc5_scraper_chart', cc5_chart_spec).then(console.log).catch(console.warn);
+    </script>
 
     <!-- CC6 Section - Placeholder -->
     <section id="CC6" class="section-grey">
@@ -230,16 +284,20 @@
         </div>
     </section>
 
-    <!-- CC7 Section - Placeholder -->
+    <!-- CC7 Section -->
     <section id="CC7" class="section-light">
         <div class="section-header">
             <h2><span class="cc-pill">CC7</span> Maps - Base maps and choropleths</h2>
         </div>
         <div class="policy-topic">
-            <p><strong>Coming Soon</strong></p>
+            <p><strong>Policy Context:</strong> Disability registration and identification systems reveal critical gaps in reaching census-identified populations, with major variations across states and districts.</p>
         </div>
-        <div class="placeholder-box">
-            <p>This section will feature spatial data visualisation with geographic mapping.</p>
+        <div class="chart-container">
+            <div class="chart-item">
+                <h4>UDID (Unique Disability ID) Coverage by District</h4>
+                <figure id="cc7_udid_map"></figure>
+                <p class="description-text"><strong>Analysis:</strong> The map reveals stark geographic disparities in UDID registration across India's districts. Despite Census 2011 identifying 26.8 million persons with disabilities, national UDID coverage remains below 15%, indicating massive implementation gaps. Southern states show higher registration rates (darker purple), while eastern states lag significantly. Most districts cannot reach disability populations outside state capitals—a structural barrier to formal policy inclusion. The mismatch between Census enumeration and UDID registration demonstrates that legal recognition has failed to translate into functional disability identification systems.</p>
+            </div>
         </div>
     </section>
 
@@ -287,6 +345,9 @@
     // CC4 - Replication
     let cc4_improved_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC4/CC4.2.json";
 
+    // CC7 - UDID Map
+    let cc7_udid_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC7/CC7.json";
+
     // Embed all charts (CC1-CC4 only)
     vegaEmbed('#Location1', figure_1_spec).then(console.log).catch(console.warn);
     vegaEmbed('#Location2', figure_2_spec).then(console.log).catch(console.warn);
@@ -295,6 +356,7 @@
     vegaEmbed('#Location5', figure_5_spec).then(console.log).catch(console.warn);
     vegaEmbed('#Location6', figure_6_spec).then(console.log).catch(console.warn);
     vegaEmbed('#Location8', cc4_improved_spec).then(console.log).catch(console.warn);
+    vegaEmbed('#cc7_udid_map', cc7_udid_spec).then(console.log).catch(console.warn);
 </script>
 
 </body>
