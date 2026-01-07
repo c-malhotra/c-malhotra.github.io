@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parliamentary Disability Advocacy | Dual House View</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { background: #000000; }
+        
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 2rem 2rem;
+            background: transparent;
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #b864d1 0%, #ff6b9d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #b8b8b8;
+            margin-bottom: 2rem;
+        }
+
+        /* Toggle Switch */
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 280px;
+            height: 50px;
+            background: rgba(123, 45, 148, 0.2);
+            border-radius: 25px;
+            border: 2px solid rgba(184, 100, 209, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, #b864d1 0%, #ff6b9d 100%);
+            border-radius: 23px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(184, 100, 209, 0.5);
+        }
+
+        .toggle-slider.rajya-sabha {
+            transform: translateX(100%);
+        }
+
+        .toggle-label {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            z-index: 1;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .toggle-label.lok-sabha {
+            left: 0;
+            color: #ffffff;
+        }
+
+        .toggle-label.rajya-sabha {
+            right: 0;
+            color: #b8b8b8;
+        }
+
+        .toggle-slider.rajya-sabha ~ .toggle-label.lok-sabha {
+            color: #b8b8b8;
+        }
+
+        .toggle-slider.rajya-sabha ~ .toggle-label.rajya-sabha {
+            color: #ffffff;
+        }
+
+        .view-info {
+            text-align: center;
+            color: #b8b8b8;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .instructions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+        }
+
+        .instruction-card {
+            background: rgba(123, 45, 148, 0.1);
+            border: 1px solid rgba(184, 100, 209, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .instruction-card:hover {
+            transform: translateY(-5px);
+            border-color: #b864d1;
+            box-shadow: 0 10px 30px rgba(184, 100, 209, 0.3);
+        }
+
+        .instruction-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #ff6b9d;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+            font-weight: 900;
+        }
+
+        .instruction-text {
+            color: #b8b8b8;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            padding: 0 2rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-size: 1.1rem;
+            background: rgba(123, 45, 148, 0.15);
+            border: 2px solid rgba(184, 100, 209, 0.4);
+            border-radius: 50px;
+            color: #ffffff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #b864d1;
+            box-shadow: 0 0 20px rgba(184, 100, 209, 0.4);
+        }
+
+        .search-box::placeholder { color: #b8b8b8; }
+
+        .map-container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 800px;
+        }
+
+        svg { display: block; }
+
+        .region {
+            stroke: #b864d1;
+            stroke-width: 0.5;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .region:hover {
+            stroke: #ff6b9d;
+            stroke-width: 2;
+            filter: brightness(1.3);
+        }
+
+        .region.vocal-high { fill: #d946b8; }
+        .region.vocal-medium { fill: #9747c7; }
+        .region.vocal-low { fill: #b864d1; }
+        .region.vocal-none { fill: #2a1f35; }
+
+        .region.highlighted {
+            stroke: #ffd700 !important;
+            stroke-width: 3 !important;
+        }
+
+        .tooltip {
+            position: fixed;
+            background: rgba(10, 10, 10, 0.98);
+            border: 2px solid #b864d1;
+            border-radius: 12px;
+            padding: 1.5rem;
+            z-index: 10000;
+            max-width: 450px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(184, 100, 209, 0.6);
+            backdrop-filter: blur(15px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            pointer-events: auto;
+        }
+
+        .tooltip.active { 
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .tooltip-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: #ff6b9d;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .tooltip-row { padding: 0.4rem 0; font-size: 0.85rem; }
+
+        .tooltip-label {
+            color: #b8b8b8;
+            display: block;
+            margin-bottom: 0.2rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tooltip-value {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .tooltip-divider {
+            height: 1px;
+            background: rgba(184, 100, 209, 0.3);
+            margin: 0.8rem 0;
+        }
+
+        .question-section {
+            background: rgba(184, 100, 209, 0.05);
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-bottom: 0.8rem;
+        }
+
+        .question-number {
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .tooltip-link {
+            display: block;
+            margin-top: 0.6rem;
+            padding: 0.6rem 1rem;
+            background: linear-gradient(135deg, #b864d1 0%, #ff6b9d 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .tooltip-link:hover {
+            transform: scale(1.03);
+            box-shadow: 0 3px 10px rgba(255, 107, 157, 0.5);
+        }
+
+        .legend {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: rgba(123, 45, 148, 0.1);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+        }
+
+        .legend-color {
+            width: 40px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(184, 100, 209, 0.4);
+        }
+
+        .legend-text {
+            color: #e8d5f0;
+            font-size: 0.9rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #b8b8b8;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 968px) {
+            .instructions { grid-template-columns: 1fr; }
+            .title { font-size: 2.5rem; }
+            #map { height: 600px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Disability Advocacy Map</h1>
+        <p class="subtitle">Tracking Parliamentary Voices for Inclusion Across India</p>
+
+        <!-- House Toggle -->
+        <div class="toggle-container">
+            <div class="toggle-switch" onclick="toggleHouse()">
+                <div class="toggle-slider" id="toggleSlider"></div>
+                <div class="toggle-label lok-sabha">LOK SABHA</div>
+                <div class="toggle-label rajya-sabha">RAJYA SABHA</div>
+            </div>
+        </div>
+        <div class="view-info" id="viewInfo">
+            Showing 543 Parliamentary Constituencies
+        </div>
+    </div>
+
+    <div class="instructions">
+        <div class="instruction-card">
+            <div class="instruction-title">FIND</div>
+            <div class="instruction-text">
+                Spot your MP on the map<br>
+                or use the search bar to<br>
+                find your region
+            </div>
+        </div>
+        <div class="instruction-card">
+            <div class="instruction-title">CLICK</div>
+            <div class="instruction-text">
+                Hover over regions<br>
+                Tooltip stays so you can<br>
+                click on document links
+            </div>
+        </div>
+        <div class="instruction-card">
+            <div class="instruction-title">ENGAGE</div>
+            <div class="instruction-text">
+                Click links in tooltip<br>
+                to view full parliamentary<br>
+                question documents
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <input 
+            type="text" 
+            class="search-box" 
+            id="searchBox"
+            placeholder="Type to search..."
+        >
+    </div>
+
+    <div class="map-container">
+        <div class="loading" id="loading">Loading parliamentary data...</div>
+        <div id="map"></div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: #d946b8;"></div>
+            <div class="legend-text">5+ Questions</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #9747c7;"></div>
+            <div class="legend-text">3-4 Questions</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #b864d1;"></div>
+            <div class="legend-text">1-2 Questions</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #2a1f35;"></div>
+            <div class="legend-text">No Questions</div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-title" id="tooltipTitle"></div>
+        <div id="tooltipContent"></div>
+    </div>
+
+    <script>
+        // Global state
+        let currentView = 'loksabha'; // 'loksabha' or 'rajyasabha'
+        let loksabhaData = null;
+        let rajyasabhaData = null;
+        let loksabhaMPLookup = {};
+        let rajyasabhaMPLookup = {};
+        let allQuestionsData = [];
+        let currentMapFeatures = [];
+        
+        const width = 1200;
+        const height = 800;
+
+        const svg = d3.select("#map")
+            .append("svg")
+            .attr("viewBox", `0 0 ${width} ${height}`)
+            .attr("preserveAspectRatio", "xMidYMid meet")
+            .style("width", "100%")
+            .style("height", "100%");
+
+        const g = svg.append("g");
+        const tooltip = d3.select("#tooltip");
+        let tooltipTimeout;
+
+        function normalizeConstituencyName(name) {
+            return name.toUpperCase().trim().replace(/\s+/g, ' ').replace(/[()]/g, '').replace(/-/g, ' ');
+        }
+
+        function normalizeStateName(name) {
+            return name.toUpperCase().trim().replace(/\s+/g, ' ');
+        }
+
+        function getVocalClass(questions) {
+            if (questions >= 5) return 'vocal-high';
+            if (questions >= 3) return 'vocal-medium';
+            if (questions >= 1) return 'vocal-low';
+            return 'vocal-none';
+        }
+
+        // Load all data
+        Promise.all([
+            d3.json('https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC3/india_ls_seats_543.geojson'),
+            fetch('https://cdn.jsdelivr.net/gh/udit-001/india-maps-data@8d907bc/topojson/india.json')
+                .then(r => r.json())
+                .then(topology => topojson.feature(topology, topology.objects.states)),
+            d3.json('https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC3/pc3_mp_complete.json'),
+            d3.csv('https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC3/pc3_parliamentary_cleaned.csv')
+        ]).then(([lsGeoData, statesGeoData, mpData, questionsData]) => {
+            
+            console.log(`✅ Loaded ${lsGeoData.features.length} LS constituencies`);
+            console.log(`✅ Loaded ${statesGeoData.features.length} states`);
+            console.log(`✅ Loaded ${mpData.length} MPs`);
+            console.log(`✅ Loaded ${questionsData.length} questions`);
+
+            loksabhaData = lsGeoData;
+            rajyasabhaData = statesGeoData;
+            allQuestionsData = questionsData;
+
+            // Build Lok Sabha lookup
+            const loksabhaQuestions = questionsData.filter(q => q.House === 'Lok Sabha');
+            mpData.forEach(mp => {
+                const constKey = normalizeConstituencyName(mp.constituency);
+                const mpQuestions = loksabhaQuestions
+                    .filter(q => q.mp_name === mp.mp_name && normalizeConstituencyName(q.constituency) === constKey)
+                    .map(q => ({
+                        theme: q.theme || 'General',
+                        title: q.question_text || 'Question',
+                        ministry: q.Ministry || 'N/A',
+                        link: q['Link.1'] || q.question_link || '#'
+                    }));
+
+                loksabhaMPLookup[constKey] = {
+                    mp: mp.mp_name,
+                    party: mp.party,
+                    state: mp.state,
+                    constituency: mp.constituency,
+                    questions: mp.questions_asked,
+                    all_questions: mpQuestions.length > 0 ? mpQuestions : null
+                };
+            });
+
+            // Build Rajya Sabha lookup (by state)
+            const rajyasabhaQuestions = questionsData.filter(q => q.House === 'Rajya Sabha');
+            const rajyasabhaByState = {};
+            
+            rajyasabhaQuestions.forEach(q => {
+                const stateName = q.state;
+                const stateKey = normalizeStateName(stateName);
+                
+                if (!rajyasabhaByState[stateKey]) {
+                    rajyasabhaByState[stateKey] = {
+                        state: stateName,
+                        mps: new Set(),
+                        questions: [],
+                        totalQuestions: 0
+                    };
+                }
+                
+                rajyasabhaByState[stateKey].mps.add(q.mp_name);
+                rajyasabhaByState[stateKey].questions.push({
+                    mp: q.mp_name,
+                    theme: q.theme || 'General',
+                    title: q.question_text || 'Question',
+                    ministry: q.Ministry || 'N/A',
+                    link: q['Link.1'] || q.question_link || '#',
+                    party: q.party
+                });
+                rajyasabhaByState[stateKey].totalQuestions++;
+            });
+
+            // Convert to lookup format
+            Object.keys(rajyasabhaByState).forEach(stateKey => {
+                const data = rajyasabhaByState[stateKey];
+                rajyasabhaMPLookup[stateKey] = {
+                    state: data.state,
+                    mps: Array.from(data.mps),
+                    questions: data.totalQuestions,
+                    all_questions: data.questions
+                };
+            });
+
+            console.log(`✅ Built lookups: ${Object.keys(loksabhaMPLookup).length} LS, ${Object.keys(rajyasabhaMPLookup).length} RS states`);
+
+            d3.select('#loading').style('display', 'none');
+            renderMap();
+
+        }).catch(error => {
+            console.error('Error loading data:', error);
+            d3.select('#loading').html('Error loading data. Please refresh the page.');
+        });
+
+        function toggleHouse() {
+            currentView = currentView === 'loksabha' ? 'rajyasabha' : 'loksabha';
+            
+            const slider = document.getElementById('toggleSlider');
+            const viewInfo = document.getElementById('viewInfo');
+            const searchBox = document.getElementById('searchBox');
+            
+            if (currentView === 'rajyasabha') {
+                slider.classList.add('rajya-sabha');
+                viewInfo.textContent = 'Showing 36 States & Union Territories';
+                searchBox.placeholder = 'Type state name or MP name...';
+            } else {
+                slider.classList.remove('rajya-sabha');
+                viewInfo.textContent = 'Showing 543 Parliamentary Constituencies';
+                searchBox.placeholder = 'Type constituency or MP name...';
+            }
+            
+            // Clear search
+            searchBox.value = '';
+            
+            // Hide tooltip
+            tooltip.classed('active', false);
+            
+            // Re-render map
+            renderMap();
+        }
+
+        function renderMap() {
+            // Clear existing paths
+            g.selectAll("path").remove();
+
+            const geoData = currentView === 'loksabha' ? loksabhaData : rajyasabhaData;
+            const dataLookup = currentView === 'loksabha' ? loksabhaMPLookup : rajyasabhaMPLookup;
+            
+            if (!geoData) return;
+
+            const projection = d3.geoMercator()
+                .center([78, 23])
+                .scale(1100)
+                .translate([width / 2, height / 2]);
+
+            const path = d3.geoPath().projection(projection);
+
+            currentMapFeatures = geoData.features;
+
+            g.selectAll("path")
+                .data(geoData.features)
+                .enter()
+                .append("path")
+                .attr("d", path)
+                .attr("class", function(d) {
+                    let regionKey;
+                    if (currentView === 'loksabha') {
+                        const constName = d.properties.ls_seat_name || '';
+                        regionKey = normalizeConstituencyName(constName);
+                    } else {
+                        const stateName = d.properties.st_nm || d.properties.state_name || '';
+                        regionKey = normalizeStateName(stateName);
+                    }
+                    
+                    const info = dataLookup[regionKey];
+                    const vocalClass = info ? getVocalClass(info.questions) : 'vocal-none';
+                    return `region ${vocalClass}`;
+                })
+                .attr("data-region", d => {
+                    return currentView === 'loksabha' ? d.properties.ls_seat_name : (d.properties.st_nm || d.properties.state_name);
+                })
+                .on("mouseenter", showTooltip)
+                .on("mouseleave", function() {
+                    tooltipTimeout = setTimeout(() => tooltip.classed('active', false), 300);
+                });
+
+            // Tooltip hover handlers
+            tooltip.on("mouseenter", function() {
+                clearTimeout(tooltipTimeout);
+                tooltip.classed('active', true);
+            });
+            
+            tooltip.on("mouseleave", function() {
+                tooltip.classed('active', false);
+            });
+
+            // Zoom
+            const zoom = d3.zoom()
+                .scaleExtent([1, 8])
+                .on("zoom", (event) => g.attr("transform", event.transform));
+            svg.call(zoom);
+
+            // Reset zoom on view change
+            svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+
+            // Search functionality
+            setupSearch(path, zoom);
+        }
+
+        function showTooltip(event, d) {
+            clearTimeout(tooltipTimeout);
+            
+            let regionName, regionKey, info;
+            
+            if (currentView === 'loksabha') {
+                regionName = d.properties.ls_seat_name || '';
+                const stateName = d.properties.state_ut_name || '';
+                regionKey = normalizeConstituencyName(regionName);
+                info = loksabhaMPLookup[regionKey];
+                
+                document.getElementById('tooltipTitle').textContent = regionName + ", " + stateName;
+                
+                if (!info) {
+                    document.getElementById('tooltipContent').innerHTML = `
+                        <div class="tooltip-row">
+                            <span class="tooltip-label">MP (LOK SABHA)</span>
+                            <div class="tooltip-value">No Questions Recorded</div>
+                        </div>
+                    `;
+                } else {
+                    let html = generateMPTooltip(info, 'LOK SABHA');
+                    document.getElementById('tooltipContent').innerHTML = html;
+                }
+                
+            } else {
+                // Rajya Sabha - state view
+                regionName = d.properties.st_nm || d.properties.state_name || '';
+                regionKey = normalizeStateName(regionName);
+                info = rajyasabhaMPLookup[regionKey];
+                
+                document.getElementById('tooltipTitle').textContent = regionName;
+                
+                if (!info) {
+                    document.getElementById('tooltipContent').innerHTML = `
+                        <div class="tooltip-row">
+                            <span class="tooltip-label">RAJYA SABHA</span>
+                            <div class="tooltip-value">No Questions Recorded</div>
+                        </div>
+                    `;
+                } else {
+                    let html = generateStateTooltip(info);
+                    document.getElementById('tooltipContent').innerHTML = html;
+                }
+            }
+            
+            // Position tooltip once and lock
+            const tooltipNode = tooltip.node();
+            const tooltipWidth = tooltipNode.offsetWidth || 400;
+            const tooltipHeight = tooltipNode.offsetHeight || 400;
+            
+            let left = event.clientX + 20;
+            let top = event.clientY + 20;
+
+            if (left + tooltipWidth > window.innerWidth) {
+                left = event.clientX - tooltipWidth - 20;
+            }
+            if (top + tooltipHeight > window.innerHeight) {
+                top = window.innerHeight - tooltipHeight - 20;
+            }
+            if (top < 0) top = 20;
+
+            tooltip
+                .style('left', left + 'px')
+                .style('top', top + 'px')
+                .classed('active', true);
+        }
+
+        function generateMPTooltip(info, house) {
+            let html = `
+                <div class="tooltip-row">
+                    <span class="tooltip-label">MP (${house})</span>
+                    <div class="tooltip-value">${info.mp}</div>
+                </div>
+                <div class="tooltip-row">
+                    <span class="tooltip-label">PARTY</span>
+                    <div class="tooltip-value">${info.party}</div>
+                </div>
+                <div class="tooltip-divider"></div>
+                <div class="tooltip-row">
+                    <span class="tooltip-label">TOTAL QUESTIONS</span>
+                    <div class="tooltip-value">${info.questions}</div>
+                </div>
+            `;
+            
+            if (info.all_questions && info.all_questions.length > 0) {
+                info.all_questions.forEach((q, index) => {
+                    html += '<div class="tooltip-divider"></div>';
+                    html += '<div class="question-section">';
+                    
+                    if (info.all_questions.length > 1) {
+                        html += `<div class="question-number">QUESTION ${index + 1} OF ${info.all_questions.length}</div>`;
+                    }
+                    
+                    html += `
+                        <div class="tooltip-row">
+                            <span class="tooltip-label">THEME</span>
+                            <div class="tooltip-value">${q.theme}</div>
+                        </div>
+                        <div class="tooltip-row">
+                            <span class="tooltip-label">MINISTRY</span>
+                            <div class="tooltip-value">${q.ministry}</div>
+                        </div>
+                        <div class="tooltip-row">
+                            <span class="tooltip-label">QUESTION</span>
+                            <div class="tooltip-value">${q.title}</div>
+                        </div>
+                    `;
+                    
+                    if (q.link && q.link !== '#' && !q.link.includes('<')) {
+                        html += `
+                            <a href="${q.link}" target="_blank" class="tooltip-link">
+                                View Question Document →
+                            </a>
+                        `;
+                    }
+                    
+                    html += '</div>';
+                });
+            }
+            
+            return html;
+        }
+
+        function generateStateTooltip(info) {
+            let html = `
+                <div class="tooltip-row">
+                    <span class="tooltip-label">RAJYA SABHA MPS (${info.mps.length})</span>
+                    <div class="tooltip-value">${info.mps.join(', ')}</div>
+                </div>
+                <div class="tooltip-divider"></div>
+                <div class="tooltip-row">
+                    <span class="tooltip-label">TOTAL QUESTIONS</span>
+                    <div class="tooltip-value">${info.questions}</div>
+                </div>
+            `;
+            
+            if (info.all_questions && info.all_questions.length > 0) {
+                // Group by MP
+                const byMP = {};
+                info.all_questions.forEach(q => {
+                    if (!byMP[q.mp]) byMP[q.mp] = [];
+                    byMP[q.mp].push(q);
+                });
+
+                Object.keys(byMP).forEach((mpName, mpIndex) => {
+                    const mpQuestions = byMP[mpName];
+                    
+                    html += '<div class="tooltip-divider"></div>';
+                    html += `<div class="tooltip-row"><span class="tooltip-label">MP</span><div class="tooltip-value">${mpName}</div></div>`;
+                    html += `<div class="tooltip-row"><span class="tooltip-label">PARTY</span><div class="tooltip-value">${mpQuestions[0].party}</div></div>`;
+                    
+                    mpQuestions.slice(0, 3).forEach((q, index) => {
+                        html += '<div class="question-section">';
+                        
+                        if (mpQuestions.length > 1) {
+                            html += `<div class="question-number">QUESTION ${index + 1} OF ${mpQuestions.length}</div>`;
+                        }
+                        
+                        html += `
+                            <div class="tooltip-row">
+                                <span class="tooltip-label">THEME</span>
+                                <div class="tooltip-value">${q.theme}</div>
+                            </div>
+                            <div class="tooltip-row">
+                                <span class="tooltip-label">MINISTRY</span>
+                                <div class="tooltip-value">${q.ministry}</div>
+                            </div>
+                            <div class="tooltip-row">
+                                <span class="tooltip-label">QUESTION</span>
+                                <div class="tooltip-value">${q.title}</div>
+                            </div>
+                        `;
+                        
+                        if (q.link && q.link !== '#' && !q.link.includes('<')) {
+                            html += `
+                                <a href="${q.link}" target="_blank" class="tooltip-link">
+                                    View Question Document →
+                                </a>
+                            `;
+                        }
+                        
+                        html += '</div>';
+                    });
+                });
+            }
+            
+            return html;
+        }
+
+        function setupSearch(path, zoom) {
+            const searchBox = document.getElementById('searchBox');
+            searchBox.value = '';
+            
+            const newHandler = function(e) {
+                const searchTerm = e.target.value.toLowerCase().trim();
+                
+                if (!searchTerm) {
+                    d3.selectAll('.region')
+                        .classed('highlighted', false)
+                        .style('opacity', 1);
+                    return;
+                }
+                
+                let foundMatch = null;
+                
+                d3.selectAll('.region')
+                    .each(function() {
+                        const elem = d3.select(this);
+                        const d = elem.datum();
+                        
+                        let matches = false;
+                        
+                        if (currentView === 'loksabha') {
+                            const constName = (d.properties.ls_seat_name || '').toLowerCase();
+                            const constKey = normalizeConstituencyName(d.properties.ls_seat_name || '');
+                            const mpInfo = loksabhaMPLookup[constKey];
+                            const mpName = mpInfo ? mpInfo.mp.toLowerCase() : '';
+                            matches = constName.includes(searchTerm) || mpName.includes(searchTerm);
+                            
+                            if (matches && constName === searchTerm) foundMatch = d;
+                        } else {
+                            const stateName = (d.properties.st_nm || d.properties.state_name || '').toLowerCase();
+                            const stateKey = normalizeStateName(d.properties.st_nm || d.properties.state_name || '');
+                            const stateInfo = rajyasabhaMPLookup[stateKey];
+                            const mpNames = stateInfo ? stateInfo.mps.map(m => m.toLowerCase()).join(' ') : '';
+                            matches = stateName.includes(searchTerm) || mpNames.includes(searchTerm);
+                            
+                            if (matches && stateName === searchTerm) foundMatch = d;
+                        }
+                        
+                        elem.classed('highlighted', matches).style('opacity', matches ? 1 : 0.15);
+                    });
+                
+                // Auto-zoom to match
+                if (foundMatch) {
+                    const bounds = path.bounds(foundMatch);
+                    const dx = bounds[1][0] - bounds[0][0];
+                    const dy = bounds[1][1] - bounds[0][1];
+                    const x = (bounds[0][0] + bounds[1][0]) / 2;
+                    const y = (bounds[0][1] + bounds[1][1]) / 2;
+                    const scale = Math.min(8, 0.9 / Math.max(dx / width, dy / height));
+                    const translate = [width / 2 - scale * x, height / 2 - scale * y];
+                    
+                    svg.transition().duration(750)
+                        .call(zoom.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
+                }
+            };
+            
+            // Remove old handler and add new one
+            searchBox.removeEventListener('input', searchBox._currentHandler);
+            searchBox._currentHandler = newHandler;
+            searchBox.addEventListener('input', newHandler);
+        }
+
+        console.log('✅ Map ready!');
+    </script>
+</body>
+</html>
