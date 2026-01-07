@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "title": {
+    "text": "The Implementation Gap: Where Policy Fails People",
+    "subtitle": "States below the diagonal line fall short of 100% UDID (Unique Disability ID) registration—revealing the gap between Census enumeration and actual policy implementation. West Bengal's 10% coverage despite 2M+ persons with disabilities exemplifies this structural failure.",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#7f8c8d",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC1_state_pwd_udid_census2011.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 4],
+        "color": "#95a5a6",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {"datum": 0},
+        "x2": {"datum": 3.5},
+        "y": {"datum": 0},
+        "y2": {"datum": 100}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": -5,
+        "fontSize": 11,
+        "color": "#7f8c8d"
+      },
+      "encoding": {
+        "x": {"datum": 3},
+        "y": {"datum": 85},
+        "text": {"datum": "Ideal: 100% coverage"}
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 150, "opacity": 0.7},
+      "encoding": {
+        "x": {
+          "field": "pwd_percent",
+          "type": "quantitative",
+          "title": "Persons with Disabilities (% of State Population, Census 2011)",
+          "scale": {"domain": [0.5, 3.5]}
+        },
+        "y": {
+          "field": "udid_coverage_percent",
+          "type": "quantitative",
+          "title": "UDID (Unique Disability ID) Registration Coverage (%)",
+          "scale": {"domain": [0, 100]}
+        },
+        "color": {
+          "condition": {
+            "test": "datum.udid_coverage_percent < 30",
+            "value": "#c2185b"
+          },
+          "value": "#ba68c8"
+        },
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State/UT"},
+          {
+            "field": "pwd_percent",
+            "type": "quantitative",
+            "title": "PwD Prevalence (%)",
+            "format": ".2f"
+          },
+          {
+            "field": "udid_coverage_percent",
+            "type": "quantitative",
+            "title": "UDID Registration (%)",
+            "format": ".2f"
+          },
+          {
+            "field": "pwd_population",
+            "type": "quantitative",
+            "title": "Total Persons with Disabilities",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"field": "pwd_percent", "type": "quantitative"},
+        "y": {"field": "udid_coverage_percent", "type": "quantitative"},
+        "text": {"field": "state", "type": "nominal"},
+        "opacity": {
+          "condition": {
+            "test": "datum.state == 'WEST BENGAL' || datum.state == 'CHANDIGARH' || datum.state == 'UTTAR PRADESH' || datum.state == 'TAMIL NADU' || datum.state == 'JAMMU & KASHMIR'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 11, "titleFontSize": 13},
+    "legend": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}

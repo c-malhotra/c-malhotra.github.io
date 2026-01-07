@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "title": {
+    "text": "Beyond Percentages: The Human Scale of Exclusion",
+    "subtitle": "Bubble size represents people excluded from UDID registration.",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#7f8c8d",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/PC1_state_pwd_udid_census2011.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.pwd_population - datum.udid_beneficiaries",
+      "as": "coverage_gap"
+    },
+    {"calculate": "100 - datum.udid_coverage_percent", "as": "gap_percent"}
+  ],
+  "mark": {"type": "circle", "opacity": 0.7},
+  "encoding": {
+    "x": {
+      "field": "pwd_percent",
+      "type": "quantitative",
+      "title": "Persons with Disabilities (% of State Population, Census 2011)",
+      "scale": {"domain": [0.5, 3.5]}
+    },
+    "y": {
+      "field": "gap_percent",
+      "type": "quantitative",
+      "title": "UDID Registration Shortfall (%)",
+      "scale": {"domain": [0, 105]}
+    },
+    "size": {
+      "field": "coverage_gap",
+      "type": "quantitative",
+      "title": "Persons Without UDID Registration",
+      "scale": {"range": [100, 3000], "type": "sqrt"}
+    },
+    "color": {
+      "condition": {"test": "datum.gap_percent > 70", "value": "#c2185b"},
+      "value": "#ba68c8",
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State/UT"},
+      {
+        "field": "pwd_population",
+        "type": "quantitative",
+        "title": "Total Persons with Disabilities",
+        "format": ","
+      },
+      {
+        "field": "udid_beneficiaries",
+        "type": "quantitative",
+        "title": "UDID Registered",
+        "format": ","
+      },
+      {
+        "field": "coverage_gap",
+        "type": "quantitative",
+        "title": "Not Registered (Persons)",
+        "format": ","
+      },
+      {
+        "field": "gap_percent",
+        "type": "quantitative",
+        "title": "Registration Shortfall (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {"labelFontSize": 11, "titleFontSize": 13},
+    "legend": {"labelFontSize": 11, "titleFontSize": 12}
+  }
+}
