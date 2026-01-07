@@ -1,35 +1,51 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Unemployment rate",
-    "anchor": "start",
-    "subtitle": "Ages 16 and over, % | Source: ONS through ECO API",
-    "fontSize": "14",
-    "subtitleFontSize": "12",
-    "color": "#000000",
-    "subtitleColor": "#000000"
+    "text": "UK Unemployment Rate (Ages 16+)",
+    "fontSize": 14,
+    "fontWeight": "bold",
+    "anchor": "start"
   },
-  "height": "250",
-  "width": "container",
-  "autosize": {"type": "fit", "contains": "padding", "resize": false},
-  "background": "#ffffff",
-  "view": {"fill": "#ffffff", "strokeOpacity": 0},
+  "width": 500,
+  "height": 350,
   "data": {
     "url": "https://api.economicsobservatory.com/gbr/unem?vega",
-    "format": {"type": "json"}
+    "format": {
+      "type": "json"
+    }
   },
-  "mark": {"type": "line", "color": "#df80f9", "strokeWidth": "2"},
+  "mark": {
+    "type": "line",
+    "color": "#9b7bb5",
+    "strokeWidth": 2,
+    "point": {
+      "filled": true,
+      "fill": "#ded0f2",
+      "size": 30
+    }
+  },
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
-      "axis": {"title": "", "titleColor": "#122B39", "grid": false}
+      "axis": {
+        "title": "Date",
+        "grid": false,
+        "labelFontSize": 11
+      }
     },
     "y": {
       "field": "value",
       "type": "quantitative",
-      "axis": {"title": "", "titleColor": "#122B39", "grid": false}
-    }
-  },
-  "config": {}
+      "axis": {
+        "title": "Unemployment Rate (%)",
+        "grid": true,
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      { "field": "date", "type": "temporal", "title": "Date", "format": "%B %Y" },
+      { "field": "value", "type": "quantitative", "format": ".2f", "title": "Unemployment (%)" }
+    ]
+  }
 }
