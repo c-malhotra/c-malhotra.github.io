@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Disability Inclusion: UDID Coverage by District"},
+  "width": 350,
+  "height": 450,
+  "data": {
+    "url": "https://cdn.jsdelivr.net/gh/udit-001/india-maps-data@8d907bc/topojson/india.json",
+    "format": {"feature": "districts", "type": "topojson"}
+  },
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "color": "#e5e5e5"},
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.st_nm", "title": "State"},
+          {"field": "properties.district"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.district",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/EcoDemoUser/EcoDemoUser.github.io/refs/heads/main/data/india_disability_cards_district.csv"
+            },
+            "key": "District Name",
+            "fields": ["Total"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.2},
+      "encoding": {
+        "color": {
+          "field": "Total",
+          "type": "quantitative",
+          "scale": {"scheme": "purples"},
+          "title": "UDID Registrations"
+        },
+        "tooltip": [
+          {"field": "properties.district", "title": "District"},
+          {"field": "Total", "type": "quantitative", "title": "UDID Cards"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
