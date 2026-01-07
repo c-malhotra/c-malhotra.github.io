@@ -39,19 +39,48 @@
         .vega-embed .marks rect {
             fill: #ded0f2 !important;
         }
+
+        /* Navigation buttons container */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Individual button styling */
+        .nav-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #6b5b95;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-button:hover {
+            background-color: #5a4a7f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
 <body>
-<nav class="top-nav">
-    <div class="nav-left">PP434</div>
-    <ul class="nav-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#project">Main Project</a></li>
-        <li><a href="#portfolio">Portfolio Tasks</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+
 
 <div class="page-wrapper">
     <h1 class="big" style="margin-bottom: 0px;">Chahat Malhotra</h1>
@@ -63,184 +92,16 @@
         This site documents my data visualisation projects undertaken as part of my coursework in PP434: Automated Data Visualisation for Policymaking, during my time at the London School of Economics in 2025–2026. It combines weekly portfolio tasks exploring different visualisation techniques with a final project focused on disability and its implications for policy and inclusion in India.   
     </h2>
 
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="home.html" class="nav-button">Portfolio</a>
+        <a href="myproject.html" class="nav-button">Project</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+
     <section id="home"></section>
 
-    <!-- CC1 Section -->
-    <section id="CC1" class="section-light">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC1</span> Hosting. Display charts in your own site</h2>
-        </div>
-        <div class="chart-container">
-            <div class="chart-item">
-                <h4>Figure 1: Disability percentage in the world</h4>
-                <figure id="Location1"></figure>
-                <p>We've organised the page into sections, with each section containing a chart, title, and a description. As a first example, we're using a basic chart from our repo.</p>
-            </div>
-            <div class="chart-item">
-                <h4>Figure 2: Unemployment in people with disabilities globally</h4>
-                <figure id="Location2"></figure>
-                <p>Figure 2 shows a snapshot of global unemployment trends among people with disabilities between 2011-2024. Mention the highlight here.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC2 Section -->
-    <section id="CC2" class="section-grey">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC2</span> Building - Create your own visualisations</h2>
-        </div>
-        <div class="chart-container">
-            <div class="chart-item">
-                <h3>Figure 1: Beneficiaries of National Social Assistance Programme in India</h3>
-                <figure id="Location3"></figure>
-                <p>Figure 1 highlights that the  </p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2: Sample text here</h3>
-                <figure id="Location4"></figure>
-                <p>Figure 2 highlights that the sample text here</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC3 Section -->
-    <section id="CC3" class="section-light">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC3</span> Debate. Use a visualisation in policy commentary</h2>
-        </div>
-        <p>Sample text here.</p>
-        <div class="chart-container">
-            <div class="chart-item">
-                <h3>Figure 1: sample text here</h3>
-                <figure id="Location5"></figure>
-                <p>While the figure shows sample text here.</p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2: sample text here</h3>
-                <figure id="Location6"></figure>
-                <p>India is a sample text here</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC4 Section -->
-    <section id="CC4" class="section-grey">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC4</span> Replication. Re-create, then improve, someone else’s chart</h2>
-        </div>
-        <p>I replaced the political infographic (Figure 1) with a neutral bar chart (Figure 2), added clear labels and percentage changes, corrected misleading framing, and used proper scales and dates.</p>
-        <div class="chart-container">
-            <div class="chart-item">
-                <h3>Figure 1: BJP's Social Media Post on Petrol Price Hike in India</h3>
-                <figure id="Location7"><img src="CC4_badchart.jpeg"><p>Source: https://x.com/BJP4India/status/1039110521549512707</p></figure>
-                <p>Found this chart on BJP X handle which misrepresents prices with distorted bar heights, inconsistent arrows, and distracting political imagery.</p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2: Corrected Representation of Change in Petrol Prices</h3>
-                <figure id="Location8"></figure>
-                <p>The above bar chart shows petrol price changes over time using proper scaling, readable labels, and neutral design choices.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC5 Section -->
-    <section id="API" class="section-light">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC5</span> Accessing data: Scraper and API</h2>
-        </div>
-        <p>In this section I use a live link to an API from our World in Data Portal (Figure 1) and have used a Google Colab python notebook to scrape Wikipedia HDI table (Figure 2).</p>
-        <div class="chart-container">
-            <div class="chart-item">
-                <h3>Figure 1: (API Chart) Life Expectancy in India</h3>
-                <figure id="api_lifeexp"></figure>
-                <p class="small-text">API endpoint: <code>https://ourworldindata.org/grapher/life-expectancy.csv</code></p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2 (Scraper Task): HDI of Indian States</h3>
-                <figure id="ScraperChart"></figure>
-                <p class="small-text">Scraped Wikipedia HDI table into pandas, cleaned and visualised state-level HDI values in Vega-Lite.</p>
-                <p>Colab notebook: <a href="https://colab.research.google.com/drive/18W_lIItoV4wQ7Dj1Zt34y9PhWNGJjIXp?usp=sharing" target="_blank">My Notebook</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC6 Section -->
-    <section id="CC6" class="section-grey">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC6</span> Loops. Build a dashboard</h2>
-        </div>
-        <p>Six mini time-series charts built from World Bank World Development Indicators for India, batch downloaded via a Python loop and embedded using a Javascript loop.</p>
-        <div class="cc6-grid">
-            <figure id="cc6_chart_1"></figure>
-            <figure id="cc6_chart_2"></figure>
-            <figure id="cc6_chart_3"></figure>
-            <figure id="cc6_chart_4"></figure>
-            <figure id="cc6_chart_5"></figure>
-            <figure id="cc6_chart_6"></figure>
-        </div>
-        <p class="small-text">Batch-download via Python, embedded via JS loop.</p>
-        <p class="small-text">Colab notebook: <a href="https://colab.research.google.com/drive/1mK5tAbQHqeckWwMOhM7-FPY8UoL3HgSF?usp=sharing" target="_blank">My Notebook</a></p>
-    </section>
-
-    <!-- CC7 Section -->
-    <section id="CC7" class="section-light">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC7</span> Maps- Base maps and choropleths</h2>
-        </div>
-        <p>Two maps: MPI HCR statewise and top 50 poorest districts in India.</p>
-        <div class="chart-container">
-            <div class="chart-item">
-                <h3>Figure 1: Incidence of Multidimensional Poverty in India, HCR (%), 2023</h3>
-                <figure id="Location9"></figure>
-                <p>Choropleth by state/UT using NITI Aayog MPI estimates.</p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2: Top 50 Multidimensionally Poorest Districts of India</h3>
-                <figure id="Location10"></figure>
-                <p>Coordinate map showing 50 poorest districts. Colab notebook: <a href="https://colab.research.google.com/drive/1vsPYuT7Xjwudbk43Kbft5ISIcf18hgfN?usp=sharing">Link</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC8 Section -->
-    <section id="CC9" class="section-light">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC8</span> Big Data- Extracting a story from millions of prices</h2>
-        </div>
-        <div class="chart-container vertical">
-            <div class="chart-item">
-                <h3>Figure 1: HDI and Constituent Indicators Over Time</h3>
-                <figure id="CC9_HDI"></figure>
-                <p class="small-text">Interactive chart showing HDI and constituent indicators over time.</p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2: Trends in Statewise HDI Score and GNI per Capita (1990–2022)</h3>
-                <figure id="HDI_Bubble"></figure>
-                <p class="small-text">Bubble chart showing HDI vs GNI per capita over time.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CC9 Section -->
-    <section id="CC10" class="section-grey">
-        <div class="section-header">
-            <h2><span class="cc-pill">CC9</span> Two interactive charts</h2>
-        </div>
-        <p class="small-text"><strong>Hypothesis:</strong> Indian states differ systematically in HDI outcomes after controlling for income.</p>
-        <div class="chart-container vertical">
-            <div class="chart-item">
-                <h3>Figure 1: HDI vs log GNI per capita (with fitted line)</h3>
-                <figure id="CC10_FIT"></figure>
-                <p class="small-text">Scatter plot of HDI vs log GNI per capita with regression line.</p>
-            </div>
-            <div class="chart-item">
-                <h3>Figure 2: HDI residuals after accounting for income</h3>
-                <figure id="CC10_RESID"></figure>
-                <p class="small-text">Residuals (actual − predicted HDI) showing over- and under-performance.</p>
-            </div>
-        </div>
-        <p class="small-text"><strong>Data Cleaning & Analysis:</strong> OLS regression in Python. <a href="https://colab.research.google.com/drive/1rdr_s0hrhpL9d3XxLFC4hnvcwvFsvrVg?usp=sharing" target="_blank">View Notebook</a></p>
-    </section>
+    
 
 </div> <!-- end of page-wrapper -->
 
@@ -295,4 +156,3 @@
 
 </body>
 </html>
-</div> <!-- end of page-wrapper -->
