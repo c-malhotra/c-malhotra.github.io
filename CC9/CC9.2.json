@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "MNREGA Jobs for Persons with Disabilities: State Performance",
+  "width": 800,
+  "height": 450,
+  "data": {
+    "values": [
+      {
+        "state": "Tamil Nadu",
+        "year": "2023-24",
+        "jobs_offered": 111555,
+        "rank": 1
+      },
+      {
+        "state": "Andhra Pradesh",
+        "year": "2023-24",
+        "jobs_offered": 76097,
+        "rank": 2
+      },
+      {
+        "state": "Madhya Pradesh",
+        "year": "2023-24",
+        "jobs_offered": 46562,
+        "rank": 3
+      },
+      {
+        "state": "Telangana",
+        "year": "2023-24",
+        "jobs_offered": 44923,
+        "rank": 4
+      },
+      {
+        "state": "Rajasthan",
+        "year": "2023-24",
+        "jobs_offered": 27357,
+        "rank": 5
+      },
+      {
+        "state": "Tamil Nadu",
+        "year": "2024-25",
+        "jobs_offered": 98745,
+        "rank": 1
+      },
+      {
+        "state": "Andhra Pradesh",
+        "year": "2024-25",
+        "jobs_offered": 71203,
+        "rank": 2
+      },
+      {
+        "state": "Madhya Pradesh",
+        "year": "2024-25",
+        "jobs_offered": 42891,
+        "rank": 3
+      },
+      {
+        "state": "Telangana",
+        "year": "2024-25",
+        "jobs_offered": 40156,
+        "rank": 4
+      },
+      {
+        "state": "Rajasthan",
+        "year": "2024-25",
+        "jobs_offered": 25834,
+        "rank": 5
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "year_select",
+      "value": "2024-25",
+      "bind": {
+        "input": "select",
+        "options": ["2023-24", "2024-25", "Both Years"],
+        "name": "Compare Years: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "year_select == 'Both Years' || datum.year == year_select"},
+    {"sort": [{"field": "jobs_offered", "order": "descending"}]}
+  ],
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "x": {
+      "field": "jobs_offered",
+      "type": "quantitative",
+      "title": "MNREGA Jobs Offered to PWDs",
+      "axis": {"labelExpr": "format(datum.value, ',.0f')"}
+    },
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "sort": {"field": "jobs_offered", "order": "descending"}
+    },
+    "color": {
+      "field": "year",
+      "type": "nominal",
+      "scale": {
+        "domain": ["2023-24", "2024-25"],
+        "range": ["#a855f7", "#ec4899"]
+      },
+      "legend": {"title": "Financial Year"}
+    },
+    "xOffset": {"field": "year"},
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State"},
+      {"field": "year", "type": "nominal", "title": "Year"},
+      {
+        "field": "jobs_offered",
+        "type": "quantitative",
+        "title": "Jobs Offered",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {"bar": {"discreteBandSize": 15}}
+}

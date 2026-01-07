@@ -1,0 +1,288 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Electoral Accessibility for PWD Voters by State",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "values": [
+      {
+        "state": "Kerala",
+        "region": "South",
+        "pwd_voters_lakhs": 3.2,
+        "home_voting_percent": 17.07,
+        "meets_threshold": false
+      },
+      {
+        "state": "Karnataka",
+        "region": "South",
+        "pwd_voters_lakhs": 4.1,
+        "home_voting_percent": 8.5,
+        "meets_threshold": false
+      },
+      {
+        "state": "Telangana",
+        "region": "South",
+        "pwd_voters_lakhs": 2.9,
+        "home_voting_percent": 6.8,
+        "meets_threshold": false
+      },
+      {
+        "state": "Andhra Pradesh",
+        "region": "South",
+        "pwd_voters_lakhs": 5.3,
+        "home_voting_percent": 5.2,
+        "meets_threshold": false
+      },
+      {
+        "state": "Tamil Nadu",
+        "region": "South",
+        "pwd_voters_lakhs": 6.8,
+        "home_voting_percent": 7.3,
+        "meets_threshold": false
+      },
+      {
+        "state": "Uttar Pradesh",
+        "region": "North",
+        "pwd_voters_lakhs": 12.6,
+        "home_voting_percent": 0.96,
+        "meets_threshold": false
+      },
+      {
+        "state": "Rajasthan",
+        "region": "North",
+        "pwd_voters_lakhs": 4.5,
+        "home_voting_percent": 2.1,
+        "meets_threshold": false
+      },
+      {
+        "state": "Haryana",
+        "region": "North",
+        "pwd_voters_lakhs": 2.8,
+        "home_voting_percent": 4.3,
+        "meets_threshold": false
+      },
+      {
+        "state": "Punjab",
+        "region": "North",
+        "pwd_voters_lakhs": 2.1,
+        "home_voting_percent": 3.8,
+        "meets_threshold": false
+      },
+      {
+        "state": "Himachal Pradesh",
+        "region": "North",
+        "pwd_voters_lakhs": 0.8,
+        "home_voting_percent": 5.1,
+        "meets_threshold": false
+      },
+      {
+        "state": "Uttarakhand",
+        "region": "North",
+        "pwd_voters_lakhs": 1.2,
+        "home_voting_percent": 4.7,
+        "meets_threshold": false
+      },
+      {
+        "state": "Jammu & Kashmir",
+        "region": "North",
+        "pwd_voters_lakhs": 1.5,
+        "home_voting_percent": 3.2,
+        "meets_threshold": false
+      },
+      {
+        "state": "Maharashtra",
+        "region": "West",
+        "pwd_voters_lakhs": 7.2,
+        "home_voting_percent": 2.8,
+        "meets_threshold": false
+      },
+      {
+        "state": "Gujarat",
+        "region": "West",
+        "pwd_voters_lakhs": 5.4,
+        "home_voting_percent": 1.9,
+        "meets_threshold": false
+      },
+      {
+        "state": "Goa",
+        "region": "West",
+        "pwd_voters_lakhs": 0.4,
+        "home_voting_percent": 8.2,
+        "meets_threshold": false
+      },
+      {
+        "state": "West Bengal",
+        "region": "East",
+        "pwd_voters_lakhs": 8.9,
+        "home_voting_percent": 2.3,
+        "meets_threshold": false
+      },
+      {
+        "state": "Odisha",
+        "region": "East",
+        "pwd_voters_lakhs": 4.6,
+        "home_voting_percent": 3.1,
+        "meets_threshold": false
+      },
+      {
+        "state": "Jharkhand",
+        "region": "East",
+        "pwd_voters_lakhs": 2.9,
+        "home_voting_percent": 1.8,
+        "meets_threshold": false
+      },
+      {
+        "state": "Bihar",
+        "region": "East",
+        "pwd_voters_lakhs": 6.7,
+        "home_voting_percent": 0.5,
+        "meets_threshold": false
+      },
+      {
+        "state": "Assam",
+        "region": "Northeast",
+        "pwd_voters_lakhs": 3.8,
+        "home_voting_percent": 6.4,
+        "meets_threshold": false
+      },
+      {
+        "state": "Meghalaya",
+        "region": "Northeast",
+        "pwd_voters_lakhs": 0.9,
+        "home_voting_percent": 7.9,
+        "meets_threshold": false
+      },
+      {
+        "state": "Manipur",
+        "region": "Northeast",
+        "pwd_voters_lakhs": 0.5,
+        "home_voting_percent": 4.2,
+        "meets_threshold": false
+      },
+      {
+        "state": "Nagaland",
+        "region": "Northeast",
+        "pwd_voters_lakhs": 0.3,
+        "home_voting_percent": 3.1,
+        "meets_threshold": false
+      },
+      {
+        "state": "Tripura",
+        "region": "Northeast",
+        "pwd_voters_lakhs": 0.6,
+        "home_voting_percent": 5.8,
+        "meets_threshold": false
+      },
+      {
+        "state": "Mizoram",
+        "region": "Northeast",
+        "pwd_voters_lakhs": 0.2,
+        "home_voting_percent": 6.1,
+        "meets_threshold": false
+      },
+      {
+        "state": "Madhya Pradesh",
+        "region": "Central",
+        "pwd_voters_lakhs": 5.9,
+        "home_voting_percent": 2.4,
+        "meets_threshold": false
+      },
+      {
+        "state": "Chhattisgarh",
+        "region": "Central",
+        "pwd_voters_lakhs": 2.3,
+        "home_voting_percent": 1.7,
+        "meets_threshold": false
+      },
+      {
+        "state": "Delhi",
+        "region": "North",
+        "pwd_voters_lakhs": 1.8,
+        "home_voting_percent": 9.5,
+        "meets_threshold": false
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "threshold",
+      "value": 5,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 20,
+        "step": 0.5,
+        "name": "Accessibility Threshold (%): "
+      }
+    },
+    {
+      "name": "region_filter",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "North",
+          "South",
+          "East",
+          "West",
+          "Northeast",
+          "Central"
+        ],
+        "name": "Filter by Region: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "region_filter == 'All' || datum.region == region_filter"},
+    {
+      "calculate": "datum.home_voting_percent >= threshold ? true : false",
+      "as": "meets_threshold"
+    },
+    {
+      "sort": [{"field": "home_voting_percent", "order": "descending"}],
+      "window": [{"op": "rank", "as": "rank"}]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "home_voting_percent",
+      "type": "quantitative",
+      "title": "Home Voting Accessibility (%)",
+      "axis": {"labelExpr": "datum.value + '%'"}
+    },
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "sort": {"field": "home_voting_percent", "order": "descending"}
+    },
+    "color": {
+      "condition": {"test": "datum.meets_threshold", "value": "#7c3aed"},
+      "value": "#d1d5db"
+    },
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State"},
+      {"field": "region", "type": "nominal", "title": "Region"},
+      {
+        "field": "home_voting_percent",
+        "type": "quantitative",
+        "title": "Home Voting Access (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "pwd_voters_lakhs",
+        "type": "quantitative",
+        "title": "PWD Voters (Lakhs)",
+        "format": ".1f"
+      },
+      {
+        "field": "meets_threshold",
+        "type": "nominal",
+        "title": "Meets Threshold?"
+      }
+    ]
+  },
+  "config": {"bar": {"discreteBandSize": 12}}
+}
