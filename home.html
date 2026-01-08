@@ -320,9 +320,6 @@
 
     <!-- CC7 Section -->
     <section id="CC7" class="section-light">
-
-    <!-- CC7 Section -->
-    <section id="CC7" class="section-light">
         <div class="section-header">
             <h2><span class="cc-pill">CC7</span> Maps - Base maps and choropleths</h2>
         </div>
@@ -338,18 +335,72 @@
         </div>
     </section>
 
-    <!-- CC8 Section - Placeholder -->
+<!-- ============ CC8: BIG DATA ============ -->
     <section id="CC8" class="section-grey">
         <div class="section-header">
             <h2><span class="cc-pill">CC8</span> Big Data - Extracting a story from large datasets</h2>
         </div>
-        <div class="policy-topic">
-            <p><strong>Coming Soon</strong></p>
+
+        <p style="margin-bottom: 1.5rem; color: #666; font-size: 14px;">
+            <strong>Public Colab Notebooks:</strong> <a href="https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC8/CC8.1.ipynb" target="_blank" style="color: #7c3aed; font-weight: 600;">Chart 1 Code →</a> | <a href="https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC8/CC8_2.ipynb" target="_blank" style="color: #7c3aed; font-weight: 600;">Chart 2 Code →</a>
+        </p>
+        
+        <!-- CHART 1: Semi-Skimmed Milk -->
+        <div class="chart-container">
+            <div class="chart-item">
+                <h4>Semi-Skimmed Milk (2 Pints) Price Trends Since 1996</h4>
+                <figure id="cc8_chart_1" aria-label="Scatter plot showing mean and median prices for semi-skimmed milk over time"></figure>
+                <p style="font-size: 14px; line-height: 1.6; color: #333; margin-top: 12px;">
+                    I used the LRPD to analyse semi-skimmed milk (2 pints) prices. I filtered the data by product ID and calculated monthly mean and median prices from 1996 onwards. I plotted both measures as separate lines in Vega-Lite to compare pricing trends across nearly three decades.
+                </p>
+            </div>
         </div>
-        <div class="placeholder-box">
-            <p>This section will demonstrate analysis and visualisation of large-scale datasets.</p>
+
+        <!-- CHART 2: Full-Fat Milk -->
+        <div class="chart-container">
+            <div class="chart-item">
+                <h4>Full-Fat Milk (2 Pints) Price Trends Since 1996</h4>
+                <figure id="cc8_chart_2" aria-label="Scatter plot showing prices for full-fat milk over time in London"></figure>
+                <p style="font-size: 14px; line-height: 1.6; color: #333; margin-top: 12px;">
+                    Analysing full-fat milk (2 pints) prices from LRPD for London. I filtered the data by product ID for full-fat milk and extracted all price observations recorded in London. I plotted individual prices over time as a scatter plot in Vega-Lite to visualise price volatility and long-term trends. 
+                </p>
+            </div>
+        </div>
+
+      
         </div>
     </section>
+
+    <!-- ============ VEGA-EMBED SCRIPTS FOR CC8 ============ -->
+    <script>
+        // CC8 Chart 1: Semi-Skimmed Milk
+        vegaEmbed('#cc8_chart_1', 'https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC8/CC8.1.json', {
+            actions: {
+                export: true,
+                source: false,
+                compiled: false,
+                editor: false
+            }
+        }).then(result => {
+            console.log('CC8 Chart 1 (Semi-Skimmed Milk) loaded successfully');
+        }).catch(error => {
+            console.error('CC8 Chart 1 error:', error);
+        });
+
+        // CC8 Chart 2: Full-Fat Milk
+        vegaEmbed('#cc8_chart_2', 'https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC8/CC8.2.json', {
+            actions: {
+                export: true,
+                source: false,
+                compiled: false,
+                editor: false
+            }
+        }).then(result => {
+            console.log('CC8 Chart 2 (Full-Fat Milk) loaded successfully');
+        }).catch(error => {
+            console.error('CC8 Chart 2 error:', error);
+        });
+    </script>
 
     <!-- ============ CC9: INTERACTIVE VISUALISATIONS ============ -->
     <section id="CC9" class="section-light">
@@ -396,7 +447,7 @@
         <!-- CC9 Summary -->
         <div style="background-color: #f5f0fa; border-left: 4px solid #9b7bb5; padding: 16px 20px; margin: 1.5rem 0; border-radius: 4px;">
             <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #333;">
-                <strong style="color: #6b5b95;">Interactive Exclusion:</strong> Sliding the threshold reveals no state achieves basic accessibility. Selecting "Both Years" exposes shrinking livelihood protection. Users discover structural inequality themselves—not through predetermined analysis, but through interaction.
+                <strong style="color: #6b5b95;">How to use:</strong> Sliding the threshold reveals no state achieves basic accessibility. Selecting "Both Years" exposes shrinking livelihood protection. Users discover structural inequality themselves—not through predetermined analysis, but through interaction.
             </p>
         </div>
 
@@ -465,6 +516,10 @@
     // CC7 - UDID Map
     let cc7_udid_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC7/CC7.json";
 
+    // CC8 - Big Data Charts
+    let cc8_chart_1_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC8/CC8.1.json";
+    let cc8_chart_2_spec = "https://raw.githubusercontent.com/c-malhotra/c-malhotra.github.io/refs/heads/main/CC8/CC8.2.json";
+
     // Embed CC1-CC4 charts
     vegaEmbed('#Location1', figure_1_spec).then(console.log).catch(console.warn);
     vegaEmbed('#Location2', figure_2_spec).then(console.log).catch(console.warn);
@@ -495,6 +550,33 @@
 
     // Embed CC7 map
     vegaEmbed('#cc7_udid_map', cc7_udid_spec).then(console.log).catch(console.warn);
+
+    // Embed CC8 charts
+    vegaEmbed('#cc8_chart_1', cc8_chart_1_spec, {
+        actions: {
+            export: true,
+            source: false,
+            compiled: false,
+            editor: false
+        }
+    }).then(result => {
+        console.log('CC8 Chart 1 (Semi-Skimmed Milk) loaded successfully');
+    }).catch(error => {
+        console.error('CC8 Chart 1 error:', error);
+    });
+
+    vegaEmbed('#cc8_chart_2', cc8_chart_2_spec, {
+        actions: {
+            export: true,
+            source: false,
+            compiled: false,
+            editor: false
+        }
+    }).then(result => {
+        console.log('CC8 Chart 2 (Flavoured Milk) loaded successfully');
+    }).catch(error => {
+        console.error('CC8 Chart 2 error:', error);
+    });
 </script>
 
 </body>
